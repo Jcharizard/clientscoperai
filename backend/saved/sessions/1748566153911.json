@@ -1,0 +1,177 @@
+{
+  "id": "1748566153911",
+  "name": "Session 5/29/2025, 5:39:56 PM",
+  "createdAt": "2025-05-30T00:49:13.911Z",
+  "leads": [
+    {
+      "username": "lucky_dog_spa",
+      "url": "https://www.instagram.com/lucky_dog_spa/",
+      "bio": null,
+      "email": null,
+      "followers": 804,
+      "bookingLinks": [],
+      "bioScore": null,
+      "visionScore": {
+        "professional_score": 9.5,
+        "business_score": 6,
+        "quality_score": 5,
+        "file_size_mb": 0.17,
+        "colorScheme": {
+          "dominantColors": [],
+          "scheme": "balanced",
+          "professionalBonus": 1,
+          "brandConsistency": 0
+        },
+        "logoAnalysis": {
+          "hasLogo": true,
+          "logoQuality": 7,
+          "logoScore": 2,
+          "brandingScore": 1.5,
+          "logoType": "professional"
+        },
+        "faceAnalysis": {
+          "hasFaces": true,
+          "faceCount": 1,
+          "personalBrandScore": 2,
+          "portraitQuality": 8
+        },
+        "textAnalysis": {
+          "hasText": true,
+          "textQuality": 6,
+          "contactInfoScore": 1,
+          "businessInfoPresent": false
+        },
+        "professional_rating": "Highly Professional",
+        "marketability": "Good - Strong market appeal",
+        "key_strengths": [
+          "Professional Appearance"
+        ]
+      },
+      "screenshot": "/screenshots/lucky_dog_spa.jpg",
+      "scrapedAt": "2025-05-30T00:40:24.870Z",
+      "activityData": {
+        "lastPostDate": null,
+        "daysSinceLastPost": null,
+        "hasActiveStory": null,
+        "isVerified": false,
+        "activityScore": 0,
+        "isActive": null
+      },
+      "contactInfo": {
+        "emails": [],
+        "phones": [],
+        "websites": [],
+        "socialLinks": [],
+        "messagingApps": [],
+        "bookingPlatforms": [],
+        "contactScore": 0,
+        "hasDirectContact": false,
+        "contactMethods": 0
+      },
+      "engagementData": {
+        "avgLikes": 0,
+        "avgComments": 0,
+        "totalEngagement": 0,
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "postsAnalyzed": 0,
+        "isHighEngagement": false,
+        "engagementScore": 0
+      },
+      "leadScore": {
+        "score": 10,
+        "tier": "COLD",
+        "priority": 4,
+        "action": "Add to nurture sequence",
+        "factors": [
+          "Professional Visuals"
+        ],
+        "confidence": "Low"
+      }
+    },
+    {
+      "username": "chopshopgrooming",
+      "url": "https://www.instagram.com/chopshopgrooming/",
+      "bio": null,
+      "email": null,
+      "followers": 9,
+      "bookingLinks": [],
+      "bioScore": null,
+      "visionScore": {
+        "professional_score": 7.5,
+        "business_score": 4,
+        "quality_score": 4,
+        "file_size_mb": 0.06,
+        "colorScheme": {
+          "dominantColors": [],
+          "scheme": "balanced",
+          "professionalBonus": 1,
+          "brandConsistency": 0
+        },
+        "logoAnalysis": {
+          "hasLogo": true,
+          "logoQuality": 5,
+          "logoScore": 1,
+          "brandingScore": 1,
+          "logoType": "simple"
+        },
+        "faceAnalysis": {
+          "hasFaces": true,
+          "faceCount": 1,
+          "personalBrandScore": 1,
+          "portraitQuality": 6
+        },
+        "textAnalysis": {
+          "hasText": false,
+          "textQuality": 0,
+          "contactInfoScore": 0,
+          "businessInfoPresent": false
+        },
+        "professional_rating": "Professional",
+        "marketability": "Average - Moderate appeal",
+        "key_strengths": [
+          "Basic Profile"
+        ]
+      },
+      "screenshot": "/screenshots/chopshopgrooming.jpg",
+      "scrapedAt": "2025-05-30T00:40:39.017Z",
+      "activityData": {
+        "lastPostDate": null,
+        "daysSinceLastPost": null,
+        "hasActiveStory": null,
+        "isVerified": false,
+        "activityScore": 0,
+        "isActive": null
+      },
+      "contactInfo": {
+        "emails": [],
+        "phones": [],
+        "websites": [],
+        "socialLinks": [],
+        "messagingApps": [],
+        "bookingPlatforms": [],
+        "contactScore": 0,
+        "hasDirectContact": false,
+        "contactMethods": 0
+      },
+      "engagementData": {
+        "avgLikes": 0,
+        "avgComments": 0,
+        "totalEngagement": 0,
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "postsAnalyzed": 0,
+        "isHighEngagement": false,
+        "engagementScore": 0
+      },
+      "leadScore": {
+        "score": 5,
+        "tier": "COLD",
+        "priority": 4,
+        "action": "Add to nurture sequence",
+        "factors": [],
+        "confidence": "Low"
+      }
+    }
+  ]
+}

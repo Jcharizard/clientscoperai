@@ -1,0 +1,70 @@
+[
+  {
+    "success": true,
+    "username": "foodnetwork",
+    "data": {
+      "username": "foodnetwork",
+      "title": "Food Network (&#064;foodnetwork) • Instagram photos and videos",
+      "following": 1478,
+      "businessIndicators": {
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasWebsite": true,
+        "hasAddress": true,
+        "hasCategory": true
+      }
+    },
+    "timestamp": "2025-06-17T18:25:13.674Z"
+  },
+  {
+    "success": true,
+    "username": "buzzfeedtasty",
+    "data": {
+      "username": "buzzfeedtasty",
+      "title": "Tasty (&#064;buzzfeedtasty) • Instagram photos and videos",
+      "following": 379,
+      "businessIndicators": {
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasWebsite": true,
+        "hasAddress": true,
+        "hasCategory": true
+      }
+    },
+    "timestamp": "2025-06-17T18:25:19.337Z"
+  },
+  {
+    "success": true,
+    "username": "louisianasoulcafe",
+    "data": {
+      "username": "louisianasoulcafe",
+      "title": "Instagram",
+      "businessIndicators": {
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasWebsite": true,
+        "hasAddress": true,
+        "hasCategory": true
+      }
+    },
+    "timestamp": "2025-06-17T18:25:22.684Z"
+  },
+  {
+    "success": true,
+    "username": "lafitness",
+    "data": {
+      "username": "lafitness",
+      "title": "LA Fitness (&#064;lafitness) • Instagram photos and videos",
+      "following": 86,
+      "posts": 1682,
+      "businessIndicators": {
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasWebsite": true,
+        "hasAddress": true,
+        "hasCategory": true
+      }
+    },
+    "timestamp": "2025-06-17T18:25:27.024Z"
+  }
+]

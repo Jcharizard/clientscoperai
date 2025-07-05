@@ -1,0 +1,539 @@
+{
+  "timestamp": "2025-07-05T04:08:39.315Z",
+  "totalLeads": 7,
+  "searchCriteria": {
+    "keyword": "fireworks la",
+    "pages": 1,
+    "timestamp": "2025-07-05T04:08:39.315Z"
+  },
+  "summary": {
+    "hotLeads": 0,
+    "warmLeads": 1,
+    "contactLeads": 0,
+    "avgBioScore": 3.4,
+    "avgVisionScore": 5,
+    "totalLeads": 7
+  },
+  "leads": [
+    {
+      "username": "powells_discount_fireworks",
+      "displayName": "Powell’s Discount Fireworks",
+      "bio": "4761 W Bert Kouns Industrial Loop, Shreveport, La, 71118",
+      "followers": 11,
+      "following": 63,
+      "posts": 3,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/powells_discount_fireworks",
+      "profilePicUrl": "https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/503713783_17844138819516106_3209753471231543010_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGEULWfVnOfAwUlBGnj427qVd-ZNp59fc07Zp2C0fqt2PziLBibaaZhX-XBC1jSIIVAGjx0vCc0ywU5LKDpG4R9&_nc_ohc=Gh6b0-6afJIQ7kNvwGp8kSI&_nc_gid=n8vgH5F4PD35VcJSxNYuaw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSBcDU5_jRtlZTuw0WVshiv_uuUsqAVGR1II0QWw0ezqA&oe=686E89B0&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Shopping & retail",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/powells_discount_fireworks_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.26,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-05T04:03:28.373Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    },
+    {
+      "username": "prettylakefireworks",
+      "displayName": "prettylakefireworks",
+      "bio": "Bringing the boom to Pretty Lake every year!\nCommunity-funded, family-friendly, and always epic.",
+      "followers": 0,
+      "following": 0,
+      "posts": 2,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/prettylakefireworks",
+      "profilePicUrl": "https://instagram.fist8-1.fna.fbcdn.net/v/t51.2885-19/501621690_17842556652502300_8913102402319714600_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fist8-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QFb_gb5k7gmBBajUm-QaUYteJAJMzV2QXE7bh1Pi2JbcoZvqrPVnFMTevzPtTznGf8&_nc_ohc=_n84PN2gIRoQ7kNvwEcREiD&_nc_gid=pNYFtdPCphCdjKMvb-6W7A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTwE7yk2r9RMtYc39uiSq_8Omb8VQItmj40qnCM2x1Q2w&oe=686E6363&_nc_sid=8b3546",
+      "externalUrl": "https://cash.app/$PrettyLakeFireworks",
+      "businessCategory": "None,Community",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/prettylakefireworks_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.18,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-05T04:03:54.928Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lakesidefireworks",
+      "displayName": "Lakeside Fireworks",
+      "bio": "#lakesidefireworks273",
+      "followers": 70,
+      "following": 46,
+      "posts": 93,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lakesidefireworks",
+      "profilePicUrl": "https://scontent-hou1-1.cdninstagram.com/v/t51.2885-19/470064131_1631161644416704_1505634374625771088_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHtW7tjdstF7rFoPukQYRQZZS9pIODS966wwtZVIZtXOgqZs5aH6Iu1myZ-bnCQxUUQCir6CDSWjKDrsCidRrav&_nc_ohc=CwyDPuyUglIQ7kNvwGPZfZ9&_nc_gid=XWeIIYbnsdZ60403yfKUgw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRhmdW9cqJxEd2SO82Q7c5soE8QsAP6O8Duh0YRTY9_cA&oe=686E8213&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Product/service",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lakesidefireworks_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.43,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-05T04:04:20.193Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    },
+    {
+      "username": "elia.fireworks",
+      "displayName": "Elia Fireworks",
+      "bio": "Ditta specializzata nel settore pirotecnico. \n- Punto vendita Batterie e giochi pirotecnici a Modica in Via S.Giuliano 101\n- Contact: ☎️📩 379 128 2243",
+      "followers": 2077,
+      "following": 7414,
+      "posts": 418,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/elia.fireworks",
+      "profilePicUrl": "https://instagram.fpbc2-5.fna.fbcdn.net/v/t51.2885-19/491446263_18044854961612531_1534442230829738365_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fpbc2-5.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QE-5TOWX_rbDg1Vh6jrZ6Ayf_JTQW66l4MKfNjQTSBSbFmr0KckP_mqFXj3XY-qQGE&_nc_ohc=A4k7JsXoYkIQ7kNvwGkW8Hv&_nc_gid=VmWRf6yN58m1_wEOtxoZog&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRq_JzHaFt8Qhg4TNd7BWtDIn-bxfN9a2wtOaB9JKSpyA&oe=686E6824&_nc_sid=8b3546",
+      "externalUrl": "http://www.eliafireworks.it/",
+      "businessCategory": "Fireworks Retailer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/elia.fireworks_composite.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 3,
+        "methods": [
+          "Phone in bio",
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 4,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.55,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-05T04:04:44.983Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lally.m",
+      "displayName": "Michael Lally",
+      "bio": "",
+      "followers": 946,
+      "following": 2444,
+      "posts": 14,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lally.m",
+      "profilePicUrl": "https://instagram.fjkr1-1.fna.fbcdn.net/v/t51.2885-19/12547702_1699265103652786_757238172_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fjkr1-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QG-tFAaiMlTClyRMIVG8xXEZzogozhzgaqAdAJ6ul9J4tGyuNgCnp6Ok7HHttTU3QE&_nc_ohc=UxAN5Zdf0Z8Q7kNvwFmMfYF&_nc_gid=iJ2HH6GJouJtx7bEmc18IA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfToAk21NJkq_maP1p4Iav4lC3fNj4jY3y4daLVlEe3ujg&oe=686E8657&_nc_sid=8b3546",
+      "externalUrl": "http://tmscaffolding.co.uk/",
+      "businessCategory": "",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lally.m_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 1,
+        "urgency_score": 1,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Unknown",
+        "business_confidence": 0,
+        "revenue_potential": 0,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "❌ INSUFFICIENT DATA - Bio too short or empty."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.57,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-05T04:05:10.664Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    },
+    {
+      "username": "laaltain.fireworks",
+      "displayName": "Laal-Tain Fireworks",
+      "bio": "Only Advance Payments.\n(Min order for Home Delivery Rs.10k)\nCall/ Whatsapp 03330676666\nCoD only avail in Lahore.\n#fireworks \n#colorsmoke\n#skylanterns",
+      "followers": 1225,
+      "following": 156,
+      "posts": 143,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/laaltain.fireworks",
+      "profilePicUrl": "https://scontent-dfw5-3.cdninstagram.com/v/t51.2885-19/46801347_283962285589509_5250647121937301504_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-dfw5-3.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGIjq5W5zL_Mr0uT8t9xdrY1b0KDFhgDclIxf098WWYWcvTn2ZJ4xUjv7yR_SnzuvM&_nc_ohc=rIOEAFWnJsIQ7kNvwHRrcd1&_nc_gid=4XTqIVrBGsv3zkm5cLEh7A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTwHEWEj7PQbW3mgMQsiN84XICgPMBo7iT5I2hC3Q4zdw&oe=686E8B45&_nc_sid=8b3546",
+      "externalUrl": "http://www.facebook.com/laaltain.fireworks",
+      "businessCategory": "None,Product/service",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/laaltain.fireworks_composite.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 2,
+        "methods": [
+          "Phone in bio",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 2,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.62,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-05T04:05:35.301Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    },
+    {
+      "username": "rodneysrockets",
+      "displayName": "Rodney’s Rockets",
+      "bio": "Fireworks superstore 5 locations throughout South Carolina!💥",
+      "followers": 74,
+      "following": 5,
+      "posts": 73,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/rodneysrockets",
+      "profilePicUrl": "https://instagram.fsjo10-1.fna.fbcdn.net/v/t51.2885-19/25005691_136541940376979_6386366797192364032_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fsjo10-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QF4jk3pB7_J91nDoA5X95rBSW9HdXlt2sUAU1Koa90rB696XRPSza-V5yF3XiSLEog&_nc_ohc=ZwLLpPLgYVgQ7kNvwF6BqUJ&_nc_gid=s8kzKz7ewWAxZ94FOy4yIg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTBJ2s4vA7rD7mtPNRwxLZ4a4HfKqoaGvajQ3px9f1l7g&oe=686E8CF1&_nc_sid=8b3546",
+      "externalUrl": "https://goo.gl/XMrpKR",
+      "businessCategory": "Personal Goods & General Merchandise Stores",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/rodneysrockets_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.62,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-05T04:06:00.318Z",
+      "source": "apify_instagram",
+      "keyword": "fireworks la",
+      "dataQuality": "high"
+    }
+  ]
+}

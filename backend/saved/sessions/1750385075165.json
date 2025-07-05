@@ -1,0 +1,907 @@
+{
+  "id": "1750385075165",
+  "name": "Session 6/19/2025, 6:56:37 PM",
+  "createdAt": "2025-06-20T02:04:35.165Z",
+  "leads": [
+    {
+      "username": "lafirteriefoodtruck",
+      "displayName": "La Firterie",
+      "bio": "🚛 foodtruck dans le Finistère \n🍟 frites maisons cuites à la graisse de bœuf\n🥖 américains &cie\n#foodtruck #frites #fritesmaison #finistere",
+      "followers": 407,
+      "following": 362,
+      "posts": 150,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lafirteriefoodtruck",
+      "profilePicUrl": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/436410744_883284963812629_7854169472791730756_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFj7IrVUR9bAp7zFwAon4ot83nsEWbeYq72lvCmD9om3nOxRTS3cVl4F9jesNenpNg&_nc_ohc=VHRSOXQymnsQ7kNvwFLy7CF&_nc_gid=0rVUl3bCLhQSqHXP6Q9XQg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfM1A_e4NQWXrA1YeX7WLPx_WtxGrID-fxHbDO6VNf3Wvg&oe=685AA65F&_nc_sid=8b3546",
+      "externalUrl": "https://www.lafirterie.fr/",
+      "businessCategory": "None,Entrepreneur",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lafirteriefoodtruck_mobile_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Food Service",
+        "business_confidence": 0.3,
+        "revenue_potential": 7,
+        "language": "Spanish",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.14,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:25.519Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "la_cabana_jus",
+      "displayName": "La Paracou Lacabanajus",
+      "bio": "Ouverture officielle saison 15 avril - 15 septembre\nSmoothies, cocktails, burgers, sandwichs, empanadas, samoussas... 😎🌴🍹🌞🍟🍔🥪",
+      "followers": 859,
+      "following": 89,
+      "posts": 347,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/la_cabana_jus",
+      "profilePicUrl": "https://instagram.fntr1-1.fna.fbcdn.net/v/t51.2885-19/243792255_1052531225516459_6882138263898863747_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fntr1-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QHHhrpIxKVOK90DY_qcYlryQNIraLFfI8fYFI5BA0fIwCs2Orywv7YYXjZRCJRx59o&_nc_ohc=2WSRZNVDgYoQ7kNvwHH2A3T&_nc_gid=r25Oc0MyaH-enQ9d17C7cA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfPmiyXBNx0Z5KuB8TC45u1r4Lx1xOiubnplG6CTuMdasA&oe=685A80FA&_nc_sid=8b3546",
+      "externalUrl": "http://www.lacabanajus.fr/",
+      "businessCategory": "None,Smoothie & Juice Bar",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/la_cabana_jus_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.19,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:30.151Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lapiolafoodtruck",
+      "displayName": "Lapiola Foodtruck • Événementiel • Privatisation • Livraison",
+      "bio": "🇦🇷 Cocina Argentina\n👫🏻 100% fait maison\n🇨🇵 Produits de saison\n🌾 Farine Locale&Bio\n🗺️ 34&alentours \n🥳 Privatisez Lapiola\n📨 Lapiola.pro@gmail.com",
+      "followers": 1504,
+      "following": 1001,
+      "posts": 63,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lapiolafoodtruck",
+      "profilePicUrl": "https://scontent-hou1-1.cdninstagram.com/v/t51.2885-19/408321297_3546298988946049_6002977522588180293_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHDN_0U6oaTU-PSh_r3NgUbxEIYNezrbs5x6VRsMVwSh2hCL2Bz48VdjzuiN54_d04&_nc_ohc=i-4RqXBC-gUQ7kNvwEZ8ZnH&_nc_gid=OtOWBoacD03uoyJEyHzueA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfPUSI5xZbwOBYFiISYTAZUEs37UiXVxN-zgLPWslmA1zg&oe=685A7720&_nc_sid=8b3546",
+      "externalUrl": "https://www.facebook.com/LapiolaFoodTruck",
+      "businessCategory": "Food Truck",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/lapiolafoodtruck_fast.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 2,
+        "methods": [
+          "Email in bio",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.13,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-06-20T01:57:34.629Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "cfalawrencefoodtruck",
+      "displayName": "CFA Lawrence Food Truck",
+      "bio": "Our team looks forward to serving the communities surrounding Lawrence, Kansas: Monday-Saturday.",
+      "followers": 217,
+      "following": 0,
+      "posts": 3,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/cfalawrencefoodtruck",
+      "profilePicUrl": "https://instagram.fxap5-1.fna.fbcdn.net/v/t51.2885-19/447917763_984196253304868_6721464527983962784_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fxap5-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QFEFOlAXvM-PMJg-Z0O1N2yq0jq-FmQdVmA14ZyEH9f3FZRz9StfGNVmOE0gpEp0kw&_nc_ohc=-m01YwNtiewQ7kNvwEHi96m&_nc_gid=NPmv7yk1TgYvP9DVsSPDuw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfMYTR3ink4KdzKAbvkeL7ic-npa60ieA-TCecRcpbvm6A&oe=685AA73F&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Restaurant",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/cfalawrencefoodtruck_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.2,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:39.081Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lacahutefood",
+      "displayName": "LA CAHUTE FOOD TRUCK",
+      "bio": "Food truck",
+      "followers": 78,
+      "following": 24,
+      "posts": 193,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lacahutefood",
+      "profilePicUrl": "https://scontent-mia3-2.cdninstagram.com/v/t51.2885-19/341199676_777023807276707_3650659307697439691_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-mia3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEmPvL0B_ZDmvE50ZG6eTzQxxwL54GnkCneC8A6Y8vWWOyReZ7OWtBv1dUM6J_b7DY&_nc_ohc=7iTnbtT0yiMQ7kNvwFr8Ahm&_nc_gid=0NWmGQ9cq3VgrsWAGDIi-A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfMyZzaZl5NeamefjPxtm4Z3QMrT8ioW1MItksaLUTHG_Q&oe=685AA8C7&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Restaurant",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lacahutefood_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Food Service",
+        "business_confidence": 0.3,
+        "revenue_potential": 7,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:43.563Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "gustolab_foodtruck",
+      "displayName": "Gustolab_foodtruck",
+      "bio": "Wedding- Eventi - Catering \n📍Firenze e Ovunque Tu Voglia\nContattaci per maggiori informazioni",
+      "followers": 1151,
+      "following": 354,
+      "posts": 34,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/gustolab_foodtruck",
+      "profilePicUrl": "https://scontent-det1-1.cdninstagram.com/v/t51.2885-19/459300987_567796985574344_8539167797535857693_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-det1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEeoAhx184O88hTUe4fvN96z6y4oOG7QfZuWTSwyKnpQrgAe__TUq0R6LsF9OMrKdCBMTFny-enfvtq9YRb2lo8&_nc_ohc=gK8B6aslkZgQ7kNvwGjgw1b&_nc_gid=hsFuJcssQlpEK2RXyJkcSA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfPxeJFsBiHR-ToU1_3HLwTZkviCky7htBASig5YAIQQcQ&oe=685A9679&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Food Truck",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/gustolab_foodtruck_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Photography",
+        "business_confidence": 0.3,
+        "revenue_potential": 8,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.08,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:48.126Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lakebabchrzanow",
+      "displayName": "La Kebab - foodtruck w centrum Chrzanowa",
+      "bio": "Zapraszamy do naszego Food Trucka w samym centrum Chrzanowa, gdzie serwujemy rzemieślniczy kebab, który podbije Wasze podniebienia\nPrzyjdź i sprawdź!",
+      "followers": 85,
+      "following": 3,
+      "posts": 46,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lakebabchrzanow",
+      "profilePicUrl": "https://instagram.fagr1-3.fna.fbcdn.net/v/t51.2885-19/443006232_449116864469729_1764060555546465621_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fagr1-3.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2QEn3xBOqoLeS0bsnZbCFb_nzCdwnC8JfdluwvRPrNrkWK92OF5vHbA-J2mzWTKr-kI&_nc_ohc=k_ajs2kMwNMQ7kNvwHGX_dy&_nc_gid=kCS7xpX8Lfcwehuck_aMGw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfMaa68ulQIiF2-QtfnIC6V-1d60lE1Ms5GUMPoFdayGPg&oe=685AA26B&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Food Truck",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lakebabchrzanow_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Food Service",
+        "business_confidence": 0.3,
+        "revenue_potential": 7,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:52.612Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lavieestbelle_foodtruck",
+      "displayName": "La vie est belle",
+      "bio": "Friterie - Burger maison \nGlaces fermières \nDisponible pour tout événement",
+      "followers": 267,
+      "following": 16,
+      "posts": 28,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lavieestbelle_foodtruck",
+      "profilePicUrl": "https://z-p42-instagram.fbsr2-2.fna.fbcdn.net/v/t51.2885-19/442062723_3350003648625600_7634006149914149325_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ad=z-m&_nc_ht=z-p42-instagram.fbsr2-2.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2QE6KDhWl58ekUc1-zDh6NRfIMVAevCzrT2ff7Zj_GabcWwmoHkXLFBCCzBGZkAwhbM&_nc_ohc=luHpjZmWLzYQ7kNvwGo99qV&_nc_gid=YVLiQuj-9EeiCgvw519oag&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfNuXwjHnYKShxWYL7-SS2tQkpws7sfVBr3j16ivCBtwEw&oe=685A9FF3&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Food Truck",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lavieestbelle_foodtruck_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.3,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:57:57.132Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "la.catrinafoodtruck",
+      "displayName": "la.catrinafoodtruck",
+      "bio": "Bringing the vibrant flavors of Mexico to your street!\n☎️ 978-727-3014",
+      "followers": 560,
+      "following": 6,
+      "posts": 83,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/la.catrinafoodtruck",
+      "profilePicUrl": "https://scontent-lga3-1.cdninstagram.com/v/t51.2885-19/440898185_1510644762998687_7512031165459707544_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGgfd7V82kmC5UcgaSGS4wKoEcCB-Rtk_DTw6XIfVCMt0KH4hrL9x_RZmEvlQNYdSfL0lgjxogkDvHDs7rhq8ZH&_nc_ohc=skJJQpSLzegQ7kNvwHDQQE8&_nc_gid=VY39VHuRLgQnFuWOT6AkZQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfPHam5I83j5ZcelVw2IeNDwmNLOn0oceRpZ57Kt9GazpQ&oe=685AA635&_nc_sid=8b3546",
+      "externalUrl": "https://order.toasttab.com/online/la-catrina-461-boston-rd",
+      "businessCategory": "None,Restaurant",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/la.catrinafoodtruck_embed_fallback.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 2,
+        "methods": [
+          "Phone in bio",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 1,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.02,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-06-20T01:58:04.376Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lacustomfoodtrucks",
+      "displayName": "LA Custom Food Trucks",
+      "bio": "Custom Food Truck/Concession Trailer Manufacturer",
+      "followers": 300,
+      "following": 32,
+      "posts": 47,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lacustomfoodtrucks",
+      "profilePicUrl": "https://instagram.fruh4-2.fna.fbcdn.net/v/t51.2885-19/344091433_1367615623822933_6355934012655107083_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fruh4-2.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2QEQe97LwNmMxGmegL1pInczfCgjVuKPgZCQpKCtZwIhL7uGxsDy7xb1OfubLOt-xxreJMN7Jh6zSftHkXxBBTxz&_nc_ohc=Og4GrBHLu5UQ7kNvwFhd22k&_nc_gid=dSiwDNZRmAp5acrJY5wsGQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfN_XaUo7WMwkgL3nun63sLYTKTQCmAz8i-9rjh6rMXlLg&oe=685AABEC&_nc_sid=8b3546",
+      "externalUrl": "http://www.lacustomfoodtrucks.com/",
+      "businessCategory": "None,Food Truck",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/lacustomfoodtrucks_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Food Service",
+        "business_confidence": 0.3,
+        "revenue_potential": 7,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:58:08.830Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "la_picota_food_truck",
+      "displayName": "La Picota Food Truck",
+      "bio": "HORARIO \nLunes a Viernes 17:00-23:00\nSábado 10:00-13:30 / 17:00-23:00\nDomingo 11:30-22:00\nNuestro menú⬇️",
+      "followers": 6156,
+      "following": 589,
+      "posts": 217,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/la_picota_food_truck",
+      "profilePicUrl": "https://scontent-ord5-3.cdninstagram.com/v/t51.2885-19/483289224_4057878314435742_9156899883833267203_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFRIG_uhLY_Cpx1gvUD79A5L5Nuwb0p1xhlklOr__DnJWQOmZEIGYEYpopdnHY4a_s&_nc_ohc=an70Tpg2uf8Q7kNvwE5ERZ6&_nc_gid=sqq7VimZL96m6ZtSXyjqYQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfO1kl34TXaBSWhWz06XdMWFIdYoq3q-Z21eP6JngvhU7w&oe=685A9EDB&_nc_sid=8b3546",
+      "externalUrl": "https://qrfy.com/p/k6NcC6?utm_source=qrcode&utm_medium=menu&utm_campaign=1010970",
+      "businessCategory": "None,Entrepreneur",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/la_picota_food_truck_embed_fallback.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.02,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-06-20T01:58:15.885Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    },
+    {
+      "username": "cfalawtonfoodtruck",
+      "displayName": "Chick-fil-A Lawton Food Truck",
+      "bio": "Your favorite Chick-fil-A menu items coming to a location near you! \n#honkifyoulovechicken\n@cfacacheroad",
+      "followers": 1601,
+      "following": 69,
+      "posts": 935,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/cfalawtonfoodtruck",
+      "profilePicUrl": "https://instagram.fdel27-3.fna.fbcdn.net/v/t51.2885-19/319296152_219210883790218_2951485354865872700_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fdel27-3.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QFhz4MM75-nesZwfFL3WXw3mhOYDM5Uvh5Ibe-qDxEnGJ3u05l4LQtghOfv7AVszMM&_nc_ohc=pDqBvtri8lIQ7kNvwGzT1Xa&_nc_gid=SA5uBPbP2ziKBWPzSp7Tuw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfNfRfjaMuQUsbm2UScLSciCQU4MpGowq0aRZXA9JBEHMA&oe=685A8DDF&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Food Truck",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/cfalawtonfoodtruck_fast.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.15,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-06-20T01:58:20.396Z",
+      "source": "apify_instagram",
+      "keyword": "la food truck",
+      "dataQuality": "high"
+    }
+  ]
+}

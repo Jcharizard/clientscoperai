@@ -1,0 +1,313 @@
+// Enhanced ClientScopeAI Database Schema
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./enhanced.db"
+}
+
+// ===== CORE MODELS =====
+
+model Profile {
+  id            String   @id @default(cuid())
+  username      String   @unique
+  displayName   String?
+  fullName      String?
+  
+  // Current stats (latest snapshot)
+  followers     Int?
+  following     Int?
+  posts         Int?
+  
+  // Profile status
+  isVerified    Boolean  @default(false)
+  isPrivate     Boolean  @default(false)
+  isBusiness    Boolean  @default(false)
+  
+  // Content
+  bio           String?
+  externalUrl   String?
+  profilePicUrl String?
+  businessCategory String?
+  
+  // Enhanced data from scraping
+  highlightsCount   Int?
+  recentPostsCount  Int?
+  externalLinks     String? // JSON array
+  locationInfo      String? // JSON object
+  
+  // Tracking
+  firstSeen     DateTime @default(now())
+  lastSeen      DateTime @updatedAt
+  lastScraped   DateTime @default(now())
+  
+  // Relationships
+  snapshots     ProfileSnapshot[]
+  leads         Lead[]
+  engagements   ProfileEngagement[]
+  
+  @@map("profiles")
+}
+
+model ProfileSnapshot {
+  id          String   @id @default(cuid())
+  profileId   String
+  
+  // Data at this point in time
+  followers   Int?
+  following   Int?
+  posts       Int?
+  bio         String?
+  isVerified  Boolean  @default(false)
+  isBusiness  Boolean  @default(false)
+  
+  // Enhanced metrics
+  avgLikes    Float?
+  avgComments Float?
+  storyActive Boolean  @default(false)
+  
+  // Metadata
+  scrapedAt   DateTime @default(now())
+  campaign    String?
+  
+  profile     Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  
+  @@map("profile_snapshots")
+}
+
+model Lead {
+  id            String   @id @default(cuid())
+  profileId     String
+  sessionId     String
+  
+  // Lead scoring
+  bioScore      Float?
+  visionScore   Float?
+  leadTier      String? // HOT, WARM, QUALIFIED, COLD
+  leadPriority  String? // HIGH, MEDIUM, LOW
+  
+  // AI Analysis
+  bioAnalysis   String? // JSON object with AI insights
+  businessType  String?
+  urgencyLevel  String?
+  pitchScore    Int?
+  
+  // Lead management
+  status        String   @default("NEW") // NEW, CONTACTED, RESPONDED, QUALIFIED, CONVERTED, DEAD
+  temperature   String?  // HOT, WARM, COLD
+  assignedTo    String?
+  notes         String?
+  
+  // Contact tracking
+  contactAttempts Int     @default(0)
+  lastContacted   DateTime?
+  responseStatus  String? // NO_RESPONSE, OPENED, REPLIED, INTERESTED, NOT_INTERESTED
+  
+  // Source tracking
+  searchKeyword String
+  campaign      String
+  
+  // Files
+  screenshotPath String?
+  
+  // Timestamps
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relationships
+  profile       Profile  @relation(fields: [profileId], references: [id])
+  session       Session  @relation(fields: [sessionId], references: [id])
+  interactions  LeadInteraction[]
+  
+  @@map("leads")
+}
+
+model Session {
+  id            String   @id @default(cuid())
+  name          String
+  keyword       String
+  campaign      String?
+  
+  // Session config
+  pages         Int      @default(1)
+  maxLeads      Int?
+  scraperType   String   @default("apify") // apify, bypass, hybrid
+  
+  // Results
+  leadsFound    Int      @default(0)
+  successRate   Float?
+  avgProcessingTime Float?
+  
+  // Status
+  status        String   @default("RUNNING") // RUNNING, COMPLETED, FAILED, PAUSED
+  
+  // Additional metadata
+  metadata      String?  // JSON string for additional session data
+  
+  // Timestamps
+  createdAt     DateTime @default(now())
+  completedAt   DateTime?
+  
+  // Relationships
+  leads         Lead[]
+  
+  @@map("sessions")
+}
+
+model LeadInteraction {
+  id          String   @id @default(cuid())
+  leadId      String
+  
+  type        String   // EMAIL, DM, COMMENT, CALL, MEETING
+  platform    String?  // INSTAGRAM, EMAIL, PHONE, etc.
+  direction   String   // OUTBOUND, INBOUND
+  
+  subject     String?
+  message     String?
+  outcome     String?  // POSITIVE, NEGATIVE, NEUTRAL, NO_RESPONSE
+  
+  scheduledAt DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  
+  lead        Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  
+  @@map("lead_interactions")
+}
+
+// ===== ANALYTICS MODELS =====
+
+model CampaignAnalytics {
+  id              String   @id @default(cuid())
+  campaign        String   @unique
+  
+  // Performance metrics
+  totalLeads      Int      @default(0)
+  hotLeads        Int      @default(0)
+  qualifiedLeads  Int      @default(0)
+  convertedLeads  Int      @default(0)
+  
+  // Quality metrics
+  avgBioScore     Float?
+  avgFollowers    Float?
+  verifiedPercent Float?
+  businessPercent Float?
+  
+  // Business intelligence
+  topBusinessTypes String? // JSON array
+  avgResponseRate  Float?
+  bestPerformingKeywords String? // JSON array
+  
+  // Timestamps
+  lastCalculated  DateTime @default(now())
+  
+  @@map("campaign_analytics")
+}
+
+model MarketIntelligence {
+  id            String   @id @default(cuid())
+  
+  // Market data
+  businessType  String
+  avgFollowers  Float?
+  growthRate    Float? // Week-over-week follower growth
+  engagement    Float? // Average engagement rate
+  
+  // Competition analysis
+  marketSaturation Float? // How many similar accounts found
+  opportunityScore Float? // 1-10 score for market opportunity
+  
+  // Geographic data
+  topLocations  String? // JSON array of popular locations
+  
+  // Trending data
+  trendingKeywords String? // JSON array
+  seasonalTrends   String? // JSON object
+  
+  // Metadata
+  calculatedAt  DateTime @default(now())
+  dataFrom      DateTime
+  dataTo        DateTime
+  
+  @@map("market_intelligence")
+}
+
+model ProfileEngagement {
+  id          String   @id @default(cuid())
+  profileId   String
+  
+  // Engagement metrics
+  avgLikes    Float?
+  avgComments Float?
+  avgShares   Float?
+  engagementRate Float?
+  
+  // Post frequency
+  postsPerWeek   Float?
+  storyFrequency Float?
+  
+  // Audience insights
+  peakHours      String? // JSON array of best posting times
+  topHashtags    String? // JSON array of their most used hashtags
+  
+  // Calculated metrics
+  influencerScore Float? // Overall influence rating 1-100
+  brandSafety     Float? // Content safety score 1-100
+  
+  // Time period
+  analyzedFrom   DateTime
+  analyzedTo     DateTime
+  calculatedAt   DateTime @default(now())
+  
+  profile        Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  
+  @@map("profile_engagement")
+}
+
+// ===== SYSTEM MODELS =====
+
+model ScrapingJob {
+  id            String   @id @default(cuid())
+  
+  keyword       String
+  campaign      String?
+  pages         Int      @default(1)
+  scraperType   String   @default("apify")
+  
+  status        String   @default("PENDING") // PENDING, RUNNING, COMPLETED, FAILED
+  progress      Float    @default(0) // 0-100
+  
+  profilesFound Int      @default(0)
+  leadsCreated  Int      @default(0)
+  errors        String?  // JSON array of errors
+  
+  startedAt     DateTime?
+  completedAt   DateTime?
+  createdAt     DateTime @default(now())
+  
+  @@map("scraping_jobs")
+}
+
+model SystemMetrics {
+  id              String   @id @default(cuid())
+  
+  // Daily metrics
+  date            DateTime @unique
+  sessionsRun     Int      @default(0)
+  leadsGenerated  Int      @default(0)
+  successRate     Float?
+  avgProcessingTime Float?
+  
+  // Quality metrics
+  avgBioScore     Float?
+  hotLeadPercent  Float?
+  verifiedPercent Float?
+  
+  // System health
+  errorCount      Int      @default(0)
+  uptime          Float?   // Percentage
+  
+  @@map("system_metrics")
+}

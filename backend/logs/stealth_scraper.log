@@ -1,0 +1,51 @@
+[2025-06-19T23:09:10.799Z] 🎯 Starting reliable screenshot capture for losangeles_fitness2.0
+[2025-06-19T23:09:11.210Z] 🔄 Trying method 1/4 for losangeles_fitness2.0
+[2025-06-19T23:09:11.210Z] 🔒 Method 1: Tor simulation for losangeles_fitness2.0
+[2025-06-19T23:09:13.673Z] ❌ Tor simulation failed: net::ERR_PROXY_CONNECTION_FAILED at https://www.instagram.com/losangeles_fitness2.0/
+[2025-06-19T23:09:15.866Z] 🔄 Trying method 2/4 for losangeles_fitness2.0
+[2025-06-19T23:09:15.867Z] 📱 Method 2: Mobile app simulation for losangeles_fitness2.0
+[2025-06-19T23:09:18.156Z] ❌ Mobile app simulation failed: page.waitForTimeout is not a function
+[2025-06-19T23:09:20.303Z] 🔄 Trying method 3/4 for losangeles_fitness2.0
+[2025-06-19T23:09:20.304Z] 🤖 Method 3: Scraper simulation for losangeles_fitness2.0
+[2025-06-19T23:09:21.901Z] ❌ Scraper simulation failed: page.waitForTimeout is not a function
+[2025-06-19T23:09:24.079Z] 🔄 Trying method 4/4 for losangeles_fitness2.0
+[2025-06-19T23:09:24.080Z] 📚 Method 4: Archive version for losangeles_fitness2.0
+[2025-06-19T23:09:28.128Z] ⚠️ Archive URL failed: https://web.archive.org/web/https://instagram.com/losangeles_fitness2.0
+[2025-06-19T23:09:30.960Z] ⚠️ Archive URL failed: https://webcache.googleusercontent.com/search?q=cache:instagram.com/losangeles_fitness2.0
+[2025-06-19T23:09:34.289Z] ⚠️ Archive URL failed: https://archive.today/https://instagram.com/losangeles_fitness2.0
+[2025-06-19T23:09:34.426Z] ❌ All archive methods failed for losangeles_fitness2.0
+[2025-06-19T23:09:34.427Z] 💥 All methods failed for losangeles_fitness2.0
+[2025-06-19T23:09:37.440Z] 🎯 Starting reliable screenshot capture for nexgenfitnessla
+[2025-06-19T23:09:37.440Z] 🔄 Trying method 1/4 for nexgenfitnessla
+[2025-06-19T23:09:37.441Z] 🔒 Method 1: Tor simulation for nexgenfitnessla
+[2025-06-19T23:09:39.735Z] ❌ Tor simulation failed: net::ERR_PROXY_CONNECTION_FAILED at https://www.instagram.com/nexgenfitnessla/
+[2025-06-19T23:09:41.930Z] 🔄 Trying method 2/4 for nexgenfitnessla
+[2025-06-19T23:09:41.930Z] 📱 Method 2: Mobile app simulation for nexgenfitnessla
+[2025-06-19T23:09:43.064Z] ❌ Mobile app simulation failed: page.waitForTimeout is not a function
+[2025-06-19T23:09:45.234Z] 🔄 Trying method 3/4 for nexgenfitnessla
+[2025-06-19T23:09:45.234Z] 🤖 Method 3: Scraper simulation for nexgenfitnessla
+[2025-06-19T23:09:46.831Z] ❌ Scraper simulation failed: page.waitForTimeout is not a function
+[2025-06-19T23:09:49.029Z] 🔄 Trying method 4/4 for nexgenfitnessla
+[2025-06-19T23:09:49.030Z] 📚 Method 4: Archive version for nexgenfitnessla
+[2025-06-19T23:09:51.451Z] ⚠️ Archive URL failed: https://web.archive.org/web/https://instagram.com/nexgenfitnessla
+[2025-06-19T23:09:54.139Z] ⚠️ Archive URL failed: https://webcache.googleusercontent.com/search?q=cache:instagram.com/nexgenfitnessla
+[2025-06-19T23:09:57.358Z] ⚠️ Archive URL failed: https://archive.today/https://instagram.com/nexgenfitnessla
+[2025-06-19T23:09:58.037Z] ❌ All archive methods failed for nexgenfitnessla
+[2025-06-19T23:09:58.037Z] 💥 All methods failed for nexgenfitnessla
+[2025-06-19T23:10:01.048Z] 🎯 Starting reliable screenshot capture for sanctuaryfitnessla
+[2025-06-19T23:10:01.049Z] 🔄 Trying method 1/4 for sanctuaryfitnessla
+[2025-06-19T23:10:01.049Z] 🔒 Method 1: Tor simulation for sanctuaryfitnessla
+[2025-06-19T23:10:03.349Z] ❌ Tor simulation failed: net::ERR_PROXY_CONNECTION_FAILED at https://www.instagram.com/sanctuaryfitnessla/
+[2025-06-19T23:10:05.554Z] 🔄 Trying method 2/4 for sanctuaryfitnessla
+[2025-06-19T23:10:05.555Z] 📱 Method 2: Mobile app simulation for sanctuaryfitnessla
+[2025-06-19T23:10:06.683Z] ❌ Mobile app simulation failed: page.waitForTimeout is not a function
+[2025-06-19T23:10:08.852Z] 🔄 Trying method 3/4 for sanctuaryfitnessla
+[2025-06-19T23:10:08.853Z] 🤖 Method 3: Scraper simulation for sanctuaryfitnessla
+[2025-06-19T23:10:10.437Z] ❌ Scraper simulation failed: page.waitForTimeout is not a function
+[2025-06-19T23:10:12.599Z] 🔄 Trying method 4/4 for sanctuaryfitnessla
+[2025-06-19T23:10:12.599Z] 📚 Method 4: Archive version for sanctuaryfitnessla
+[2025-06-19T23:10:14.807Z] ⚠️ Archive URL failed: https://web.archive.org/web/https://instagram.com/sanctuaryfitnessla
+[2025-06-19T23:10:17.501Z] ⚠️ Archive URL failed: https://webcache.googleusercontent.com/search?q=cache:instagram.com/sanctuaryfitnessla
+[2025-06-19T23:10:20.202Z] ⚠️ Archive URL failed: https://archive.today/https://instagram.com/sanctuaryfitnessla
+[2025-06-19T23:10:20.896Z] ❌ All archive methods failed for sanctuaryfitnessla
+[2025-06-19T23:10:20.897Z] 💥 All methods failed for sanctuaryfitnessla

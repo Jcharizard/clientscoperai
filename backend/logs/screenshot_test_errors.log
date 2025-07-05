@@ -1,0 +1,71 @@
+[2025-06-17T03:45:50.654Z] 🚀 Starting Apify Screenshot Actor Tests
+[2025-06-17T03:45:50.656Z] 📊 Testing Instagram screenshot capabilities with multiple Apify actors
+[2025-06-17T03:45:50.657Z] 
+🔍 Testing screenshots for Instagram user: nasa
+[2025-06-17T03:45:50.657Z] 🧪 TEST 1: Testing official Apify screenshot actor for nasa
+[2025-06-17T03:45:50.657Z] 📡 Starting Apify screenshot actor with input: {"url":"https://www.instagram.com/nasa/","waitUntil":"networkidle0","delay":3000,"viewportWidth":1366,"scrollToBottom":true,"delayAfterScrolling":2000}
+[2025-06-17T03:45:54.969Z] ✅ Screenshot actor completed. Run ID: P7NlMGxO7pnzPeUQV
+[2025-06-17T03:45:55.083Z] 📋 Key-value store items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:45:55.084Z] ❌ No screenshot found in key-value store for nasa
+[2025-06-17T03:45:55.084Z] 🧪 TEST 2: Testing community screenshot actor for nasa
+[2025-06-17T03:45:55.084Z] 📡 Starting community screenshot actor with input: {"url":"https://www.instagram.com/nasa/","device":"Desktop (1920x1080)","outputFormat":"jpeg","captureScreenshots":true}
+[2025-06-17T03:45:55.198Z] ❌ Community screenshot failed: You must rent a paid Actor in order to run it after its free trial has expired. To rent this Actor, go to https://console.apify.com/actors/YhYmNdt9RnVZF5Unu
+[2025-06-17T03:45:55.199Z] 🧪 TEST 3: Testing Website Content Crawler with screenshots for nasa
+[2025-06-17T03:45:55.199Z] 📡 Starting Website Content Crawler with input: {"startUrls":[{"url":"https://www.instagram.com/nasa/"}],"crawlerType":"playwright","includeUrlGlobs":["**/instagram.com/nasa/*"],"maxCrawlDepth":0,"maxCrawlPages":1,"proxyConfiguration":{"useApifyProxy":true},"generateScreenshots":true,"screenshotFormat":"png","removeElementsCssSelector":"header, footer, nav, .cookie-banner","clickElementsCssSelector":"button:contains('Accept')"}
+[2025-06-17T03:45:55.398Z] ❌ Website Content Crawler failed: Input is not valid: Field input.crawlerType must be equal to one of the allowed values: "playwright:adaptive", "playwright:firefox", "cheerio", "jsdom", "playwright:chrome"
+[2025-06-17T03:45:55.399Z] 🧪 TEST 4: Testing official screenshot actor WITH your Webshare proxy for nasa
+[2025-06-17T03:45:55.399Z] 📡 Starting screenshot with Webshare proxy: {"url":"https://www.instagram.com/nasa/","waitUntil":"networkidle0","delay":5000,"viewportWidth":1366,"scrollToBottom":true,"delayAfterScrolling":3000,"proxyConfiguration":{"useApifyProxy":true,"proxyUrls":["http://cwqmeinh-rotate:vd77k4jhsq9q@proxy.webshare.io:80"]}}
+[2025-06-17T03:45:59.040Z] ✅ Proxy screenshot actor completed. Run ID: mwaRkcxycKp3UHYJr
+[2025-06-17T03:45:59.149Z] 📋 Key-value store items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:45:59.150Z] ❌ No proxy screenshot found for nasa
+[2025-06-17T03:45:59.150Z] 
+📊 SUMMARY for nasa: 0/4 screenshot methods succeeded
+[2025-06-17T03:45:59.150Z] ❌ All screenshot methods failed for nasa
+[2025-06-17T03:45:59.151Z] ⏰ Waiting 10 seconds before next user...
+[2025-06-17T03:46:09.153Z] 
+🔍 Testing screenshots for Instagram user: natgeo
+[2025-06-17T03:46:09.154Z] 🧪 TEST 1: Testing official Apify screenshot actor for natgeo
+[2025-06-17T03:46:09.154Z] 📡 Starting Apify screenshot actor with input: {"url":"https://www.instagram.com/natgeo/","waitUntil":"networkidle0","delay":3000,"viewportWidth":1366,"scrollToBottom":true,"delayAfterScrolling":2000}
+[2025-06-17T03:46:13.212Z] ✅ Screenshot actor completed. Run ID: PNtyvNZZS1OGQvnt0
+[2025-06-17T03:46:13.341Z] 📋 Key-value store items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:46:13.342Z] ❌ No screenshot found in key-value store for natgeo
+[2025-06-17T03:46:13.342Z] 🧪 TEST 2: Testing community screenshot actor for natgeo
+[2025-06-17T03:46:13.342Z] 📡 Starting community screenshot actor with input: {"url":"https://www.instagram.com/natgeo/","device":"Desktop (1920x1080)","outputFormat":"jpeg","captureScreenshots":true}
+[2025-06-17T03:46:13.472Z] ❌ Community screenshot failed: You must rent a paid Actor in order to run it after its free trial has expired. To rent this Actor, go to https://console.apify.com/actors/YhYmNdt9RnVZF5Unu
+[2025-06-17T03:46:13.472Z] 🧪 TEST 3: Testing Website Content Crawler with screenshots for natgeo
+[2025-06-17T03:46:13.472Z] 📡 Starting Website Content Crawler with input: {"startUrls":[{"url":"https://www.instagram.com/natgeo/"}],"crawlerType":"playwright","includeUrlGlobs":["**/instagram.com/natgeo/*"],"maxCrawlDepth":0,"maxCrawlPages":1,"proxyConfiguration":{"useApifyProxy":true},"generateScreenshots":true,"screenshotFormat":"png","removeElementsCssSelector":"header, footer, nav, .cookie-banner","clickElementsCssSelector":"button:contains('Accept')"}
+[2025-06-17T03:46:13.646Z] ❌ Website Content Crawler failed: Input is not valid: Field input.crawlerType must be equal to one of the allowed values: "playwright:adaptive", "playwright:firefox", "cheerio", "jsdom", "playwright:chrome"
+[2025-06-17T03:46:13.647Z] 🧪 TEST 4: Testing official screenshot actor WITH your Webshare proxy for natgeo
+[2025-06-17T03:46:13.647Z] 📡 Starting screenshot with Webshare proxy: {"url":"https://www.instagram.com/natgeo/","waitUntil":"networkidle0","delay":5000,"viewportWidth":1366,"scrollToBottom":true,"delayAfterScrolling":3000,"proxyConfiguration":{"useApifyProxy":true,"proxyUrls":["http://cwqmeinh-rotate:vd77k4jhsq9q@proxy.webshare.io:80"]}}
+[2025-06-17T03:46:17.363Z] ✅ Proxy screenshot actor completed. Run ID: 2r8dizR3J1GPhmD6y
+[2025-06-17T03:46:17.494Z] 📋 Key-value store items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:46:17.494Z] ❌ No proxy screenshot found for natgeo
+[2025-06-17T03:46:17.495Z] 
+📊 SUMMARY for natgeo: 0/4 screenshot methods succeeded
+[2025-06-17T03:46:17.495Z] ❌ All screenshot methods failed for natgeo
+[2025-06-17T03:46:17.495Z] ⏰ Waiting 10 seconds before next user...
+[2025-06-17T03:46:27.499Z] 
+🔍 Testing screenshots for Instagram user: instagram
+[2025-06-17T03:46:27.500Z] 🧪 TEST 1: Testing official Apify screenshot actor for instagram
+[2025-06-17T03:46:27.500Z] 📡 Starting Apify screenshot actor with input: {"url":"https://www.instagram.com/instagram/","waitUntil":"networkidle0","delay":3000,"viewportWidth":1366,"scrollToBottom":true,"delayAfterScrolling":2000}
+[2025-06-17T03:46:31.454Z] ✅ Screenshot actor completed. Run ID: CdTWIER1cd7ikQGI0
+[2025-06-17T03:46:31.602Z] 📋 Key-value store items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:46:31.603Z] ❌ No screenshot found in key-value store for instagram
+[2025-06-17T03:46:31.603Z] 🧪 TEST 2: Testing community screenshot actor for instagram
+[2025-06-17T03:46:31.603Z] 📡 Starting community screenshot actor with input: {"url":"https://www.instagram.com/instagram/","device":"Desktop (1920x1080)","outputFormat":"jpeg","captureScreenshots":true}
+[2025-06-17T03:46:31.715Z] ❌ Community screenshot failed: You must rent a paid Actor in order to run it after its free trial has expired. To rent this Actor, go to https://console.apify.com/actors/YhYmNdt9RnVZF5Unu
+[2025-06-17T03:46:31.716Z] 🧪 TEST 3: Testing Website Content Crawler with screenshots for instagram
+[2025-06-17T03:46:31.716Z] 📡 Starting Website Content Crawler with input: {"startUrls":[{"url":"https://www.instagram.com/instagram/"}],"crawlerType":"playwright","includeUrlGlobs":["**/instagram.com/instagram/*"],"maxCrawlDepth":0,"maxCrawlPages":1,"proxyConfiguration":{"useApifyProxy":true},"generateScreenshots":true,"screenshotFormat":"png","removeElementsCssSelector":"header, footer, nav, .cookie-banner","clickElementsCssSelector":"button:contains('Accept')"}
+[2025-06-17T03:46:31.921Z] ❌ Website Content Crawler failed: Input is not valid: Field input.crawlerType must be equal to one of the allowed values: "playwright:adaptive", "playwright:firefox", "cheerio", "jsdom", "playwright:chrome"
+[2025-06-17T03:46:31.921Z] 🧪 TEST 4: Testing official screenshot actor WITH your Webshare proxy for instagram
+[2025-06-17T03:46:31.922Z] 📡 Starting screenshot with Webshare proxy: {"url":"https://www.instagram.com/instagram/","waitUntil":"networkidle0","delay":5000,"viewportWidth":1366,"scrollToBottom":true,"delayAfterScrolling":3000,"proxyConfiguration":{"useApifyProxy":true,"proxyUrls":["http://cwqmeinh-rotate:vd77k4jhsq9q@proxy.webshare.io:80"]}}
+[2025-06-17T03:46:35.649Z] ✅ Proxy screenshot actor completed. Run ID: kGjRyH0UX4zFLsHKQ
+[2025-06-17T03:46:35.761Z] 📋 Key-value store items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:46:35.762Z] ❌ No proxy screenshot found for instagram
+[2025-06-17T03:46:35.762Z] 
+📊 SUMMARY for instagram: 0/4 screenshot methods succeeded
+[2025-06-17T03:46:35.762Z] ❌ All screenshot methods failed for instagram
+[2025-06-17T03:46:35.762Z] 
+🏁 All screenshot tests completed!
+[2025-06-17T03:46:35.763Z] 📁 Check the screenshots directory: E:\PROTOTYPE SNIPER 1\backend\screenshots
+[2025-06-17T03:46:35.763Z] 📊 Review test results in: E:\PROTOTYPE SNIPER 1\backend\logs\screenshot_test_errors.log

@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-06-17T18:23:54.842Z",
+  "duration": 17.22,
+  "overallStats": {
+    "totalTests": 12,
+    "totalSuccesses": 8,
+    "successRate": "66.7"
+  },
+  "methodStats": {
+    "Direct Fetch Mobile": {
+      "total": 4,
+      "success": 4,
+      "profiles": [
+        "foodnetwork",
+        "buzzfeedtasty",
+        "louisianasoulcafe",
+        "lafitness"
+      ]
+    },
+    "Direct Fetch Android": {
+      "total": 2,
+      "success": 2,
+      "profiles": [
+        "foodnetwork",
+        "buzzfeedtasty"
+      ]
+    },
+    "Puppeteer Mobile Fixed": {
+      "total": 2,
+      "success": 2,
+      "profiles": [
+        "foodnetwork",
+        "buzzfeedtasty"
+      ]
+    },
+    "API - Mobile API": {
+      "total": 2,
+      "success": 0,
+      "profiles": []
+    },
+    "API - Web Profile Info": {
+      "total": 2,
+      "success": 0,
+      "profiles": []
+    }
+  },
+  "detailedResults": [
+    {
+      "method": "Direct Fetch Mobile",
+      "username": "foodnetwork",
+      "success": true,
+      "details": {
+        "status": 200,
+        "contentLength": 2465015,
+        "loginRedirect": false,
+        "hasProfileData": true,
+        "finalUrl": "https://www.instagram.com/foodnetwork/"
+      }
+    },
+    {
+      "method": "Direct Fetch Mobile",
+      "username": "buzzfeedtasty",
+      "success": true,
+      "details": {
+        "status": 200,
+        "contentLength": 1547528,
+        "loginRedirect": false,
+        "hasProfileData": true,
+        "finalUrl": "https://www.instagram.com/buzzfeedtasty/"
+      }
+    },
+    {
+      "method": "Direct Fetch Mobile",
+      "username": "louisianasoulcafe",
+      "success": true,
+      "details": {
+        "status": 200,
+        "contentLength": 446136,
+        "loginRedirect": false,
+        "hasProfileData": true,
+        "finalUrl": "https://www.instagram.com/louisianasoulcafe/"
+      }
+    },
+    {
+      "method": "Direct Fetch Mobile",
+      "username": "lafitness",
+      "success": true,
+      "details": {
+        "status": 200,
+        "contentLength": 638090,
+        "loginRedirect": false,
+        "hasProfileData": true,
+        "finalUrl": "https://www.instagram.com/lafitness/"
+      }
+    },
+    {
+      "method": "Direct Fetch Android",
+      "username": "foodnetwork",
+      "success": true,
+      "details": {
+        "status": 200,
+        "loginRedirect": false,
+        "hasProfileData": true
+      }
+    },
+    {
+      "method": "Direct Fetch Android",
+      "username": "buzzfeedtasty",
+      "success": true,
+      "details": {
+        "status": 200,
+        "loginRedirect": false,
+        "hasProfileData": true
+      }
+    },
+    {
+      "method": "Puppeteer Mobile Fixed",
+      "username": "foodnetwork",
+      "success": true,
+      "details": {
+        "urlRedirect": false,
+        "hasLoginForm": false,
+        "hasProfileData": true,
+        "title": "Food Network (@foodnetwork) • Instagram photos and videos",
+        "contentLength": 2363568,
+        "finalUrl": "https://www.instagram.com/foodnetwork/"
+      }
+    },
+    {
+      "method": "Puppeteer Mobile Fixed",
+      "username": "buzzfeedtasty",
+      "success": true,
+      "details": {
+        "urlRedirect": false,
+        "hasLoginForm": false,
+        "hasProfileData": true,
+        "title": "Tasty (@buzzfeedtasty) • Instagram photos and videos",
+        "contentLength": 1802320,
+        "finalUrl": "https://www.instagram.com/buzzfeedtasty/"
+      }
+    },
+    {
+      "method": "API - Mobile API",
+      "username": "foodnetwork",
+      "success": false,
+      "details": {
+        "status": 400,
+        "isValidJSON": true,
+        "responseLength": 48,
+        "preview": "{\"message\":\"useragent mismatch\",\"status\":\"fail\"}..."
+      }
+    },
+    {
+      "method": "API - Mobile API",
+      "username": "buzzfeedtasty",
+      "success": false,
+      "details": {
+        "status": 400,
+        "isValidJSON": true,
+        "responseLength": 48,
+        "preview": "{\"message\":\"useragent mismatch\",\"status\":\"fail\"}..."
+      }
+    },
+    {
+      "method": "API - Web Profile Info",
+      "username": "foodnetwork",
+      "success": false,
+      "details": {
+        "status": 400,
+        "isValidJSON": true,
+        "responseLength": 48,
+        "preview": "{\"message\":\"useragent mismatch\",\"status\":\"fail\"}..."
+      }
+    },
+    {
+      "method": "API - Web Profile Info",
+      "username": "buzzfeedtasty",
+      "success": false,
+      "details": {
+        "status": 400,
+        "isValidJSON": true,
+        "responseLength": 48,
+        "preview": "{\"message\":\"useragent mismatch\",\"status\":\"fail\"}..."
+      }
+    }
+  ]
+}

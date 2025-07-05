@@ -1,0 +1,35 @@
+{
+  "name": "clientscope-backend",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "index.cjs",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "apify-client": "^2.12.5",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "https-proxy-agent": "^7.0.2",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.98.0",
+    "prisma": "^6.10.1",
+    "proxy-chain": "^2.5.8",
+    "puppeteer": "^22.15.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "python-shell": "^5.0.0",
+    "random-useragent": "^0.5.0",
+    "sharp": "^0.34.2",
+    "user-agents": "^1.1.538"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node start.js",
+    "direct": "node index.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

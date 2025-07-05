@@ -1,0 +1,164 @@
+{
+  "id": "1732752000000",
+  "name": "Sample Business Leads",
+  "campaign": "Demo Campaign",
+  "createdAt": "2024-11-28T00:00:00.000Z",
+  "leads": [
+    {
+      "username": "@sarah_photographer",
+      "fullName": "Sarah Johnson",
+      "bio": "Wedding photographer in NYC 📸 Looking to expand my client base. DM for bookings! 💍✨",
+      "followers": 3200,
+      "screenshot": "/screenshots/sample1.jpg",
+      "email": "sarah@sarahjohnsonphoto.com",
+      "url": "https://instagram.com/sarah_photographer",
+      "bioScore": {
+        "pitch_score": 9,
+        "urgent": "yes",
+        "business_type": "Photographer",
+        "region": "New York",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 8,
+        "aesthetic_score": 9
+      }
+    },
+    {
+      "username": "@mike_fitness_coach",
+      "fullName": "Mike Rodriguez",
+      "bio": "Personal trainer & nutrition coach 💪 Helping busy professionals get fit. Free consultation available!",
+      "followers": 1850,
+      "screenshot": "/screenshots/sample2.jpg",
+      "url": "https://instagram.com/mike_fitness_coach",
+      "bioScore": {
+        "pitch_score": 7,
+        "urgent": "no",
+        "business_type": "Fitness Coach",
+        "region": "California",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 7,
+        "aesthetic_score": 6
+      }
+    },
+    {
+      "username": "@lisa_salon_owner",
+      "fullName": "Lisa Chen",
+      "bio": "Hair salon owner in downtown Miami. Specializing in color & cuts. Book online!",
+      "followers": 950,
+      "screenshot": "/screenshots/sample3.jpg",
+      "url": "https://instagram.com/lisa_salon_owner",
+      "bioScore": {
+        "pitch_score": 6,
+        "urgent": "no",
+        "business_type": "Salon Owner",
+        "region": "Florida",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 6,
+        "aesthetic_score": 7
+      }
+    },
+    {
+      "username": "@alex_marketing_guru",
+      "fullName": "Alex Thompson",
+      "bio": "Digital marketing consultant 🚀 Need more leads? I can help! 10+ years experience. Let's chat!",
+      "followers": 5200,
+      "screenshot": "/screenshots/sample4.jpg",
+      "email": "alex@marketingguru.com",
+      "url": "https://instagram.com/alex_marketing_guru",
+      "bioScore": {
+        "pitch_score": 8,
+        "urgent": "yes",
+        "business_type": "Marketing Consultant",
+        "region": "Texas",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 8,
+        "aesthetic_score": 7
+      }
+    },
+    {
+      "username": "@jenny_bakery",
+      "fullName": "Jenny Williams",
+      "bio": "Custom cake designer 🎂 Weddings, birthdays, special events. Order 2 weeks in advance.",
+      "followers": 1200,
+      "screenshot": "/screenshots/sample5.jpg",
+      "url": "https://instagram.com/jenny_bakery",
+      "bioScore": {
+        "pitch_score": 5,
+        "urgent": "no",
+        "business_type": "Baker",
+        "region": "Oregon",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 6,
+        "aesthetic_score": 8
+      }
+    },
+    {
+      "username": "@david_realtor",
+      "fullName": "David Kim",
+      "bio": "Real estate agent in Seattle 🏠 First-time buyer specialist. Ready to find your dream home!",
+      "followers": 2800,
+      "screenshot": "/screenshots/sample6.jpg",
+      "email": "david@seattlehomes.com",
+      "url": "https://instagram.com/david_realtor",
+      "bioScore": {
+        "pitch_score": 7,
+        "urgent": "yes",
+        "business_type": "Real Estate Agent",
+        "region": "Washington",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 7,
+        "aesthetic_score": 6
+      }
+    },
+    {
+      "username": "@maria_yoga_studio",
+      "fullName": "Maria Santos",
+      "bio": "Yoga instructor & studio owner 🧘‍♀️ Mind, body, soul wellness. New student special: 50% off first month!",
+      "followers": 1650,
+      "screenshot": "/screenshots/sample7.jpg",
+      "url": "https://instagram.com/maria_yoga_studio",
+      "bioScore": {
+        "pitch_score": 6,
+        "urgent": "no",
+        "business_type": "Yoga Instructor",
+        "region": "Colorado",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 7,
+        "aesthetic_score": 8
+      }
+    },
+    {
+      "username": "@tech_startup_ceo",
+      "fullName": "Ryan Park",
+      "bio": "CEO of TechFlow AI 🤖 Building the future of automation. Always looking for talented developers!",
+      "followers": 8500,
+      "screenshot": "/screenshots/sample8.jpg",
+      "email": "ryan@techflow.ai",
+      "url": "https://instagram.com/tech_startup_ceo",
+      "bioScore": {
+        "pitch_score": 9,
+        "urgent": "yes",
+        "business_type": "CEO",
+        "region": "California",
+        "language": "English"
+      },
+      "visionScore": {
+        "professional_score": 9,
+        "aesthetic_score": 7
+      }
+    }
+  ]
+} 

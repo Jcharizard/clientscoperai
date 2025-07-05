@@ -1,0 +1,112 @@
+[2025-06-17T03:47:43.034Z] 🚀 Starting FIXED Apify Screenshot Tests
+[2025-06-17T03:47:43.036Z] 
+=== BASELINE TEST ===
+[2025-06-17T03:47:43.037Z] 🧪 BASELINE TEST: Testing screenshot on a simple website
+[2025-06-17T03:47:43.037Z] 📡 Starting baseline screenshot test: {"url":"https://example.com","waitUntil":"load","delay":1000,"viewportWidth":1366}
+[2025-06-17T03:47:46.805Z] ✅ Baseline screenshot completed. Run ID: B61c9Nnu6cx6YKYfJ
+[2025-06-17T03:47:46.928Z] 📋 Baseline KV items: ["INPUT","SDK_CRAWLER_STATISTICS_0","SDK_SESSION_POOL_STATE","SDK_START_URLS-REQUEST_LIST_REQUESTS"]
+[2025-06-17T03:47:47.030Z] ❌ No baseline screenshot found
+[2025-06-17T03:47:47.030Z] ❌ Baseline test FAILED - screenshot functionality may be broken
+[2025-06-17T03:47:47.031Z] 
+=== SOCIAL MEDIA COMPARISON ===
+[2025-06-17T03:47:47.031Z] 🧪 COMPARE TEST: Testing https://twitter.com/nasa
+[2025-06-17T03:47:51.401Z] ✅ Compare test completed for https://twitter.com/nasa. Run ID: PftEdencMLZatYejh
+[2025-06-17T03:47:51.572Z] 🧪 COMPARE TEST: Testing https://www.linkedin.com/company/nasa
+[2025-06-17T03:47:58.055Z] ✅ Compare test completed for https://www.linkedin.com/company/nasa. Run ID: c7Ok9XNrDzYXzdAYs
+[2025-06-17T03:47:58.188Z] 🧪 COMPARE TEST: Testing https://www.facebook.com/NASA
+[2025-06-17T03:48:32.278Z] ✅ Compare test completed for https://www.facebook.com/NASA. Run ID: FI9VlacLTFzwGMmss
+[2025-06-17T03:48:32.411Z] 
+=== INSTAGRAM TESTS for nasa ===
+[2025-06-17T03:48:32.412Z] 🧪 FIXED TEST: Website Content Crawler for nasa
+[2025-06-17T03:48:32.412Z] 📡 Starting fixed Website Content Crawler: {"startUrls":[{"url":"https://www.instagram.com/nasa/"}],"crawlerType":"playwright:chrome","maxCrawlDepth":0,"maxCrawlPages":1,"proxyConfiguration":{"useApifyProxy":true},"readableTextCharThreshold":100,"removeCookieWarnings":true,"clickElementsCssSelector":"[aria-label*='Accept'], [aria-label*='OK'], .cookie-accept","saveScreenshots":true,"saveHtml":true}
+[2025-06-17T03:49:03.347Z] ✅ Fixed crawler completed. Run ID: BIfGnqgDZEF2HdacD
+[2025-06-17T03:49:03.492Z] 📋 Dataset items: 1
+[2025-06-17T03:49:03.493Z] 📊 Crawler data keys: url,crawl,metadata,screenshotUrl,text,html,markdown,debug
+[2025-06-17T03:49:03.493Z] 📊 Full result: {
+  "url": "https://www.instagram.com/nasa/",
+  "crawl": {
+    "loadedUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fnasa%2F&is_from_rle",
+    "loadedTime": "2025-06-17T03:48:58.532Z",
+    "referrerUrl": "https://www.instagram.com/nasa/",
+    "depth": 0,
+    "httpStatusCode": 200
+  },
+  "metadata": {
+    "canonicalUrl": "https://www.instagram.com/accounts/login/",
+    "title": "Login • Instagram",
+    "description": "Welcome back to Instagram. Sign in to check out what your friends, family & interests have been capturing & sharing around the world.",
+    "author": null,
+    "keywords": null,
+    "languageCode": "en",
+    "jsonLd": null,
+    "headers": {
+      "vary": "Accept-Encoding",
+      "content-encoding": "zstd",
+      "set-cookie": "csrftoken=IktPB4u-Ua7JwfxaxeSi2b; expires=Wed, 22-Jul-2026 03:48:55 GMT; Max-Age=34560000; path=/; domain=.instagram.com; secure; SameSite=None\ndatr=p-VQaJ1M4SzSaB7NvHpYgc3w; expires=Wed, 22-Jul-2026 03:48:55 GMT; Max-Age=34560000; path=/; domain=.instagram.com; secure; httponly; SameSite=None\nps_l=0; expires=Wed, 22-Jul-2026 03:48:55 GMT; Max-Age=34560000; path=/; domain=.instagram.com; secure; httponly; SameSite=Lax\nps_n=0; expires=Wed, 22-Jul-2026 03:48:55 GMT; Max-Age=34560000; path=/; domain=.instagram.com; secure; httponly; SameSite=None",
+      "accept-ch-lifetime": "4838400",
+      "accept-ch": "viewport-width, dpr, Sec-CH-Prefers-Color-Scheme, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform-Version, Sec-CH-UA-Model",
+      "reporting-endpoints": "coop_report=\"https://www.facebook.com/browser_reporting/coop/?minimize=0\", default=\"https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown&brsid=7516760283745301942&comet_app_key=7&cpp=C3&cv=1023888953&st=1750132135528\", permissions_policy=\"https://www.instagram.com/error/ig_web_error_reports/\"",
+      "report-to": "{\"max_age\":2592000, \"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coop\\/?minimize=0\"}], \"group\":\"coop_report\", \"include_subdomains\":true}, {\"max_age\":259200, \"endpoints\":[{\"url\":\"https:\\/\\/www.instagram.com\\/error\\/ig_web_error_reports\\/?device_level=unknown&brsid=7516760283745301942&comet_app_key=7&cpp=C3&cv=1023888953&st=1750132135528\"}]}, {\"max_age\":21600, \"endpoints\":[{\"url\":\"https:\\/\\/www.instagram.com\\/error\\/ig_web_error_reports\\/\"}], \"group\":\"permissions_policy\"}",
+      "content-security-policy": "default-src *.facebook.com *.fbcdn.net *.instagram.com blob:;script-src *.instagram.com static.cdninstagram.com *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-GmtJqvNj' blob: 'self' 'wasm-unsafe-eval' https://*.google-analytics.com https://translate.google.com https://apis.google.com https://accounts.google.com;style-src *.instagram.com static.cdninstagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* ws://localhost:* blob: *.cdninstagram.com wss://*.instagram.com:* 'self' https://meta.privacy-gateway.cloudflare.com/relay;font-src *.instagram.com static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com https://fonts.gstatic.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: *.fbsbx.com android-webview-video-poster: *.oculuscdn.com *.giphy.com *.tenor.co *.tenor.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk https://www.gstatic.com https://*.google-analytics.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com cdn.fbsbx.com data: blob: https://*.giphy.com *.tenor.co *.tenor.com;child-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;frame-src *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data: www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk;manifest-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;object-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;block-all-mixed-content;upgrade-insecure-requests;",
+      "document-policy": "force-load-at-top, include-js-call-stacks-in-crash-reports",
+      "permissions-policy": "accelerometer=(self), attribution-reporting=(), autoplay=(), bluetooth=(), camera=(self), ch-device-memory=(), ch-downlink=(), ch-dpr=(), ch-ect=(), ch-rtt=(), ch-save-data=(), ch-ua-arch=(), ch-ua-bitness=(), ch-viewport-height=(), ch-viewport-width=(), ch-width=(), clipboard-read=(), clipboard-write=(self), compute-pressure=(), display-capture=(self), encrypted-media=(), fullscreen=(self), gamepad=(), geolocation=(self), gyroscope=(self), hid=(), idle-detection=(), interest-cohort=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(self), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), private-state-token-issuance=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), shared-storage=(), shared-storage-select-url=(), private-state-token-redemption=(), usb=(), unload=(self), window-management=(), xr-spatial-tracking=();report-to=\"permissions_policy\"",
+      "cross-origin-resource-policy": "same-origin",
+      "cross-origin-opener-policy": "unsafe-none",
+      "pragma": "no-cache",
+      "cache-control": "private, no-cache, no-store, must-revalidate",
+      "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "0",
+      "x-frame-options": "DENY",
+      "origin-agent-cluster": "?1",
+      "strict-transport-security": "max-age=31536000; preload; includeSubDomains",
+      "x-stack": "www",
+      "content-type": "text/html; charset=\"utf-8\"",
+      "x-fb-debug": "BZOvSo91pBxiaEIP8KcSqyKbkpTXi0QYY2fIzS0G35mE4IMicl5zNgFqqifCryfxFFORqXLncxQ/S2l6O8AFVQ==",
+      "date": "Tue, 17 Jun 2025 03:48:55 GMT",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=20, rtx=0, c=18, mss=1380, tbw=5094, tp=-1, tpl=-1, uplat=114, ullat=0",
+      "x-firefox-spdy": "h2"
+    }
+  },
+  "screenshotUrl": "https://api.apify.com/v2/key-value-stores/MFusWFGNqdM5w8mTZ/records/SCREENSHOT-www-instagram-com-nasa--2b954f8f.jpg",
+  "text": "Login • Instagram\nPhone number, username, or email",
+  "html": "<div id=\"readability-content\"><h1>Login • Instagram</h1><div id=\"readability-page-1\" class=\"page\"><div><p><label><span>Phone number, username, or email</span></label></p></div></div></div>",
+  "markdown": "# Login • Instagram\n\nPhone number, username, or email",
+  "debug": {
+    "requestHandlerMode": "browser"
+  }
+}
+[2025-06-17T03:49:03.623Z] 📋 KV store items: [{"key":"CRAWLEE_STATE","size":129},{"key":"INPUT","size":1310},{"key":"SCREENSHOT-www-instagram-com-nasa--2b954f8f.jpg","size":16324},{"key":"SDK_CRAWLER_STATISTICS_0","size":454},{"key":"SDK_SESSION_POOL_STATE","size":850}]
+[2025-06-17T03:49:03.624Z] 🔍 Checking KV item: CRAWLEE_STATE (size: 129)
+[2025-06-17T03:49:03.625Z] 🔍 Checking KV item: INPUT (size: 1310)
+[2025-06-17T03:49:03.625Z] 🔍 Checking KV item: SCREENSHOT-www-instagram-com-nasa--2b954f8f.jpg (size: 16324)
+[2025-06-17T03:49:03.830Z] 🔍 Checking KV item: SDK_CRAWLER_STATISTICS_0 (size: 454)
+[2025-06-17T03:49:03.831Z] 🔍 Checking KV item: SDK_SESSION_POOL_STATE (size: 850)
+[2025-06-17T03:49:03.831Z] ❌ No screenshot found in fixed crawler for nasa
+[2025-06-17T03:49:03.831Z] 🧪 ALTERNATIVE TEST: Testing https://www.instagram.com/nasa/
+[2025-06-17T03:49:03.832Z] 📡 Starting alternative URL test: {"url":"https://www.instagram.com/nasa/","waitUntil":"load","delay":2000,"viewportWidth":375,"viewportHeight":812,"scrollToBottom":false}
+[2025-06-17T03:49:09.060Z] ✅ Alternative test completed. Run ID: EudkcKnax42KBi77R
+[2025-06-17T03:49:09.185Z] 📋 KV items for https://www.instagram.com/nasa/: [{"key":"INPUT","size":318},{"key":"SDK_CRAWLER_STATISTICS_0","size":780},{"key":"SDK_SESSION_POOL_STATE","size":77},{"key":"SDK_START_URLS-REQUEST_LIST_REQUESTS","size":22}]
+[2025-06-17T03:49:11.191Z] 🧪 ALTERNATIVE TEST: Testing https://instagram.com/nasa/
+[2025-06-17T03:49:11.191Z] 📡 Starting alternative URL test: {"url":"https://instagram.com/nasa/","waitUntil":"load","delay":2000,"viewportWidth":375,"viewportHeight":812,"scrollToBottom":false}
+[2025-06-17T03:49:15.147Z] ✅ Alternative test completed. Run ID: S3JHNInunPAKd5nfB
+[2025-06-17T03:49:15.288Z] 📋 KV items for https://instagram.com/nasa/: [{"key":"INPUT","size":314},{"key":"SDK_CRAWLER_STATISTICS_0","size":780},{"key":"SDK_SESSION_POOL_STATE","size":77},{"key":"SDK_START_URLS-REQUEST_LIST_REQUESTS","size":22}]
+[2025-06-17T03:49:17.296Z] 🧪 ALTERNATIVE TEST: Testing https://www.instagram.com/nasa
+[2025-06-17T03:49:17.296Z] 📡 Starting alternative URL test: {"url":"https://www.instagram.com/nasa","waitUntil":"load","delay":2000,"viewportWidth":375,"viewportHeight":812,"scrollToBottom":false}
+[2025-06-17T03:49:21.195Z] ✅ Alternative test completed. Run ID: 62u4mQING9L0GGn9m
+[2025-06-17T03:49:21.312Z] 📋 KV items for https://www.instagram.com/nasa: [{"key":"INPUT","size":317},{"key":"SDK_CRAWLER_STATISTICS_0","size":780},{"key":"SDK_SESSION_POOL_STATE","size":77},{"key":"SDK_START_URLS-REQUEST_LIST_REQUESTS","size":22}]
+[2025-06-17T03:49:23.327Z] 🧪 ALTERNATIVE TEST: Testing https://instagram.com/nasa
+[2025-06-17T03:49:23.327Z] 📡 Starting alternative URL test: {"url":"https://instagram.com/nasa","waitUntil":"load","delay":2000,"viewportWidth":375,"viewportHeight":812,"scrollToBottom":false}
+[2025-06-17T03:49:26.727Z] ✅ Alternative test completed. Run ID: VsUAgGxDu12oiWX0d
+[2025-06-17T03:49:26.889Z] 📋 KV items for https://instagram.com/nasa: [{"key":"INPUT","size":313},{"key":"SDK_CRAWLER_STATISTICS_0","size":780},{"key":"SDK_SESSION_POOL_STATE","size":77},{"key":"SDK_START_URLS-REQUEST_LIST_REQUESTS","size":22}]
+[2025-06-17T03:49:28.903Z] 🧪 ALTERNATIVE TEST: Testing https://m.instagram.com/nasa/
+[2025-06-17T03:49:28.903Z] 📡 Starting alternative URL test: {"url":"https://m.instagram.com/nasa/","waitUntil":"load","delay":2000,"viewportWidth":375,"viewportHeight":812,"scrollToBottom":false}
+[2025-06-17T03:49:33.761Z] ✅ Alternative test completed. Run ID: PgVbYfrK2wYR4H5O1
+[2025-06-17T03:49:33.867Z] 📋 KV items for https://m.instagram.com/nasa/: [{"key":"INPUT","size":316},{"key":"SDK_CRAWLER_STATISTICS_0","size":780},{"key":"SDK_SESSION_POOL_STATE","size":77},{"key":"SDK_START_URLS-REQUEST_LIST_REQUESTS","size":22}]
+[2025-06-17T03:49:35.872Z] 
+📊 FINAL SUMMARY: 0/3 main tests succeeded
+[2025-06-17T03:49:35.873Z] ❌ No screenshots captured
+[2025-06-17T03:49:35.873Z] 
+🏁 Fixed screenshot tests completed!
+[2025-06-17T03:49:35.873Z] 📁 Check screenshots: E:\PROTOTYPE SNIPER 1\backend\screenshots

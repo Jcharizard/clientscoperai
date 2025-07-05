@@ -1,0 +1,69 @@
+[2025-06-19T23:12:21.292Z] 🎯 Starting reliable screenshot for losangeles_fitness2.0
+[2025-06-19T23:12:21.677Z] 🔄 Trying method 1/4 for losangeles_fitness2.0
+[2025-06-19T23:12:21.678Z] 🎲 Method 1: Random User Agent for losangeles_fitness2.0
+[2025-06-19T23:12:28.312Z] ✅ Random UA success: losangeles_fitness2.0_random_ua.png
+[2025-06-19T23:12:28.512Z] 🎉 SUCCESS: Method 1 worked for losangeles_fitness2.0
+[2025-06-19T23:27:32.603Z] 🎲 Method 1: Random User Agent for losangeles_fitness2.0
+[2025-06-19T23:27:42.345Z] ✅ Random UA success: losangeles_fitness2.0_random_ua.png
+[2025-06-19T23:27:44.524Z] 📱 Method 2: Mobile bypass for losangeles_fitness2.0
+[2025-06-19T23:27:48.164Z] ✅ Mobile bypass success: losangeles_fitness2.0_mobile.png
+[2025-06-19T23:27:50.320Z] ⏳ Method 3: Delayed navigation for losangeles_fitness2.0
+[2025-06-19T23:27:50.657Z] 🏠 Visiting Instagram homepage first...
+[2025-06-19T23:27:55.209Z] 👤 Navigating to profile: losangeles_fitness2.0
+[2025-06-19T23:28:01.332Z] ✅ Delayed navigation success: losangeles_fitness2.0_delayed.png
+[2025-06-19T23:28:03.521Z] 🔗 Method 4: Embed approach for losangeles_fitness2.0
+[2025-06-19T23:28:11.787Z] ✅ Embed approach success: losangeles_fitness2.0_embed.png
+[2025-06-19T23:28:16.998Z] 🎲 Method 1: Random User Agent for nexgenfitnessla
+[2025-06-19T23:28:25.278Z] ✅ Random UA success: nexgenfitnessla_random_ua.png
+[2025-06-19T23:28:27.451Z] 📱 Method 2: Mobile bypass for nexgenfitnessla
+[2025-06-19T23:28:31.902Z] ✅ Mobile bypass success: nexgenfitnessla_mobile.png
+[2025-06-19T23:28:34.061Z] ⏳ Method 3: Delayed navigation for nexgenfitnessla
+[2025-06-19T23:28:34.365Z] 🏠 Visiting Instagram homepage first...
+[2025-06-19T23:28:38.950Z] 👤 Navigating to profile: nexgenfitnessla
+[2025-06-19T23:28:44.469Z] ✅ Delayed navigation success: nexgenfitnessla_delayed.png
+[2025-06-19T23:28:46.691Z] 🔗 Method 4: Embed approach for nexgenfitnessla
+[2025-06-19T23:28:55.181Z] ✅ Embed approach success: nexgenfitnessla_embed.png
+[2025-06-19T23:29:00.353Z] 🎲 Method 1: Random User Agent for sanctuaryfitnessla
+[2025-06-19T23:29:07.637Z] ✅ Random UA success: sanctuaryfitnessla_random_ua.png
+[2025-06-19T23:29:10.361Z] 📱 Method 2: Mobile bypass for sanctuaryfitnessla
+[2025-06-19T23:29:15.035Z] ✅ Mobile bypass success: sanctuaryfitnessla_mobile.png
+[2025-06-19T23:29:17.215Z] ⏳ Method 3: Delayed navigation for sanctuaryfitnessla
+[2025-06-19T23:29:17.523Z] 🏠 Visiting Instagram homepage first...
+[2025-06-19T23:29:22.106Z] 👤 Navigating to profile: sanctuaryfitnessla
+[2025-06-19T23:29:27.330Z] ✅ Delayed navigation success: sanctuaryfitnessla_delayed.png
+[2025-06-19T23:29:29.515Z] 🔗 Method 4: Embed approach for sanctuaryfitnessla
+[2025-06-19T23:29:37.294Z] ✅ Embed approach success: sanctuaryfitnessla_embed.png
+[2025-06-19T23:30:59.248Z] 📱 Method 2: Enhanced mobile bypass for losangeles_fitness2.0
+[2025-06-19T23:31:09.141Z] ❌ Enhanced mobile bypass failed: png screenshots do not support 'quality'.
+[2025-06-19T23:31:25.753Z] 📱 Method 2: Enhanced mobile bypass for losangeles_fitness2.0
+[2025-06-19T23:31:35.015Z] ✅ Enhanced mobile bypass success: losangeles_fitness2.0_mobile_enhanced.png
+[2025-06-19T23:44:19.876Z] 🎯 Starting optimized screenshot capture for losangeles_fitness2.0
+[2025-06-19T23:44:19.877Z] 🔄 Trying Random User Agent (1/4) for losangeles_fitness2.0
+[2025-06-19T23:44:19.877Z] 🎲 Method 1: Random User Agent for losangeles_fitness2.0
+[2025-06-19T23:44:26.982Z] ✅ Random UA success: losangeles_fitness2.0_random_ua.png
+[2025-06-19T23:44:27.143Z] ⚠️ Low quality screenshot from Random User Agent (12.5KB) - trying next method
+[2025-06-19T23:44:28.655Z] 🔄 Trying Embed Approach (2/4) for losangeles_fitness2.0
+[2025-06-19T23:44:28.655Z] 🔗 Method 4: Embed approach for losangeles_fitness2.0
+[2025-06-19T23:44:36.762Z] ✅ Embed approach success: losangeles_fitness2.0_embed.png
+[2025-06-19T23:44:36.980Z] ⚠️ Low quality screenshot from Embed Approach (12.3KB) - trying next method
+[2025-06-19T23:44:38.496Z] 🔄 Trying Enhanced Mobile (3/4) for losangeles_fitness2.0
+[2025-06-19T23:44:38.497Z] 📱 Method 2: Enhanced mobile bypass for losangeles_fitness2.0
+[2025-06-19T23:44:47.438Z] ✅ Enhanced mobile bypass success: losangeles_fitness2.0_mobile_enhanced.png
+[2025-06-19T23:44:47.600Z] 🎉 SUCCESS: Enhanced Mobile worked for losangeles_fitness2.0 (9104ms, 71.0KB)
+[2025-06-19T23:44:47.601Z] 🎯 Starting optimized screenshot capture for nexgenfitnessla
+[2025-06-19T23:44:47.601Z] 🔄 Trying Random User Agent (1/4) for nexgenfitnessla
+[2025-06-19T23:44:47.601Z] 🎲 Method 1: Random User Agent for nexgenfitnessla
+[2025-06-19T23:44:56.329Z] ❌ Random UA blocked for nexgenfitnessla
+[2025-06-19T23:44:58.480Z] 🔄 Trying Embed Approach (2/4) for nexgenfitnessla
+[2025-06-19T23:44:58.480Z] 🔗 Method 4: Embed approach for nexgenfitnessla
+[2025-06-19T23:45:07.050Z] ✅ Embed approach success: nexgenfitnessla_embed.png
+[2025-06-19T23:45:07.212Z] ⚠️ Low quality screenshot from Embed Approach (16.3KB) - trying next method
+[2025-06-19T23:45:08.725Z] 🔄 Trying Enhanced Mobile (3/4) for nexgenfitnessla
+[2025-06-19T23:45:08.726Z] 📱 Method 2: Enhanced mobile bypass for nexgenfitnessla
+[2025-06-19T23:45:18.702Z] ✅ Enhanced mobile bypass success: nexgenfitnessla_mobile_enhanced.png
+[2025-06-19T23:45:18.903Z] 🎉 SUCCESS: Enhanced Mobile worked for nexgenfitnessla (10177ms, 71.0KB)
+[2025-06-19T23:45:18.904Z] 🎯 Starting optimized screenshot capture for sanctuaryfitnessla
+[2025-06-19T23:45:18.904Z] 🔄 Trying Random User Agent (1/4) for sanctuaryfitnessla
+[2025-06-19T23:45:18.904Z] 🎲 Method 1: Random User Agent for sanctuaryfitnessla
+[2025-06-19T23:45:26.253Z] ✅ Random UA success: sanctuaryfitnessla_random_ua.png
+[2025-06-19T23:45:26.944Z] 🎉 SUCCESS: Random User Agent worked for sanctuaryfitnessla (8040ms, 37.6KB)

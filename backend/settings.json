@@ -1,0 +1,21 @@
+{
+  "apifyApiKey": "",
+  "cookieMode": true,
+  "cookies": [
+    {
+      "sessionid": "",
+      "ds_user_id": "",
+      "csrftoken": ""
+    },
+    {
+      "sessionid": "",
+      "ds_user_id": "",
+      "csrftoken": ""
+    },
+    {
+      "sessionid": "",
+      "ds_user_id": "",
+      "csrftoken": ""
+    }
+  ]
+}

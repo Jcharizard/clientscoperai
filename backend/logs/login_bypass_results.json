@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-06-17T18:22:19.040Z",
+  "duration": 19.239,
+  "results": [
+    {
+      "method": "Direct Fetch",
+      "username": "foodnetwork",
+      "success": true,
+      "details": {
+        "status": 200,
+        "contentLength": 1864052,
+        "loginRedirect": false
+      }
+    },
+    {
+      "method": "Direct Fetch",
+      "username": "buzzfeedtasty",
+      "success": true,
+      "details": {
+        "status": 200,
+        "contentLength": 638048,
+        "loginRedirect": false
+      }
+    },
+    {
+      "method": "Puppeteer Mobile",
+      "username": "foodnetwork",
+      "success": false,
+      "details": {
+        "error": "page.waitForTimeout is not a function"
+      }
+    },
+    {
+      "method": "Puppeteer Mobile",
+      "username": "buzzfeedtasty",
+      "success": false,
+      "details": {
+        "error": "page.waitForTimeout is not a function"
+      }
+    },
+    {
+      "method": "Puppeteer Stealth",
+      "username": "foodnetwork",
+      "success": false,
+      "details": {
+        "error": "page.waitForTimeout is not a function"
+      }
+    },
+    {
+      "method": "Puppeteer Stealth",
+      "username": "buzzfeedtasty",
+      "success": false,
+      "details": {
+        "error": "page.waitForTimeout is not a function"
+      }
+    }
+  ],
+  "methodStats": {
+    "Direct Fetch": {
+      "total": 2,
+      "success": 2
+    },
+    "Puppeteer Mobile": {
+      "total": 2,
+      "success": 0
+    },
+    "Puppeteer Stealth": {
+      "total": 2,
+      "success": 0
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "leads": [
+    {
+      "username": "clothingbrand_la",
+      "url": "https://instagram.com/clothingbrand_la",
+      "fullName": "𝗖𝗟𝗢𝗧𝗛𝗜𝗡𝗚 𝗕𝗥𝗔𝗡𝗗 𝗟𝗔 🌐",
+      "bio": "CHAZING BILLIONZ LOS ANGELES",
+      "followers": 1789,
+      "following": 1059,
+      "posts": 3,
+      "isVerified": false,
+      "isPrivate": false,
+      "externalUrl": "",
+      "businessEmail": "",
+      "businessPhone": "",
+      "category": "None,Clothing (Brand)",
+      "screenshotPath": "E:\\PROTOTYPE SNIPER 1\\backend\\screenshots\\clothingbrand_la_fast.png",
+      "qualityScore": 25,
+      "classification": "COLD",
+      "enhancedScore": 98.5,
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Los Angeles",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.8,
+        "quality_score": 5,
+        "branding_score": 4.5,
+        "composition_score": 4,
+        "file_size_mb": 0.29,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "timestamp": "2025-06-20T02:40:53.436Z",
+      "analysisTime": 254
+    },
+    {
+      "username": "latinos.brand",
+      "url": "https://instagram.com/latinos.brand",
+      "fullName": "RAICES EÑE",
+      "bio": "",
+      "followers": 156,
+      "following": 0,
+      "posts": 1,
+      "isVerified": false,
+      "isPrivate": false,
+      "externalUrl": "http://latinosbrand.com/",
+      "businessEmail": "",
+      "businessPhone": "",
+      "category": "None,Clothing (Brand)",
+      "screenshotPath": "E:\\PROTOTYPE SNIPER 1\\backend\\screenshots\\latinos.brand_fast.png",
+      "qualityScore": 25,
+      "classification": "COLD",
+      "enhancedScore": 90,
+      "bioScore": {
+        "pitch_score": 1,
+        "urgency_score": 1,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Unknown",
+        "business_confidence": 0,
+        "revenue_potential": 0,
+        "recommendation": "❌ INSUFFICIENT DATA - Bio too short or empty."
+      },
+      "visionScore": {
+        "professional_score": 4.8,
+        "quality_score": 5,
+        "branding_score": 4.5,
+        "composition_score": 4,
+        "file_size_mb": 0.13,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "timestamp": "2025-06-20T02:40:48.835Z",
+      "analysisTime": 134
+    }
+  ],
+  "stats": {
+    "totalSearched": 6,
+    "screenshotAttempts": 2,
+    "screenshotSuccesses": 2,
+    "qualityLeads": 2,
+    "hotLeads": 2,
+    "warmLeads": 0,
+    "coldLeads": 0,
+    "avgScore": 94,
+    "totalTime": 89184
+  },
+  "timestamp": "2025-06-20T02:39:25.267Z",
+  "keyword": "la clothing brand",
+  "searchTerms": []
+}
