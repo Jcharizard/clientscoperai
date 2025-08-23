@@ -1,0 +1,780 @@
+{
+  "timestamp": "2025-07-07T08:58:22.622Z",
+  "totalLeads": 10,
+  "searchCriteria": {
+    "keyword": "miami coach",
+    "pages": 3,
+    "timestamp": "2025-07-07T08:58:22.622Z"
+  },
+  "summary": {
+    "hotLeads": 0,
+    "warmLeads": 5,
+    "contactLeads": 2,
+    "avgBioScore": 5.1,
+    "avgVisionScore": 4.2,
+    "totalLeads": 10
+  },
+  "leads": [
+    {
+      "username": "miamilimocoach",
+      "displayName": "Miami Limo Coach",
+      "bio": "Miami’s Premier Party Bus serving South Florida for 10+ years \nWe can offer you a Customized Package Deal for your Event or VIP parties",
+      "followers": 657,
+      "following": 896,
+      "posts": 30,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/miamilimocoach",
+      "profilePicUrl": "https://scontent-man2-1.cdninstagram.com/v/t51.2885-19/370314617_825244199304300_4485463218116516536_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGIH5UrJqO2ad1MRIEsdZPoWOifXXcdjYtaxYhWegNioxg9pJaFGqOQrJGVsoLoKow&_nc_ohc=B2h4yhWRSYAQ7kNvwE5W4JD&_nc_gid=HBe5U0S7zXheKHs5-HIy6Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRG9yjglCxywpJXx4FcqTC40II7h4vJOo7Gkh9YKj6hVg&oe=68715C60&_nc_sid=8b3546",
+      "externalUrl": "https://miamilimocoach.com/",
+      "businessCategory": "None,Limo Service",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/miamilimocoach_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.1,
+        "urgency_score": 2,
+        "credibility_score": 0.4,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Miami",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.26,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:50:10.255Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "coachmiamipresents",
+      "displayName": "\"Coach Miami Presents\"",
+      "bio": "WE ARE THE BLUEPRINT \nCMP reserves the right to decline participation from any team or athlete at any CMP meets. \nRun with the competition!!",
+      "followers": 56524,
+      "following": 3430,
+      "posts": 1441,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/coachmiamipresents",
+      "profilePicUrl": "https://scontent-iev1-1.cdninstagram.com/v/t51.2885-19/104219956_195080301797005_39835205311569761_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-iev1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHSiALSe4YlZLRB6o0aq44NEaOiahfob0mRF-VaMHSTVm86cG9UJP1IlQ7tnVhO86I&_nc_ohc=qbGCOaX5G_0Q7kNvwEQ3YpW&_nc_gid=WPevVfQXQOMBmuIIl9TOHA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQenxs1LBNUxN6--hd8PArMqx8-h6eMM3f7MgHsuuNHcA&oe=68716CA7&_nc_sid=8b3546",
+      "externalUrl": "http://facebook.com/coachmiamipresents",
+      "businessCategory": "None,Digital creator",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/coachmiamipresents_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T08:50:37.283Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "_.mi_a_mi_",
+      "displayName": "Miami",
+      "bio": "Affiliate Mindset 🧠\n            Gemini ♊\nMusic 🎧",
+      "followers": 378,
+      "following": 70,
+      "posts": 23,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/_.mi_a_mi_",
+      "profilePicUrl": "https://instagram.ftpa1-2.fna.fbcdn.net/v/t51.2885-19/515065741_17891399646272476_7063143513146132068_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.ftpa1-2.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QETfHGHBq1SS_uCrdTZaCjdk5uYOdPcxGmLpG-pB-gzDSnVMRBLCFEuqZMrUX_lJMlxx93iGxnpU4NE9AUfXMre&_nc_ohc=-fxFmEHLMGQQ7kNvwGB8TXB&_nc_gid=HHz4xOO9CKrmtLypqhnV-Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRxMqPFOeG4P4laD1H1_2hraZ0aRC_Mx0p_MHy_WG_sUA&oe=6871456E&_nc_sid=8b3546",
+      "externalUrl": "https://www.trendqash.com/user/register.php?ref=Miami",
+      "businessCategory": "None,Marketing Agency",
+      "isBusinessAccount": true,
+      "screenshot": null,
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T08:51:06.820Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "miamivalleyautismcoachingteam",
+      "displayName": "Autism Coaching Team",
+      "bio": "The Autism & Low-Incidence Coaching Team is a service of the Montgomery County ESC.",
+      "followers": 659,
+      "following": 193,
+      "posts": 341,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/miamivalleyautismcoachingteam",
+      "profilePicUrl": "https://scontent-gru1-2.cdninstagram.com/v/t51.2885-19/306435627_1047322172651926_6115429081740482509_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QH9grB0id0gBacpbTP2eMYVaEmlw5JZW5vX01APlVxUefyll4uQZDwQ-b32CFqfr7c&_nc_ohc=oN1GUPvOYfQQ7kNvwEXYR65&_nc_gid=oIFG7kbWJx6GvnfjhbzytQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQTxceU75tsL8tjubceLKSQPc3v9QI8iGt7w4b944yR3A&oe=687164A1&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/AutismLowIncidenceCoachingTeam",
+      "businessCategory": "None,School",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/miamivalleyautismcoachingteam_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.4,
+        "urgency_score": 2,
+        "credibility_score": 0.5,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Business Entity"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.29,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:51:33.941Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "itmsgroup_neschen",
+      "displayName": "ITMS GROUP/ NESCHEN Products",
+      "bio": "Email: sales@itmsgroup.net \nPhone: 1-866-467-8855",
+      "followers": 21,
+      "following": 45,
+      "posts": 9,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/itmsgroup_neschen",
+      "profilePicUrl": "https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/15876243_1217689518279281_2000459607423582208_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFD_xC499VNQ-Us3bPGQpvLljupgjtRM7Roa1gfxZM7PXhwnnYNloHHeVy4xWjkXiI&_nc_ohc=RIdoi4fRxIYQ7kNvwGbHB_C&_nc_gid=xdo7pIY38i5V1Vb0rNLJOg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfR4CXet6m9PXfn_BwCvlMB9xuSyd8K5PIFbAuzINKviOQ&oe=68715990&_nc_sid=8b3546",
+      "externalUrl": "https://www.neschenproducts.com/",
+      "businessCategory": "Home Services",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/itmsgroup_neschen_composite.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 4,
+        "methods": [
+          "Email in bio",
+          "Phone in bio",
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 2,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:52:00.661Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "miami_coach",
+      "displayName": "MiamiCoach Worldwide",
+      "bio": "📍Miami, Ft Lauderdale, West Palm Beach, Keys",
+      "followers": 10844,
+      "following": 362,
+      "posts": 163,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/miami_coach",
+      "profilePicUrl": "https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-19/428595477_403379835573576_8429655154799362629_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QE3voO4is7mFi8GnRYHMLPbM6JHuHV3VhaQPcBJX3SsBoPpxmm7jDTZWbPMjoChwXg&_nc_ohc=7W8O1cR5o1YQ7kNvwFI8ddl&_nc_gid=KHtLZ42FT4Y9gYFgDIrAqA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRq9rM162xk-WD84cWdoK6_unffNHQLYWFk82wD7x6C8A&oe=68715B56&_nc_sid=8b3546",
+      "externalUrl": "https://www.miamicoach.com/",
+      "businessCategory": "None,Limo Service",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/miami_coach.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Miami",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 2.6,
+        "quality_score": 1,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0,
+        "image_quality": "Needs Improvement",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "❌ NEEDS IMPROVEMENT"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:52:30.132Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "coachcarolrose",
+      "displayName": "CoachCarolRose",
+      "bio": "HEALTH • LOVE • HAPPINESS\nI help people lose weight, gain\nenergy, be fit & happy!\nHealth & Wellness Coach for 28 years 💪🏼",
+      "followers": 5009,
+      "following": 330,
+      "posts": 149,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/coachcarolrose",
+      "profilePicUrl": "https://instagram.fdac15-1.fna.fbcdn.net/v/t51.2885-19/52551509_154866518766791_4877101859015229440_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fdac15-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QGGPHTwxemCniDZdg_I0VSaYncHY0ytZDKlHBJN0ko8_yhPL1sDxbAn6eDLTdNdkSM&_nc_ohc=5wx6BWWnx9IQ7kNvwEMY7eo&_nc_gid=yYMbrfkTVIbhDj8kqtA6Ug&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTN4TquR550WJT4soLvb1eUyWQKMaMfc8awsptKruorcA&oe=68714931&_nc_sid=8b3546",
+      "externalUrl": "http://www.megazest.com/",
+      "businessCategory": "",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/coachcarolrose_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.2,
+        "urgency_score": 2,
+        "credibility_score": 0.4,
+        "contact_readiness": 0,
+        "business_type": "Healthcare",
+        "business_confidence": 0.6,
+        "revenue_potential": 9.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.29,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:52:57.825Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "julietarazonaofficial",
+      "displayName": "Julie Tarazona | International Coach•Speaker",
+      "bio": "🇺🇸Strengthen Mindset in Biz•\nLife•Relationships•\n🇪🇸Fortalece tu\nMente•Negocios•Vida•Relaciones\nCEO @elevatewomensconference & Fierce Coaching Miami",
+      "followers": 2683,
+      "following": 493,
+      "posts": 1797,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/julietarazonaofficial",
+      "profilePicUrl": "https://instagram.fdel42-1.fna.fbcdn.net/v/t51.2885-19/463311405_454511200419347_6037498973941733971_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fdel42-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QGFQgSwtHZyB2nVzuFxcmV-9_uhxjTDmwE04OdaFjMZvSN5O7FLgc8KqfCjc10P_hw&_nc_ohc=KJ8coe-I07UQ7kNvwFs-k4w&_nc_gid=zq_OsCAI7px7Op5I_ZNM6g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRTpTHK3kjD0HV_Z1m9HBwMo7Ipgp5r8hLVWtuLC0F6Cw&oe=687171E6&_nc_sid=8b3546",
+      "externalUrl": "http://www.julietarazona.com/",
+      "businessCategory": "Motivational speaker",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/julietarazonaofficial_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6.1,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Miami",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.4,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:53:25.116Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "coach_stevenvargas",
+      "displayName": "Coach | Fitness | Trainer",
+      "bio": "🅻🅸🅵🅴🆂🆃🆈🅻🅴 🅳🅸🆁🅴🅲🆃🅾🆁\n✪| ɪᴍᴘʀᴏᴠɪɴɢ ᴘᴇᴏᴘʟᴇ’s ǫᴜᴀʟɪᴛʏ ᴏғ ʟɪғᴇ \n✪| ᴍɪᴀᴍɪ, ғʟᴏʀɪᴅᴀ \n✪| ʜᴇᴀʟᴛʜ & ғɪᴛɴᴇss \n✪| ᴘᴇʀsᴏɴᴀʟ ᴛʀᴀɪɴᴇʀ",
+      "followers": 7371,
+      "following": 3023,
+      "posts": 245,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/coach_stevenvargas",
+      "profilePicUrl": "https://scontent-mia3-1.cdninstagram.com/v/t51.2885-19/432593685_430898309459418_8668203754089044084_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-mia3-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QH2ceSAjn8jV3F4UYIXcdjly-XMXA-ZIMFk77qHmS0NTNG0a3MsXNyAm2LDjxo3ncE&_nc_ohc=svGrjIvU5OsQ7kNvwG2FZE_&_nc_gid=zyhDTi6s3IPq1lrv-LuE8g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTVL6Yu680yVGpyTlURAJfB2KuGeG9SLDz4zuPzVF0YTA&oe=687147D5&_nc_sid=8b3546",
+      "externalUrl": "https://getinsaltd.com/coachstevenvargas/?_se=c3Z2MTUxNUBob3RtYWlsLmNvbQ%253D%253D",
+      "businessCategory": "",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/coach_stevenvargas.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 2.6,
+        "quality_score": 1,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0,
+        "image_quality": "Needs Improvement",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "❌ NEEDS IMPROVEMENT"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T08:53:54.833Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "jbcoaches",
+      "displayName": "JB Coaches | Life & Business Coach",
+      "bio": "🧭 ICF: ACC Credential\n🎓 University of Miami: Certified Professional Coach\n🎓 Harvard: Leadership Principles\n💼 Goldman Sachs: 10KSB Alumni \nI speak:🇺🇸🇪🇸",
+      "followers": 5243,
+      "following": 6765,
+      "posts": 347,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/jbcoaches",
+      "profilePicUrl": "https://instagram.fdac181-1.fna.fbcdn.net/v/t51.2885-19/487718490_1172412747596782_4186521146415495794_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fdac181-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QHHGrnm56HvIUi0Ym2C7X6jhLIAxGZLAu4qYSHy9IDaClCLBm6PninfCu23Aikbe5E&_nc_ohc=mb_MWb0GUMAQ7kNvwG5IFjv&_nc_gid=HgUWX5MtCt30h97kgozOdA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTniVYsUvAGnOog4r_y_MrR973pMojfm--MM2XiUQxwWQ&oe=687149B9&_nc_sid=8b3546",
+      "externalUrl": "https://jbcoaches.com/",
+      "businessCategory": "None,Personal Coach",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/jbcoaches_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 9.2,
+        "urgency_score": 2,
+        "credibility_score": 1.2,
+        "contact_readiness": 0.8,
+        "business_type": "Beauty",
+        "business_confidence": 0.7,
+        "revenue_potential": 7.5,
+        "language": "English",
+        "region": "Miami",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Certified Professional",
+          "Contact Ready",
+          "Business Entity"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.17,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 30,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Excellent Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T08:54:22.673Z",
+      "source": "apify_instagram",
+      "keyword": "miami coach",
+      "dataQuality": "high"
+    }
+  ]
+}

@@ -253,7 +253,7 @@ const AnalyticsDashboard: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-gray-800 rounded-lg p-4">
           <div className="flex items-center gap-3 mb-3">
-            <UserGroupIcon className="w-3 h-3 text-blue-500" />
+            <UserGroupIcon className="w-5 h-5 text-blue-500" />
             <h3 className="text-lg font-semibold">Total Leads</h3>
           </div>
           <div className="text-3xl font-bold">{analytics.leadMetrics.totalLeads.toLocaleString()}</div>
@@ -264,7 +264,7 @@ const AnalyticsDashboard: React.FC = () => {
 
         <div className="bg-gray-800 rounded-lg p-4">
           <div className="flex items-center gap-3 mb-3">
-            <FireIcon className="w-3 h-3 text-red-500" />
+            <FireIcon className="w-5 h-5 text-red-500" />
             <h3 className="text-lg font-semibold">Conversion Rate</h3>
           </div>
           <div className="text-3xl font-bold text-green-400">
@@ -277,7 +277,7 @@ const AnalyticsDashboard: React.FC = () => {
 
         <div className="bg-gray-800 rounded-lg p-4">
           <div className="flex items-center gap-3 mb-3">
-            <ArrowTrendingUpIcon className="w-3 h-3 text-green-500" />
+            <ArrowTrendingUpIcon className="w-5 h-5 text-green-500" />
             <h3 className="text-lg font-semibold">Avg Followers</h3>
           </div>
           <div className="text-3xl font-bold">
@@ -290,7 +290,7 @@ const AnalyticsDashboard: React.FC = () => {
 
         <div className="bg-gray-800 rounded-lg p-4">
           <div className="flex items-center gap-3 mb-3">
-            <ClockIcon className="w-3 h-3 text-purple-500" />
+            <ClockIcon className="w-5 h-5 text-purple-500" />
             <h3 className="text-lg font-semibold">Processing Time</h3>
           </div>
           <div className="text-3xl font-bold">
@@ -306,7 +306,7 @@ const AnalyticsDashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-gray-800 rounded-lg p-4">
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <StarIcon className="w-3 h-3 text-yellow-500" />
+            <StarIcon className="w-5 h-5 text-yellow-500" />
             Lead Quality Distribution
           </h3>
           
@@ -357,7 +357,7 @@ const AnalyticsDashboard: React.FC = () => {
         {/* Top Business Types */}
         <div className="bg-gray-800 rounded-lg p-4">
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <BuildingOfficeIcon className="w-3 h-3 text-green-500" />
+            <BuildingOfficeIcon className="w-5 h-5 text-green-500" />
             Top Business Types
           </h3>
           
@@ -394,7 +394,7 @@ const AnalyticsDashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-gray-800 rounded-lg p-4">
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <ChartBarIcon className="w-3 h-3 text-blue-500" />
+            <ChartBarIcon className="w-5 h-5 text-blue-500" />
             Best Performing Keywords
           </h3>
           
@@ -416,7 +416,7 @@ const AnalyticsDashboard: React.FC = () => {
 
         <div className="bg-gray-800 rounded-lg p-4">
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <ArrowTrendingUpIcon className="w-3 h-3 text-purple-500" />
+            <ArrowTrendingUpIcon className="w-5 h-5 text-purple-500" />
             Market Intelligence
           </h3>
           

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import LeadScoringGuide from "./LeadScoringGuide";
-import HashtagAnalytics from "./HashtagAnalytics";
 import { Lead } from '../types';
 
 // Interfaces for component data
@@ -93,6 +92,11 @@ interface FilterCriteria {
   maxFollowers: number;
 }
 
+// Advanced Settings Interface
+interface AdvancedSettings {
+  followerLimit: number;
+}
+
 const Tooltip: React.FC<TooltipProps> = ({ text, children }) => (
   <div className="group relative inline-block">
     {children}
@@ -103,27 +107,38 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => (
   </div>
 );
 
-// 🚀 ENHANCED LEAD QUALITY BADGE WITH NEW FEATURES
+// 🚀 ENHANCED LEAD QUALITY BADGE WITH IMPROVED SCORING
 const LeadQualityBadge: React.FC<{ lead: Lead }> = ({ lead }) => {
-  const getTierData = (score: number) => {
-    if (score >= 8) return { tier: 'HOT', color: 'bg-red-600', text: '🔥 HOT' };
-    if (score >= 6) return { tier: 'WARM', color: 'bg-orange-600', text: '🌟 WARM' };
-    if (score >= 4) return { tier: 'QUALIFIED', color: 'bg-blue-600', text: '✅ QUALIFIED' };
-    return { tier: 'COLD', color: 'bg-gray-600', text: '❄️ COLD' };
+  const getTierData = (leadScore: number, leadTier: string) => {
+    // Use the actual lead score from backend (0-100) and convert to 0-10 for display
+    const displayScore = leadScore / 10;
+    
+    // Use the tier from backend if available
+    if (leadTier === 'HOT') return { tier: 'HOT', color: 'bg-red-600', text: '🔥 HOT', score: displayScore };
+    if (leadTier === 'WARM') return { tier: 'WARM', color: 'bg-orange-600', text: '🌟 WARM', score: displayScore };
+    if (leadTier === 'QUALIFIED') return { tier: 'QUALIFIED', color: 'bg-blue-600', text: '✅ QUALIFIED', score: displayScore };
+    
+    // Fallback to score-based logic if tier not available
+    if (displayScore >= 8) return { tier: 'HOT', color: 'bg-red-600', text: '🔥 HOT', score: displayScore };
+    if (displayScore >= 6) return { tier: 'WARM', color: 'bg-orange-600', text: '🌟 WARM', score: displayScore };
+    if (displayScore >= 4) return { tier: 'QUALIFIED', color: 'bg-blue-600', text: '✅ QUALIFIED', score: displayScore };
+    return { tier: 'COLD', color: 'bg-gray-600', text: '❄️ COLD', score: displayScore };
   };
 
   const bioScore = lead.bioScore?.pitch_score || 0;
   const visionScore = lead.visionScore?.professional_score || 0;
-  const avgScore = (bioScore + visionScore) / 2;
-  const { color, text } = getTierData(avgScore);
+  const leadScore = lead.leadScore || 0; // Use actual lead score from backend
+  const leadTier = lead.leadTier || 'COLD'; // Use actual tier from backend
+  const { color, text, score } = getTierData(leadScore, leadTier);
 
   return (
     <div className="flex items-center space-x-2 text-xs">
-      <Tooltip text={`Bio: ${bioScore}/10 | Vision: ${visionScore}/10 | Avg: ${avgScore.toFixed(1)}/10`}>
+      <Tooltip text={`Bio: ${bioScore}/10 | Vision: ${visionScore}/10 | Lead Score: ${leadScore}/100`}>
         <span className={`${color} px-2 py-1 rounded`}>
           {text}
         </span>
       </Tooltip>
+      <span className="text-gray-400">⚡Score: {score.toFixed(1)}/10</span>
     </div>
   );
 };
@@ -145,7 +160,7 @@ const ActivityStatus: React.FC<{ activityData?: ActivityData }> = ({ activityDat
     if (score >= 4) return 'Moderate';
     return 'Inactive';
   };
-
+  
   return (
     <div className="flex items-center space-x-2 text-xs">
       <Tooltip text={`Days since last post: ${activityData.daysSinceLastPost} | Has story: ${activityData.hasActiveStory ? 'Yes' : 'No'} | Verified: ${activityData.isVerified ? 'Yes' : 'No'}`}>
@@ -163,7 +178,7 @@ const ContactInfo: React.FC<{ contactInfo?: ContactInfo; email?: string }> = ({ 
   
   const hasContact = email || (contactInfo && contactInfo.hasDirectContact);
   const contactScore = contactInfo?.contactScore || (email ? 8 : 0);
-
+  
   return (
     <div className="flex items-center space-x-2 text-xs">
       <Tooltip text={`Contact Score: ${contactScore}/10 | Direct Contact: ${hasContact ? 'Yes' : 'No'}`}>
@@ -375,7 +390,7 @@ const AdvancedFilters: React.FC<AdvancedFiltersProps> = ({ leads, onFilterChange
       </div>
     </div>
   );
-};
+}; 
 
 // Additional components needed for the ScraperPanel
 const AdvancedTooltip: React.FC<{ text: string; children: React.ReactNode; position?: string; className?: string }> = ({ text, children, position = 'auto', className = '' }) => {
@@ -483,6 +498,113 @@ const StatsCard: React.FC<{ title: string; value: number; subtitle?: string; ico
   </div>
 );
 
+// 🚨 ENHANCED ERROR DISPLAY COMPONENT
+const ErrorDisplay: React.FC<{ error: string; onDismiss: () => void }> = ({ error, onDismiss }) => {
+  const [showDetails, setShowDetails] = useState(false);
+  
+  // Try to parse error as JSON for enhanced error info
+  let errorData: any = null;
+  try {
+    errorData = JSON.parse(error);
+  } catch {
+    // If not JSON, treat as simple string
+    errorData = { error: error };
+  }
+
+  const isEnhancedError = errorData && typeof errorData === 'object' && errorData.details;
+
+  return (
+    <div className="bg-red-900/30 border border-red-500/50 rounded-lg p-4 mb-4">
+      <div className="flex items-start justify-between">
+        <div className="flex items-start space-x-3 flex-1">
+          <span className="text-red-400 text-xl mt-0.5">❌</span>
+          <div className="flex-1">
+            <h3 className="text-red-300 font-semibold">
+              {isEnhancedError ? errorData.error : 'Scraping Failed'}
+            </h3>
+            
+            {isEnhancedError && errorData.details?.suggestion && (
+              <p className="text-red-200 text-sm mt-1">
+                💡 {errorData.details.suggestion}
+              </p>
+            )}
+            
+            {!isEnhancedError && (
+              <p className="text-red-200 text-sm mt-1">{error}</p>
+            )}
+
+            {isEnhancedError && errorData.details?.troubleshooting && (
+              <div className="mt-3">
+                <button
+                  onClick={() => setShowDetails(!showDetails)}
+                  className="text-red-300 text-sm hover:text-red-200 flex items-center space-x-1"
+                >
+                  <span>{showDetails ? '▼' : '▶'}</span>
+                  <span>Troubleshooting Details</span>
+                </button>
+                
+                {showDetails && (
+                  <div className="mt-3 space-y-3 bg-red-900/20 rounded p-3">
+                    {/* Keyword Analysis */}
+                    {errorData.details.troubleshooting.keyword && (
+                      <div>
+                        <h4 className="text-red-200 font-medium text-sm">Keyword Analysis:</h4>
+                        <p className="text-red-300 text-xs">
+                          Type: {errorData.details.troubleshooting.keyword.type} 
+                          ({errorData.details.troubleshooting.keyword.length} characters)
+                        </p>
+                        {errorData.details.troubleshooting.keyword.suggestions?.length > 0 && (
+                          <ul className="text-red-300 text-xs mt-1 list-disc list-inside">
+                            {errorData.details.troubleshooting.keyword.suggestions.map((suggestion: string, idx: number) => (
+                              <li key={idx}>{suggestion}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Next Steps */}
+                    {errorData.details.troubleshooting.nextSteps && (
+                      <div>
+                        <h4 className="text-red-200 font-medium text-sm">Next Steps:</h4>
+                        <ol className="text-red-300 text-xs mt-1 list-decimal list-inside space-y-0.5">
+                          {errorData.details.troubleshooting.nextSteps.map((step: string, idx: number) => (
+                            <li key={idx}>{step}</li>
+                          ))}
+                        </ol>
+                      </div>
+                    )}
+
+                    {/* Settings Recommendations */}
+                    {errorData.details.troubleshooting.settings?.recommendations && (
+                      <div>
+                        <h4 className="text-red-200 font-medium text-sm">Settings:</h4>
+                        <ul className="text-red-300 text-xs mt-1 list-disc list-inside">
+                          {errorData.details.troubleshooting.settings.recommendations.map((rec: string, idx: number) => (
+                            <li key={idx}>{rec}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+        
+        <button
+          onClick={onDismiss}
+          className="text-red-400 hover:text-red-300 ml-2"
+          title="Dismiss error"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const ModernLeadCard: React.FC<{ lead: Lead; index: number }> = ({ lead, index }) => {
   const [showScreenshot, setShowScreenshot] = useState(false);
 
@@ -492,6 +614,12 @@ const ModernLeadCard: React.FC<{ lead: Lead; index: number }> = ({ lead, index }
   };
 
   const openProfile = (url: string) => {
+    window.open(url, '_blank');
+  };
+
+  const openWebsite = (website: string) => {
+    // Add https:// if not present
+    const url = website.startsWith('http') ? website : `https://${website}`;
     window.open(url, '_blank');
   };
 
@@ -535,20 +663,76 @@ const ModernLeadCard: React.FC<{ lead: Lead; index: number }> = ({ lead, index }
         </div>
       </div>
 
+      {/* Additional Info Grid */}
+      <div className="grid grid-cols-3 gap-2 mb-4 text-xs">
+        <div className="bg-gray-700/50 rounded p-2 text-center">
+          <p className="text-gray-400">Posts</p>
+          <p className="text-white font-semibold">{lead.posts?.toLocaleString() || 'N/A'}</p>
+        </div>
+        <div className="bg-gray-700/50 rounded p-2 text-center">
+          <p className="text-gray-400">Following</p>
+          <p className="text-white font-semibold">{lead.following?.toLocaleString() || 'N/A'}</p>
+        </div>
+        <div className="bg-gray-700/50 rounded p-2 text-center">
+          <p className="text-gray-400">Engagement</p>
+          <p className="text-white font-semibold">{lead.posts && lead.followers ? ((lead.posts / lead.followers) * 100).toFixed(1) + '%' : 'N/A'}</p>
+        </div>
+      </div>
+
+      {/* Business Info */}
+      {(lead.businessCategory || lead.bioScore?.business_type || lead.isVerified) && (
+        <div className="flex flex-wrap gap-2 mb-4">
+          {lead.businessCategory && (
+            <span className="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">
+              🏢 {lead.businessCategory}
+            </span>
+          )}
+          {lead.bioScore?.business_type && lead.bioScore.business_type !== lead.businessCategory && (
+            <span className="bg-purple-600/20 text-purple-300 px-2 py-1 rounded text-xs">
+              🎯 {lead.bioScore.business_type}
+            </span>
+          )}
+          {lead.isVerified && (
+            <span className="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs">
+              ✅ Verified
+            </span>
+          )}
+          {lead.isBusinessAccount && (
+            <span className="bg-orange-600/20 text-orange-300 px-2 py-1 rounded text-xs">
+              💼 Business
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* Lead Factors */}
+      {lead.leadFactors && lead.leadFactors.length > 0 && (
+        <div className="mb-4">
+          <p className="text-gray-400 text-xs mb-2">Lead Factors:</p>
+          <div className="flex flex-wrap gap-1">
+            {lead.leadFactors.slice(0, 3).map((factor, idx) => (
+              <span key={idx} className="bg-yellow-600/20 text-yellow-300 px-2 py-1 rounded text-xs">
+                {factor}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="flex items-center justify-between mb-4">
         <ActivityStatus activityData={lead.activityData} />
         <ContactInfo contactInfo={lead.contactInfo} email={lead.email} />
       </div>
 
-      <EngagementMetrics engagementData={lead.engagementData} />
+      {/* <EngagementMetrics engagementData={lead.engagementData} /> */}
 
       <div className="flex items-center justify-between pt-4 border-t border-gray-700">
         <div className="flex space-x-2">
           <button
-            onClick={() => openProfile(lead.url || '')}
+            onClick={() => openProfile(lead.url || `https://instagram.com/${lead.username}`)}
             className="px-3 py-1 bg-blue-600 hover:bg-blue-500 text-white text-xs rounded transition-colors"
           >
-            View Profile
+            View
           </button>
           {lead.screenshot && (
             <button
@@ -556,6 +740,15 @@ const ModernLeadCard: React.FC<{ lead: Lead; index: number }> = ({ lead, index }
               className="px-3 py-1 bg-purple-600 hover:bg-purple-500 text-white text-xs rounded transition-colors"
             >
               Screenshot
+            </button>
+          )}
+          {(lead.externalUrl || lead.website) && (
+            <button
+              onClick={() => openWebsite(lead.externalUrl || lead.website || '')}
+              className="px-3 py-1 bg-green-600 hover:bg-green-500 text-white text-xs rounded transition-colors transform hover:scale-105 duration-200"
+              title="Open website in new tab"
+            >
+              🌐Website
             </button>
           )}
         </div>
@@ -589,6 +782,9 @@ const ModernLeadCard: React.FC<{ lead: Lead; index: number }> = ({ lead, index }
   );
 };
 
+// 🔥 NEW ADVANCED SETTINGS COMPONENT
+
+
 const ControlPanel: React.FC<{ 
   keyword: string; setKeyword: (keyword: string) => void; 
   pages: number; setPages: (pages: number) => void; 
@@ -599,6 +795,9 @@ const ControlPanel: React.FC<{
   eta: string;
   showAdvanced: boolean;
   setShowAdvanced: (show: boolean) => void;
+  advancedSettings: AdvancedSettings;
+  setAdvancedSettings: (settings: AdvancedSettings) => void;
+  leads: Lead[];
 }> = ({ 
   keyword, setKeyword, 
   pages, setPages, 
@@ -608,8 +807,50 @@ const ControlPanel: React.FC<{
   progress, 
   eta,
   showAdvanced,
-  setShowAdvanced 
-}) => (
+  setShowAdvanced,
+  advancedSettings,
+  setAdvancedSettings,
+  leads
+}) => {
+  const handleCopyDebugLogs = async () => {
+    try {
+      const response = await axios.get('http://localhost:5001/api/logs/debug');
+      if (response.data.success) {
+        await navigator.clipboard.writeText(response.data.logs);
+        // Show success message briefly
+        const button = document.querySelector('[data-copy-logs]');
+        if (button) {
+          const originalText = button.textContent;
+          button.textContent = '✅ Copied!';
+          setTimeout(() => {
+            button.textContent = originalText;
+          }, 2000);
+        }
+      }
+    } catch (error) {
+      console.error('Error copying debug logs:', error);
+      // Fallback to basic system info
+      const debugInfo = `
+ClientScope AI Debug Info
+========================
+Timestamp: ${new Date().toISOString()}
+Keyword: ${keyword}
+Pages: ${pages}
+Follower Limit: ${advancedSettings.followerLimit}
+Current Leads: ${leads.length}
+      `.trim();
+      await navigator.clipboard.writeText(debugInfo);
+    }
+  };
+
+  const getFollowerText = (value: number) => {
+    if (value >= 5000000) return '5M+';
+    if (value >= 1000000) return `${(value / 1000000).toFixed(1)}M`;
+    if (value >= 1000) return `${(value / 1000).toFixed(0)}K`;
+    return value.toString();
+  };
+
+  return (
   <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
       <div>
@@ -672,17 +913,61 @@ const ControlPanel: React.FC<{
       </div>
     )}
 
-    <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex space-x-4">
+          <button
+            onClick={handleCopyDebugLogs}
+            data-copy-logs
+            className="text-gray-400 hover:text-gray-300 text-sm flex items-center space-x-1"
+          >
+            <span>📋</span>
+            <span>Copy Debug Logs</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Advanced Settings Dropdown */}
+      <div className="mb-4">
       <button
         onClick={() => setShowAdvanced(!showAdvanced)}
         className="text-blue-400 hover:text-blue-300 text-sm flex items-center space-x-1"
       >
         <span>{showAdvanced ? '▼' : '▶'}</span>
-        <span>Advanced Options</span>
+          <span>Advanced Settings</span>
       </button>
+        
+        {showAdvanced && (
+          <div className="mt-4 p-4 bg-gray-700 rounded-lg border border-gray-600 animate-slideDown">
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                Follower Limit: {getFollowerText(advancedSettings.followerLimit)}
+              </label>
+              <div className="relative">
+                <input
+                  type="range"
+                  min="0"
+                  max="5000000"
+                  step="10000"
+                  value={advancedSettings.followerLimit}
+                  onChange={(e) => setAdvancedSettings({ ...advancedSettings, followerLimit: Number(e.target.value) })}
+                  className="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer slider"
+                />
+                <div className="flex justify-between text-xs text-gray-400 mt-1">
+                  <span>0</span>
+                  <span>1M</span>
+                  <span>2M</span>
+                  <span>3M</span>
+                  <span>4M</span>
+                  <span>5M+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
     </div>
   </div>
 );
+};
 
 const ScraperPanel: React.FC = () => {
   const location = useLocation();
@@ -694,9 +979,15 @@ const ScraperPanel: React.FC = () => {
   const [success, setSuccess] = useState("");
   const [currentProgress, setCurrentProgress] = useState<CurrentProgress>({ current: 0, target: 0 });
   const [eta, setEta] = useState("Calculating...");
-  const [showAdvanced, setShowAdvanced] = useState(false);
   const [showScoringGuide, setShowScoringGuide] = useState(false);
   const [isSavingSession, setIsSavingSession] = useState(false);
+  const [showAdvanced, setShowAdvanced] = useState(false);
+  
+  // New advanced settings state
+  const [advancedSettings, setAdvancedSettings] = useState<AdvancedSettings>({
+    followerLimit: 5000000 // 5M default
+  });
+
   const abortControllerRef = useRef<AbortController | null>(null);
 
   // 🔄 Session Loading Effect
@@ -753,27 +1044,76 @@ const ScraperPanel: React.FC = () => {
     setLoading(true);
     setError("");
     setSuccess("");
-    abortControllerRef.current = new AbortController();
+    setCurrentProgress({ current: 0, target: pages * 10 });
+    setEta('Calculating...');
+    
+    // Clear previous results
+    setLeads([]);
+    
+    // Start ETA simulation
+    const startTime = Date.now();
+    const estimatedTimePerPage = 15000; // 15 seconds per page
+    const totalEstimatedTime = pages * estimatedTimePerPage;
+    
+    const etaInterval = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const remaining = Math.max(0, totalEstimatedTime - elapsed);
+      const progress = Math.min(100, (elapsed / totalEstimatedTime) * 100);
+      
+      setCurrentProgress({ current: Math.floor(progress), target: 100 });
+      
+      if (remaining > 0) {
+        const minutes = Math.floor(remaining / 60000);
+        const seconds = Math.floor((remaining % 60000) / 1000);
+        setEta(`ETA: ${minutes}m ${seconds}s - ${Math.floor(progress)}%`);
+      } else {
+        setEta('Finalizing...');
+      }
+    }, 1000);
     
     try {
-      const response = await axios.post('http://localhost:5001/scrape', {
+      const abortController = new AbortController();
+      abortControllerRef.current = abortController;
+      
+      const response = await axios.post('http://localhost:5001/api/scrape', {
         keyword: keyword.trim(),
-        pages,
-        massMode: true,
-        delay: 3000
+        pages: pages,
+        advancedSettings: advancedSettings // Pass advanced settings to backend
       }, {
-        signal: abortControllerRef.current.signal
+        signal: abortController.signal,
+        timeout: 300000 // 5 minutes
       });
+      
+      clearInterval(etaInterval);
       
       if (response.data.success) {
         setLeads(response.data.leads || []);
-        setSuccess(`Successfully scraped ${response.data.leads?.length || 0} leads!`);
+        setSuccess(`✅ Successfully scraped ${response.data.leads?.length || 0} leads!`);
+        setCurrentProgress({ current: 100, target: 100 });
+        setEta('Completed!');
       } else {
-        setError(response.data.error || "Scraping failed");
+        setError(response.data.error || 'Scraping failed');
       }
     } catch (error: any) {
-      if (error.name !== 'AbortError') {
-        setError(error.response?.data?.error || error.message || "Scraping failed");
+      clearInterval(etaInterval);
+      
+      if (error.name === 'AbortError' || error.code === 'ERR_CANCELED') {
+        setSuccess('Scraping was stopped by user');
+      } else {
+        console.error('Scraping error:', error);
+        
+        // Handle enhanced error responses
+        if (error.response?.data) {
+          // If the backend sent enhanced error data, stringify it for the ErrorDisplay component
+          const errorData = error.response.data;
+          if (errorData.details) {
+            setError(JSON.stringify(errorData));
+          } else {
+            setError(errorData.error || errorData.message || 'Failed to scrape leads');
+          }
+        } else {
+          setError(error.message || 'Failed to scrape leads');
+        }
       }
     } finally {
       setLoading(false);
@@ -798,6 +1138,50 @@ const ScraperPanel: React.FC = () => {
       // Still stop the frontend loading state
       setLoading(false);
       setSuccess("Scraping stopped (frontend). Keeping scraped results.");
+    }
+  };
+
+  // 🔥 NEW: Fetch Results Handler
+  const handleFetchResults = async () => {
+    try {
+      setError(''); // Clear previous errors
+      
+      // First try to get latest leads from memory (this should work during scraping)
+      const latestResponse = await axios.get('http://localhost:5001/api/leads/latest');
+      if (latestResponse.data.success) {
+        const fetchedLeads = latestResponse.data.leads || [];
+        setLeads(fetchedLeads);
+        
+        if (fetchedLeads.length > 0) {
+          const message = loading ? 
+            `🔄 Fetched ${fetchedLeads.length} leads (scraping in progress)` :
+            `✅ Fetched ${fetchedLeads.length} leads from latest session!`;
+          setSuccess(message);
+          return;
+        } else if (loading) {
+          setSuccess('🔄 Fetching latest leads... (scraping in progress)');
+          return;
+        }
+      }
+      
+      // If no latest leads, try database
+      const dbResponse = await axios.get('http://localhost:5001/api/leads');
+      if (dbResponse.data.success && dbResponse.data.leads && dbResponse.data.leads.length > 0) {
+        setLeads(dbResponse.data.leads);
+        setSuccess(`✅ Fetched ${dbResponse.data.leads.length} leads from database!`);
+        return;
+      }
+      
+      // If still no leads, show appropriate message
+      if (loading) {
+        setSuccess('🔄 Scraping in progress... Leads will appear here as they are found.');
+      } else {
+        setError('No leads found. Try starting a new scrape or check if a previous scrape completed.');
+      }
+      
+    } catch (error: any) {
+      console.error('Error fetching results:', error);
+      setError(error.response?.data?.error || "Failed to fetch results from backend");
     }
   };
 
@@ -866,14 +1250,14 @@ const ScraperPanel: React.FC = () => {
           eta={eta}
           showAdvanced={showAdvanced}
           setShowAdvanced={setShowAdvanced}
+          advancedSettings={advancedSettings}
+          setAdvancedSettings={setAdvancedSettings}
+          leads={leads}
         />
 
         {/* Status Messages */}
         {error && (
-          <div className="bg-red-900/30 border border-red-500/50 rounded-lg p-4 flex items-center space-x-3">
-            <span className="text-red-400 text-xl">❌</span>
-            <span className="text-red-300">{error}</span>
-          </div>
+          <ErrorDisplay error={error} onDismiss={() => setError('')} />
         )}
         
         {success && (
@@ -911,6 +1295,15 @@ const ScraperPanel: React.FC = () => {
                   <span>Scoring Guide</span>
                 </button>
                 
+                {/* 🔥 NEW: Fetch Results Button */}
+                <button 
+                  onClick={handleFetchResults}
+                  className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors duration-200 flex items-center space-x-2"
+                >
+                  <span>🔄</span>
+                  <span>Fetch Results</span>
+                </button>
+                
                 {/* 🔥 NEW: Save Session Button */}
                 <button 
                   onClick={handleSaveSession}
@@ -940,11 +1333,6 @@ const ScraperPanel: React.FC = () => {
           </div>
         )}
 
-        {/* 🔥 NEW: Hashtag Performance Analytics */}
-        {leads.length > 0 && (
-          <HashtagAnalytics leads={leads} />
-        )}
-
         {/* Empty State */}
         {!loading && leads.length === 0 && (
           <div className="text-center py-16">
@@ -970,7 +1358,7 @@ const ScraperPanel: React.FC = () => {
                     </svg>
                   </button>
                 </div>
-                <LeadScoringGuide />
+                <LeadScoringGuide isOpen={true} onClose={() => setShowScoringGuide(false)} />
               </div>
             </div>
           </div>

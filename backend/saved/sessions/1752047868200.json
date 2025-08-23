@@ -1,0 +1,1925 @@
+{
+  "timestamp": "2025-07-09T07:57:48.194Z",
+  "totalLeads": 25,
+  "searchCriteria": {
+    "keyword": "chicago clothing",
+    "pages": 5,
+    "timestamp": "2025-07-09T07:57:48.194Z"
+  },
+  "summary": {
+    "hotLeads": 0,
+    "warmLeads": 8,
+    "contactLeads": 10,
+    "avgBioScore": 4.5,
+    "avgVisionScore": 4.9,
+    "totalLeads": 25
+  },
+  "leads": [
+    {
+      "username": "chicagoflagclothingco",
+      "displayName": "Chicago Flag Clothing Co.",
+      "bio": "Inspired By The Chicago Flag  ✶ ✶ ✶ ✶",
+      "followers": 250,
+      "following": 18,
+      "posts": 0,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/chicagoflagclothingco",
+      "profilePicUrl": "https://scontent-ord5-3.cdninstagram.com/v/t51.2885-19/120260509_457282558530334_7641156462676604084_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHQ04d4K7ixnHVoS1Bo_OfjX7oL5hECyG9uyK_BOsozV25xPK1YgyQuYF3pCLQ1RJU&_nc_ohc=ZmXGaPE8MSAQ7kNvwF0fwLK&_nc_gid=wdoKJaxTqGLuFiJG50FJyA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTVx0wsWlRd6GTlU11lPN4ZcRBIpjea7qc1d9mvAxtU4w&oe=6873CDDA&_nc_sid=8b3546",
+      "externalUrl": "http://www.chicagoflag.com/",
+      "businessCategory": "Personal Goods & General Merchandise Stores",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/chicagoflagclothingco_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.07,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:07:55.451Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "panosotrosclothingchicago",
+      "displayName": "Sam Esmilee",
+      "bio": "Chicago inner city neighborhood clothing line, gear that represents us, in  Our own original style, PA NOSOTROS POR NOSOTROS pa Servirles,check us out",
+      "followers": 479,
+      "following": 63,
+      "posts": 468,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/panosotrosclothingchicago",
+      "profilePicUrl": "https://scontent-ord5-1.cdninstagram.com/v/t51.2885-19/301211740_1152035578682053_5696362573526285507_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGS9jpqoYqC_mht3nTeW5qAzypu7ykDF6Of-HG-n3DLTXfGsZhsnkzyHWGfW4dBEt8&_nc_ohc=-WpeAmzInbwQ7kNvwGSqVaI&_nc_gid=KzOVxPdJTGmb6O5opZ9XSQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSWBlsWG-vfH6XLPaYZXCG41kEDPDynjP_y6kOv3IYk-Q&oe=6873C556&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Clothing (Brand)",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/panosotrosclothingchicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.56,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:08:13.540Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "littlechicagoclothing",
+      "displayName": "Little Chicago Clothing Co.",
+      "bio": "Uniquely designed & hand-printed apparel\nCollab in @printandpresscanton w/ @letterpressjess",
+      "followers": 10007,
+      "following": 5819,
+      "posts": 2873,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/littlechicagoclothing",
+      "profilePicUrl": "https://instagram.fman2-2.fna.fbcdn.net/v/t51.2885-19/49688773_297023887554499_4025108376168955904_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fman2-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QGBQtbwWnlcNRmPK6zdYOe3pEUfHxpukP3t8l1v9kB9rCuWVZs5cqIt8fw6VzMOs04&_nc_ohc=gkA_UU1bnRoQ7kNvwFe4ojF&_nc_gid=_r1h77sInXI4Vs6ku1PS_A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQT6hJm9vE9XcpJHICODPONhbf9jcX6XhSC09ogscriGw&oe=6873D3F1&_nc_sid=8b3546",
+      "externalUrl": "https://smart.bio/littlechicagoclothing",
+      "businessCategory": "None,Apparel & clothing",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/littlechicagoclothing_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.57,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:08:31.820Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "marilyndengal1521",
+      "displayName": "Marilyn",
+      "bio": "",
+      "followers": 110,
+      "following": 142,
+      "posts": 20,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/marilyndengal1521",
+      "profilePicUrl": "https://instagram.fsac1-1.fna.fbcdn.net/v/t51.2885-19/10693528_557775367688480_699313782_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fsac1-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QHJOo-3T7wnRfBfMHFb_uIPnklY13fr1Ecw8iB5Mmjn0LcZTAxofngdPKCpXuI_FWvH7FcuGzd4dqhMaR2bNRjR&_nc_ohc=_ecWoBjDRa0Q7kNvwH_A74h&_nc_gid=NOLcwqNVv5Gwv75b4FsKVQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRh-U_oM-_JQ9nwYEg4V2-wFfu60xdlz4IKpGlAI3dlZQ&oe=6873B7D9&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Personal Goods & General Merchandise Stores",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/marilyndengal1521_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 1,
+        "urgency_score": 1,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Unknown",
+        "business_confidence": 0,
+        "revenue_potential": 0,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "❌ INSUFFICIENT DATA - Bio too short or empty."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.65,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-09T04:08:49.984Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "bombayboutique.chicago",
+      "displayName": "Bombay Boutique",
+      "bio": "Your gateway to the fashions of bollywood!\n• Shop Latest & Trendy Bollywood Fashions from india's fashion hub Mumbai!\n• un compromised product quality",
+      "followers": 597,
+      "following": 259,
+      "posts": 855,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/bombayboutique.chicago",
+      "profilePicUrl": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/12424500_1712390128975659_894944388_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QEH_RLYFBGSGcvlWkohauYDlRAwcHj-uLeUDxZpEtqWE_xlkwfyc8g-vpmnXM-_A-EfqQrFh8Wvr6ESzB9RJTm-&_nc_ohc=OUgyzud7_v4Q7kNvwHOv19j&_nc_gid=oy9GVgLAq6vgcaqCey2g4Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ8krc150N6kG8RdG5T53xBys--jmkY4LY8vdcWogkBig&oe=6873A896&_nc_sid=8b3546",
+      "externalUrl": "http://www.bombayboutique.net/",
+      "businessCategory": "Personal Goods & General Merchandise Stores",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/bombayboutique.chicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.57,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-09T04:09:08.080Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "chicagoclothingbr",
+      "displayName": "Chicago Clothing",
+      "bio": "A sua marca no mundo",
+      "followers": 446,
+      "following": 1514,
+      "posts": 0,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/chicagoclothingbr",
+      "profilePicUrl": "https://instagram.fjpr2-1.fna.fbcdn.net/v/t51.2885-19/41144297_321135321953702_3266679402951344128_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fjpr2-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2QGQIpg0A0BtRR3yXxmxdXwQVvhFcXYOES4y8wSgyldm_xPIV7-Cp8kaYZahe7otBm4&_nc_ohc=8HpfeRjE7C8Q7kNvwGT5w7Q&_nc_gid=rgPtf5MW34Et08LXlj5ZNQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfT2baEl4-hFu1ZvfBCGfTRhGRNI44rxBMUal0KH2nvwEA&oe=6873C5B6&_nc_sid=8b3546",
+      "externalUrl": "http://www.chicagoclothing.com.br/",
+      "businessCategory": "",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/chicagoclothingbr_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.06,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-09T04:09:26.913Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "internet.hotspot",
+      "displayName": "WIFI EXTENDER",
+      "bio": "we like to have fun \nAFK /// email 4 inquiries",
+      "followers": 5365,
+      "following": 125,
+      "posts": 81,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/internet.hotspot",
+      "profilePicUrl": "https://instagram.fhyd8-1.fna.fbcdn.net/v/t51.2885-19/84439054_212610723259791_2540314581096464384_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fhyd8-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QEdG6w4O7w4F0Scz1urdaR5R_Or8VChVoOwFM-KMVSkQZzLKkfusAJ3W3zxkcAIgiM&_nc_ohc=hJzUSUZRplgQ7kNvwHjdpz5&_nc_gid=O-LHYLVa3pQ_2trHENXuSw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTf6t7UAiH8RuTOUWuQAx9_uWbmfkwYRF_rQ0bCk8kvRQ&oe=6873D1C9&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Telecommunication company",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/internet.hotspot_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "DM welcome"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.47,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:09:45.675Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "rage_method_chi",
+      "displayName": "Chicago Clothing Brand | Our City, Your Style",
+      "bio": "Authentic Chicago style—designed for the bold. Stand out with unique, hand-drawn designs inspired by the city’s heart and soul.",
+      "followers": 780,
+      "following": 3084,
+      "posts": 230,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/rage_method_chi",
+      "profilePicUrl": "https://scontent-det1-1.cdninstagram.com/v/t51.2885-19/434479637_876483811265344_6505223827876304974_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-det1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFto93TLcut3yTUIzQsaD0EyxeBifQZjdOiuj0w5mL99k-ZoDWhSpp2bKDLydqD4-pcqgfNTYdeau-iZfmyfUOd&_nc_ohc=9IqnPryXT7sQ7kNvwFyjYK7&_nc_gid=aEQkxLEjS1-SJUo9eUHD1Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQqUBfWtLiqCW2Djb6rI3wyN-SaLWLi1Cb-tjW9mH0X0g&oe=6873B483&_nc_sid=8b3546",
+      "externalUrl": "http://www.ragemethod.com/",
+      "businessCategory": "None,Clothing (Brand)",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/rage_method_chi_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.64,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:10:03.687Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "codeclothing147",
+      "displayName": "Ima Chicago Designer|CreativeWise",
+      "bio": "On This Page Are Pictures of THE HOTTEST BRANDS BY CHICAGOS ENTREPRENEURS DREAMS&Tingz CODEclothing UrbanKicks.",
+      "followers": 6860,
+      "following": 7499,
+      "posts": 17,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/codeclothing147",
+      "profilePicUrl": "https://scontent-det1-1.cdninstagram.com/v/t51.2885-19/460935469_1967408167036114_3466352971860515465_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-det1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHU0RfwhTySslgSm2tBNASGZL7dkJ8Hp7Khq-uIOZ1XbJd8qW8SkxoifWWYsVNyQHEZB5byvKcpNYgRSq_N34k3&_nc_ohc=T4zpbaWGRhYQ7kNvwEZcytP&_nc_gid=73GPTHX4MWo0rvTsjUbhAA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSwtYv-_7Y-H5bDgFueAfvILxR7WBwv7bDqlZxVLK26JA&oe=6873B432&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Designer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/codeclothing147_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.59,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:10:21.693Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "pareeshaysara",
+      "displayName": "PAREESHAY SARA EXCLUSIVE",
+      "bio": "",
+      "followers": 58,
+      "following": 11,
+      "posts": 46,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/pareeshaysara",
+      "profilePicUrl": "https://scontent-poa1-1.cdninstagram.com/v/t51.2885-19/22157332_363409690779294_596257394737020928_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-poa1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QF_51Ylj_Q7Dq_sXJOmg80iH3KEcKOcAJUWQWbODEaWsmQL-XOrU4hM7_SDYrzbgW8&_nc_ohc=QqTzpxhfHrkQ7kNvwEoH26i&_nc_gid=ysq0uUVaBCD6KhRWfGMcDA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ7pVGT6IWk9X9hzJHE_WgzptDhyLdzkKaCgzYskAfjRQ&oe=6873C365&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Personal Goods & General Merchandise Stores",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/pareeshaysara_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 1,
+        "urgency_score": 1,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Unknown",
+        "business_confidence": 0,
+        "revenue_potential": 0,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "❌ INSUFFICIENT DATA - Bio too short or empty."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.68,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-09T04:10:40.611Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fameclothing.chicago",
+      "displayName": "FAME CLOTHING",
+      "bio": "To feel good, all you have to do is look good . We offering a wide selection of top brands and stylish apparel for men , kids and unisex in Chicago",
+      "followers": 1116,
+      "following": 0,
+      "posts": 49,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/fameclothing.chicago",
+      "profilePicUrl": "https://instagram.fktm19-1.fna.fbcdn.net/v/t51.2885-19/458595736_508511541782039_518564033103499087_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fktm19-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QFa_LbnK8nZ5J0AL_GH_HpFFEg5b3FyI5Ep6FPW54G7QD2NMlovBZrIWP1213x_I5U&_nc_ohc=HVQIeXdOfMUQ7kNvwGXZiE5&_nc_gid=7PDMnqn-dUU6d2RJg626tQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSX95knqEcow3EILH7lkotV9cqJZNmZR1lHu_LdfcFZpQ&oe=6873C6DE&_nc_sid=8b3546",
+      "externalUrl": "http://fameclothingstore.com/",
+      "businessCategory": "None,Clothing (Brand)",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/fameclothing.chicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.3,
+        "urgency_score": 2,
+        "credibility_score": 0.6,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Award Winner"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.64,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:10:59.377Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "chicagoclothingcompany",
+      "displayName": "Chicago Clothing Company LLC ™",
+      "bio": "😎 Chicago \n👕 |T-shirts | Tank Tops\n😍 |Crop Tops\n👀 |Crewnecks| Hoodies\n❤ #chicagoisbae \n💋 #chigirlcollection\n💲 Buy Now, Pay Later w/Pa",
+      "followers": 19971,
+      "following": 2751,
+      "posts": 338,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/chicagoclothingcompany",
+      "profilePicUrl": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/11939639_1481838312112872_428057547_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QF_j65_fXKt0v34rToLyakOPytk7rNwbIZv1LkMajxtRrE5cR45y1QFNr6Wdt6_SGY&_nc_ohc=xPoudyo9ZFcQ7kNvwFmPxpI&_nc_gid=bGzriLad32nQ0Wiw56fFOg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRM8aXL6c4P_KqFEhJNw8uYqsLL1Dqmh8sBXk1rYdaWpQ&oe=6873CEC8&_nc_sid=8b3546",
+      "externalUrl": "https://chicagoclothingcompany.com/shop/",
+      "businessCategory": "None,E-commerce website",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/chicagoclothingcompany_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.3,
+        "urgency_score": 2,
+        "credibility_score": 0.6,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Award Winner"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.6,
+        "quality_score": 6,
+        "branding_score": 4.5,
+        "composition_score": 5,
+        "file_size_mb": 0.52,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:11:17.273Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "la_chicago_clothing",
+      "displayName": "LA CHICAGO CLOTHING",
+      "bio": "Shopping & Retail👕👖\n📍Court road taliparamba\nkannur, kerala - 670141 \n🇮🇳 All india delivery available 🚛\n📞+919048129090\n📞+919048159090",
+      "followers": 447,
+      "following": 53,
+      "posts": 692,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/la_chicago_clothing",
+      "profilePicUrl": "https://scontent-ord5-3.cdninstagram.com/v/t51.2885-19/490743347_1173488647591929_3589451066072735707_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGp-GdFcfMAS-ZOUkWHyRJ-olV15uuWo0NQMWChNb2g1cZDNOee_CEuGd22tY-0ejE&_nc_ohc=UY5AXYdC_ZUQ7kNvwFvkTU5&_nc_gid=QykScG6xumof9Pta1i8GSg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQTw-lkDZLql4SIDOGiCwRsrDqWK03djhOHGhNtOdTfVA&oe=6873B798&_nc_sid=8b3546",
+      "externalUrl": "https://wa.me/message/CA6EL425V2VQO1",
+      "businessCategory": "None,Clothing (Brand)",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/la_chicago_clothing_composite.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 2,
+        "methods": [
+          "Phone in bio",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.9,
+        "urgency_score": 3,
+        "credibility_score": 0,
+        "contact_readiness": 1,
+        "business_type": "Ecommerce",
+        "business_confidence": 0.3,
+        "revenue_potential": 8,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.06,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:11:35.409Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "childishchicb",
+      "displayName": "Chicago Children Clothing",
+      "bio": "Chicago, IL\nWhere playful meets chic ✨\nTap the link to shop! ⬇️",
+      "followers": 544,
+      "following": 25,
+      "posts": 8,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/childishchicb",
+      "profilePicUrl": "https://scontent-mia3-1.cdninstagram.com/v/t51.2885-19/96871439_1152635098403082_8706195370973069312_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-mia3-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHBrsyOTyo1n6kC-uk4jCkhnF_BWYB7u-BnEP_k_q-V2EIM04Bb2FEQbhzgoYPLqQpaucyW4PTUOLixN13s2Nja&_nc_ohc=2yz58hnKZgcQ7kNvwHhBSqT&_nc_gid=j5mLZHgJ9wbSR_nqVFFipA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSjHowYnfldl80AKOjpAbiAt4d5gRbL2oK2MSYY_elkXA&oe=6873D613&_nc_sid=8b3546",
+      "externalUrl": "http://childishchicboutique.com/",
+      "businessCategory": "Clothing (Brand)",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/childishchicb_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.52,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:11:53.569Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "shop500boutique",
+      "displayName": "Shop500Boutique | Chicago | Women’s Clothing + Shapewear",
+      "bio": "For the woman who loves chic, effortless style✨Shop in-store or online! 5847 S. State St., Chicago, IL 60621",
+      "followers": 32900,
+      "following": 2584,
+      "posts": 5866,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/shop500boutique",
+      "profilePicUrl": "https://instagram.fjdo1-1.fna.fbcdn.net/v/t51.2885-19/498562243_18514588075041927_7694442008660950728_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fjdo1-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QFmV5Y0HC3v5DEWp7TsCqWWS6DQfx_drLTRPJqyO9L1926MOzyDqRVcpcUMrKUvzbA&_nc_ohc=zWR3J4O5rS8Q7kNvwHqmCn1&_nc_gid=PadCguO977oiukxlCehLpg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTuPoi2tUsTdnXcvnELr8yceERAk8lIg5oSkuRQ0BfZZw&oe=6873D437&_nc_sid=8b3546",
+      "externalUrl": "http://www.shop500boutique.com/",
+      "businessCategory": "Clothing (Brand)",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/shop500boutique_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.59,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:12:12.084Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "amanat.brand",
+      "displayName": "MUSLIM CLOTHING | HIJABS CHICAGO",
+      "bio": "33:59🤲🏻\n📍Chicago,IL\nUS shipping🇺🇸\nDM for detailed information and order💌",
+      "followers": 322,
+      "following": 48,
+      "posts": 12,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/amanat.brand",
+      "profilePicUrl": "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/475142839_2593431900861410_3814140283653236655_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFOsnm01kJduCOrD-bkCSA5ENOcjMeyM-0ox-PLKguOj8fgCru8y1LB8X7K_naTD3Y&_nc_ohc=531dqiphSDMQ7kNvwG1GkjZ&_nc_gid=ju4flyUHHQTrVGE1oe93EA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfR8zZG_wtd2yVbnIWSGo-CvKsTR1Mjc1suwD-0wvjhA1w&oe=6873A918&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Blogger",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/amanat.brand_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "DM welcome"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.6,
+        "quality_score": 6,
+        "branding_score": 4.5,
+        "composition_score": 5,
+        "file_size_mb": 0.48,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:12:30.119Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "seclothingchicago",
+      "displayName": "S/EColthingChicago",
+      "bio": "S/E Clothing, “We Don’t Represent The Streets, We Represent The People In Them” Street Apparel @ It's Best\nticktok.com/@Streteducatedclothing",
+      "followers": 1430,
+      "following": 705,
+      "posts": 156,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/seclothingchicago",
+      "profilePicUrl": "https://instagram.ftun1-2.fna.fbcdn.net/v/t51.2885-19/504519208_18014647316719501_7780985951756398774_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.ftun1-2.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2QG9ff0XgbSsoUhAuuMrJpNceuaCtVltw-SbXppN9vyDr3t98da5tpqg-8HFbaTbzZY&_nc_ohc=FrwvEK1FsKwQ7kNvwFySrrr&_nc_gid=QRfXYrmmmvY2oinR5eO0Mg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ-bgrg7wZyLFCkE50Wg4U3ZPM5migQzphG0pr1I6QQvQ&oe=6873D1A1&_nc_sid=8b3546",
+      "externalUrl": "http://streteducatedclothing.com/",
+      "businessCategory": "Clothing (Brand)",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/seclothingchicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.9,
+        "urgency_score": 2,
+        "credibility_score": 0.6,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available",
+          "Award Winner"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.46,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:12:48.596Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "dripanddriveclothing",
+      "displayName": "Kchicago prince of Chicago",
+      "bio": "Last page HACKED @ 5000❗️❗️❗️(NEW and ONLY PAGE) come FOLLOW THE DRIP",
+      "followers": 161,
+      "following": 436,
+      "posts": 72,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/dripanddriveclothing",
+      "profilePicUrl": "https://scontent-fra5-2.cdninstagram.com/v/t51.2885-19/300933428_3220273031560686_5178898380390770969_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEwnLuSyL714vmKYJTFvvhjoBFvIYvfU1S4Xcuyy6xozthbBSC8E8eR2EjsKKL7UC4&_nc_ohc=4x34IeyFb0cQ7kNvwEyi3Hz&_nc_gid=On61i1tjHKDCI-yYYOwh0g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQsn3Xyzy7RLndeJOLqDWey9sHlJiyiuOret--lbMEZMQ&oe=6873B75D&_nc_sid=8b3546",
+      "externalUrl": "https://dripanddrive.myshopify.com/?_ab=0&_fd=0&_sc=1",
+      "businessCategory": "None,Personal blog",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/dripanddriveclothing_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.49,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:13:07.281Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "amithafashions",
+      "displayName": "Amitha Fashions | Indian Clothing In Chicago",
+      "bio": "USA Franchise of @roshniboutiquebangalore ✨\nThe one stop shop for all types of Ethnic Wear ❤️\n#indianclothinginusa #chicagoboutique",
+      "followers": 3088,
+      "following": 714,
+      "posts": 1291,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/amithafashions",
+      "profilePicUrl": "https://instagram.fcre1-1.fna.fbcdn.net/v/t51.2885-19/174476386_200712111619113_7352383876267287083_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fcre1-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QHX-t0Lmk5Fr9aAspKUQheoDqMRV4NHC7N96K9kh77ho9526DlWymC_FTguXWTmU1A&_nc_ohc=Qkx2TUHQ9Q0Q7kNvwHuDn-m&_nc_gid=JHp1a_QocOBVbyx_EGwyLQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfR81T_DckIc7xgGt-dpSdc57W2QKDU7jvYysjkRS74N9g&oe=6873AA73&_nc_sid=8b3546",
+      "externalUrl": "http://www.amithafashions.com",
+      "businessCategory": "Clothing store",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/amithafashions_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6.4,
+        "urgency_score": 2,
+        "credibility_score": 0.6,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Email Available",
+          "Award Winner"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.6,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:13:25.559Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "sewing_chicago",
+      "displayName": "Oksana Tupotin • CLOTHING REPAIR CHICAGO • atelier",
+      "bio": "𝐂𝐇𝐈𝐂𝐀𝐆𝐎 | 𝐳𝐢𝐩 𝟔𝟎𝟔𝟑𝟒\n⠀\n▫️Clothing repair of any complexity \n▫️Restoration of your favorite items \n▫️6 years of experience in an Italian atelier",
+      "followers": 2342,
+      "following": 1160,
+      "posts": 206,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/sewing_chicago",
+      "profilePicUrl": "https://instagram.fmgf12-1.fna.fbcdn.net/v/t51.2885-19/498173847_17904392691165066_7322446132416603885_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fmgf12-1.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QGMal8ppSiwH2GcIljTLl5mwmjOw2OLdAXXbIUSWgOzgQHn5h-fqk1nOyi4BUtwu58&_nc_ohc=DSiv7yHyjlQQ7kNvwEYB-Yt&_nc_gid=LJ3qUq9IoVl4kjf4qDEf4g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfREM9rFJ-t7YXE9CQ52SCP8Xh4QzxzcLC7XILpH0AQHpw&oe=6873CE48&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Local service",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/sewing_chicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0.4,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.37,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-09T04:13:44.448Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "anatraclothing",
+      "displayName": "Anatra | Chicago",
+      "bio": "Chicago | Art | Fashion | Design\nFor collabs email: info@anatraclothing.com",
+      "followers": 79370,
+      "following": 665,
+      "posts": 9,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/anatraclothing",
+      "profilePicUrl": "https://instagram.fshd1-1.fna.fbcdn.net/v/t51.2885-19/480188841_612488044901782_2117359883682569593_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fshd1-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QEeurmUrYZNfC1s_IFoEa11BCvpC71ZTOdWDsVylRZI0oo2yQvXCe93E5TEr0NLTeaPFumSU44q65o9ZLqgC9Wt&_nc_ohc=Eg5vl57oUQQQ7kNvwGD4BqZ&_nc_gid=9KbPaTeVWKssAMd-ccNioA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRgycUgngrlr74T92pHQ_rIx-hbLqawzrxng6EhCZ5eUg&oe=6873A1E1&_nc_sid=8b3546",
+      "externalUrl": "http://www.anatraclothing.com/",
+      "businessCategory": "None,Clothing (Brand)",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/anatraclothing_composite.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 3,
+        "methods": [
+          "Email in bio",
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6.6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 1.6,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.35,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:14:02.691Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "chica_fashion2024",
+      "displayName": "Chica | Girls Clothing Brand",
+      "bio": "✨ Girlswear with a touch of charm\n🎀 Premium quality – Ages 2–12\n📩 DM to order | Limited stock",
+      "followers": 891,
+      "following": 96,
+      "posts": 125,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/chica_fashion2024",
+      "profilePicUrl": "https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/491416123_18280310788269364_2005017868548431684_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEDt_RWgD3aImHn8CNJVeJ0icWbkDQYG5QEe2ZQnjOtu9PLtIkNt5044LbMU5FiPvc&_nc_ohc=8ICPsQ-4KvgQ7kNvwGACfgY&_nc_gid=a1kSG3KRGRKhGiYpi-UXPg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRThx6v3o6xZ-nqsNI5_b1jtzXIRm6Fxuat_vwldGga-A&oe=6873A6A4&_nc_sid=8b3546",
+      "externalUrl": "http://www.chicastore.shop/",
+      "businessCategory": "Clothing (Brand)",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/chica_fashion2024_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 2,
+        "methods": [
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.07,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:14:20.955Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "cufliccollection",
+      "displayName": "Clothing Boutique | Chicago",
+      "bio": "🤍 Chic and stylish wear for you\n✈️Worldwide shipping\nFIRST WEBSITE ORDER 20% OFF\nDM to schedule your appointment",
+      "followers": 5418,
+      "following": 6420,
+      "posts": 1951,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/cufliccollection",
+      "profilePicUrl": "https://instagram.fbzv4-1.fna.fbcdn.net/v/t51.2885-19/353842371_3518354531732991_9219050779011110618_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fbzv4-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QFyESRJJ-aiLAP0ixjlajVQH9gDx3laoUX2tbU9CXTLyftoOcsVZppCKMCq7ggN4N0&_nc_ohc=V_nUn7Ni48IQ7kNvwH8X0l6&_nc_gid=8kTgbAAaXittLeohKNYi2g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRmEPO0Fe5QIKCpdOaqXaoak3Fh6vT4S-N1CnmHpg8uBw&oe=6873C677&_nc_sid=8b3546",
+      "externalUrl": "https://cufliccollection.com/",
+      "businessCategory": "None,Women's clothing store",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/cufliccollection_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 2,
+        "methods": [
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 2,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.09,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:14:39.847Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "stellar_chicago",
+      "displayName": "Stellar clothing",
+      "bio": "Street culture FASHION FORWARD⭐️\nChicago,IL\nCeo:@devin_stlr\nWebsite👇👇",
+      "followers": 1077,
+      "following": 292,
+      "posts": 3,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/stellar_chicago",
+      "profilePicUrl": "https://scontent-lax3-1.cdninstagram.com/v/t51.2885-19/376273350_3401363986841900_875243537949433799_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEh7tQ2offbUk2PP5-OfVd3VHG9YjQ83mWjDuEJ4U-T4tSRXK8aYOeu6ltmX_6KaPQ&_nc_ohc=9N0xA_pX9wkQ7kNvwHpGg7S&_nc_gid=3YevhzSMfcTURTVpuEj6dA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSusY-gfSW8Uf_IBcV3IcBnEw2Jt__j1sfLlSIsyGpeUw&oe=6873CB8D&_nc_sid=8b3546",
+      "externalUrl": "https://stellarapparel.shop/",
+      "businessCategory": "None,Clothing (Brand)",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/stellar_chicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.12,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:14:57.819Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    },
+    {
+      "username": "reduxclothingchicago",
+      "displayName": "Redux Clothing Company",
+      "bio": "📍 Chicago,IL                                                               ♻️👕 Vintage/ Retro/Throwback - BST\nDM for inquiries. \nStay fly.",
+      "followers": 1427,
+      "following": 2697,
+      "posts": 265,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/reduxclothingchicago",
+      "profilePicUrl": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/70010872_610083009396235_8834752993501904896_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QE4jmsV7LemZH7LmRljdJxbJMs6q7eauvQJXhzWIuVN4P6PVez-ZtJ6XKy0S2-hjHg&_nc_ohc=0qgswdtV2i4Q7kNvwHjy9Gi&_nc_gid=K6M_eR-ApOKGzA1CAF7vQw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTSThfN1FotpjYpdhpH8yzj3Z0BXwiOrdra-7UThB3pBw&oe=6873AD4B&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/reduxclothingchicago_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "DM welcome"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Chicago",
+        "region_value": "Major Cities",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.49,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-09T04:15:16.075Z",
+      "source": "apify_instagram",
+      "keyword": "chicago clothing",
+      "dataQuality": "high"
+    }
+  ]
+}

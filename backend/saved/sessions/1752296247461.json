@@ -1,0 +1,2366 @@
+{
+  "timestamp": "2025-07-12T04:57:27.456Z",
+  "totalLeads": 31,
+  "searchCriteria": {
+    "keyword": "",
+    "pages": 3,
+    "timestamp": "2025-07-12T04:57:27.456Z"
+  },
+  "summary": {
+    "hotLeads": 0,
+    "warmLeads": 9,
+    "contactLeads": 15,
+    "avgBioScore": 4.6,
+    "avgVisionScore": 4.9,
+    "totalLeads": 31
+  },
+  "leads": [
+    {
+      "username": "fitcoach_michael",
+      "displayName": "Michael Keuchler - Online Fitness Coach - Europameister Physique",
+      "bio": "💊@vitaminversand24com Code: Fitcoach\nMit neuem Selbstvertrauen zu einem Körper, \nin dem du dich rundum wohlfühlst. \n📝 Melde dich und wir legen los",
+      "followers": 100986,
+      "following": 593,
+      "posts": 826,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitcoach_michael",
+      "profilePicUrl": "https://instagram.frba4-2.fna.fbcdn.net/v/t51.2885-19/491462374_18501943543016200_8524396163974926599_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.frba4-2.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QFLIDCWtkAoaSlO6K3U28M9EvxxpT_Bq7vThmg5qpgIMNbUcYO1FekjwQfp-nQCTCo&_nc_ohc=IIm49WM97XkQ7kNvwFLbLt1&_nc_gid=d1sGsm-gypGxZMPW3NCk5A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfT2M6wyawNE5ATjlOxPONYNUSrkAAkrHbIr5iHbeB8mzw&oe=6877CA10&_nc_sid=8b3546",
+      "externalUrl": "https://www.changeyoucoaching.de/",
+      "businessCategory": "Personal Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fitcoach_michael_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.59,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:45:57.250Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "pilidevelasco",
+      "displayName": "Pili De Velasco | Fitness Trainer & Nutricion Deportiva",
+      "bio": "🔥 Tonifica y quema grasa sin dietas extremas\n💪🏻 Entrena fuerza y transforma tu cuerpo\n💖 +1000 mujeres han cambiado su vida\n👉🏻 DM “QUEEN” para empezar",
+      "followers": 29354,
+      "following": 1095,
+      "posts": 840,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/pilidevelasco",
+      "profilePicUrl": "https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/386105518_1193163158752913_2268070409130283958_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFUX4I3uF8_7CSVYCVR3E7EcwssR_0hgk0iQ_i9W1hCgQ2tw6CgyMD57Eb56fE-b70&_nc_ohc=7WuPm1iv03wQ7kNvwGFFiUw&_nc_gid=ilh0aT8sqbIWhIsRYyYmrg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfT-biu4kJq14Tp_DxKbh7hiTOiRkRoqsr-mSllRXZhU2w&oe=6877A2B0&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Health & wellness website",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/pilidevelasco_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "DM welcome"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "Spanish",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.52,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:46:15.552Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitwithparia",
+      "displayName": "Fitness coach",
+      "bio": "برنامه تمرینی+تغذیه\nآنلاین کوچینگ+پشتیبانی کامل💪🏻\nتمرینات اصلاحی",
+      "followers": 4118,
+      "following": 437,
+      "posts": 3,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitwithparia",
+      "profilePicUrl": "https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/518208008_18134559175420616_7252958073985622869_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEDJdA-5hZIvnRHWlYHKTAMFaZPDMZUMa3tRI_sGUnszOClub0atmoe8HI6Cm16Wtw&_nc_ohc=yCD1sTaa4KcQ7kNvwHNY27C&_nc_gid=cW_WAUdtePyWavIU6yO9AA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTp4gVVpRH5ZFIAoN4bSLhFtj5yC7dUcxgBw000sjOYxA&oe=6877BE59&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fitwithparia_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:46:33.654Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitness_____coach",
+      "displayName": "Daria Kosolapova",
+      "bio": "",
+      "followers": 2151,
+      "following": 1701,
+      "posts": 552,
+      "isVerified": false,
+      "isPrivate": true,
+      "url": "https://instagram.com/fitness_____coach",
+      "profilePicUrl": "https://scontent-ord5-2.cdninstagram.com/v/t51.2885-19/317298265_5858403137513930_2725148536425810135_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGaL-JQyWBV7HJWAIb4atArndC6tZTvUA_MwQwAprfii3_wMAMYv4NZgypV1qE2cdbXvdSygjKDxjvs9nxaxI-H&_nc_ohc=GhZFMA2HSdgQ7kNvwHeD14O&_nc_gid=kTIdfrvCaYDVLTeHWhvU6g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRrb_IVEpcLx7dWXu6aBRtPtU5uXu7dP0otqN2_BP0sCA&oe=6877A2EF&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fitness_____coach_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 1,
+        "urgency_score": 1,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Unknown",
+        "business_confidence": 0,
+        "revenue_potential": 0,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "❌ INSUFFICIENT DATA - Bio too short or empty."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.08,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:46:51.627Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "_fitness._.coach__",
+      "displayName": "Amber",
+      "bio": "Fitness Coach \n🔵Head Coach @cyclonefitnessplus \n🔵Certified Personal Trainer  @issaonline  \n🏅@gft.academy \n🔵Certified Yoga Instructor  @issaonline",
+      "followers": 4271,
+      "following": 738,
+      "posts": 321,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/_fitness._.coach__",
+      "profilePicUrl": "https://scontent-ord5-3.cdninstagram.com/v/t51.2885-19/270169717_1290232258164127_5098342578602603477_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGxTWXsta5h2pG5K6i0ewTgrgNuV_Rfoa1RiKKBLZrnyl7ZsM_6pxUgWR2Ezvv_pA0&_nc_ohc=HWNEitnOlVQQ7kNvwEy2WHv&_nc_gid=BfQSas_N1MwA8a1sj7E01A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSLb48u5JGxJSAzgCTfPRVTIblvdedVd31CgCKvkrLLdg&oe=6877B19F&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/_fitness._.coach___composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 7.5,
+        "urgency_score": 2,
+        "credibility_score": 0.7,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 1,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Certified Professional",
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.2,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:47:09.836Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "irene.sagona",
+      "displayName": "Irene Sagona | Fitness & Nutrition Coach",
+      "bio": "💖Trasforma il tuo corpo con me in 15 minuti al giorno! \n🏆5 mila donne trasformate nella loro miglior versione\n💰Soddisfatta o rimborsata\nSCOPRI COME⬇️",
+      "followers": 220302,
+      "following": 212,
+      "posts": 1073,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/irene.sagona",
+      "profilePicUrl": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/472959398_1871876986550268_1135502312416498908_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QFvXudEBiH0uXFw1DY9Daiec7bzNuIgey-na3_81ysx2PvIKMUwpCpzoHqOTrOtKwc&_nc_ohc=RuhMe_3btDgQ7kNvwEyxn4e&_nc_gid=czIH6H8dSWrRb1irIjp1Yg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfR51PRstrV0SHGm8nNnkmVmTLhga9sIJjk2rHUM5rSJyw&oe=6877A3C5&_nc_sid=8b3546",
+      "externalUrl": "https://irenesagona.it/",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/irene.sagona_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.2,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:47:28.082Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "saracolombo.fitnesscoach",
+      "displayName": "Sara Colombo | Trasformazioni fisiche femminili",
+      "bio": "Sono maga delle trasformazioni 💎\nUn METODO unico per un corpo tonico, partendo dai piedi. \nSei a un passo dalla tua nuova te🦶⬇️",
+      "followers": 37334,
+      "following": 134,
+      "posts": 275,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/saracolombo.fitnesscoach",
+      "profilePicUrl": "https://scontent-dub4-1.cdninstagram.com/v/t51.2885-19/444445864_1659882121424817_8053841453226622119_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-dub4-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHXLv_03qdze-Jfq64jg5IckGVHk9-cdzI8l5behsNOA7LU3PS7MpaWoUgr5b5BzIw&_nc_ohc=UYteqbMNs5IQ7kNvwHcE3cm&_nc_gid=5EUYaxaMFKNbdhEe8K4dtQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRPhPaKkHKHbZkH-t7AWhDaLHEvQRCNQ0uiTFeLh-TYzw&oe=6877A6C5&_nc_sid=8b3546",
+      "externalUrl": "https://saracolombofitnesscoach.com/",
+      "businessCategory": "Health/beauty",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/saracolombo.fitnesscoach_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.57,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:47:46.359Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "anujverma5044",
+      "displayName": "FITNESS COACH ☣️ - ANUJ",
+      "bio": "🥇 MR.BARABANKI\n 2X 🏆 TIME IBBF CHAMPION\n FACULTY IPTFA @iptfa_india @iptfa_official \n🎖DM FOR PERSONAL TRAINING \n🏆 CONTEST LEVEL PREP. COACH 🥇",
+      "followers": 2187,
+      "following": 922,
+      "posts": 566,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/anujverma5044",
+      "profilePicUrl": "https://instagram.fuln4-2.fna.fbcdn.net/v/t51.2885-19/464931234_915191963273420_1729811133189617433_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fuln4-2.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QGk8Uso5i_jJRyrEr08GZWQBmJ_rE1DL_D5WuoUx06y4A-T8_AXMpo4y126F2kwNEo&_nc_ohc=9QdfUY9IWb0Q7kNvwE91MBA&_nc_gid=w5P7fNfe8N_W9UVOcX4qMw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ4e6MZZ8LNjK0K1jPMVJrxAVVTvuXRnBmSngN2Oq1dcA&oe=6877A3F0&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Personal Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/anujverma5044_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "DM welcome"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6.4,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 1.6,
+        "business_type": "Fitness",
+        "business_confidence": 0.6,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready",
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 3.8,
+        "quality_score": 4,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.09,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:48:05.684Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "petrubozesan.ro",
+      "displayName": "PetruBozesan.ro | Coach de fitness ONLINE pentru tați ocupați",
+      "bio": "👨‍👧‍👦Ajut tați să-și transforme corpul si energia prin @biserica_de_fier \n🥩Nutriție+antrenamente smart🛑Fără diete\n📩 Scrie-mi„DISCIPLINĂ”pentru detalii",
+      "followers": 8945,
+      "following": 4378,
+      "posts": 2009,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/petrubozesan.ro",
+      "profilePicUrl": "https://instagram.fixc11-1.fna.fbcdn.net/v/t51.2885-19/98291130_2742837419280424_162252512844316672_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fixc11-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QHLyjJQJSTHvT6HCRMCVdkxo6D6_anVkfdwhCabiZBRf-rOccLK4zc8JJJuEdMpJk0&_nc_ohc=4dq8UeFhNjgQ7kNvwH6kUuD&_nc_gid=hTsBF2ehJVvdO5fDA0exvg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTiLBWhLxPy9O-R8hu2Zk-UfZTeuReLKWZv0WccVOnVEw&oe=6877C8BF&_nc_sid=8b3546",
+      "externalUrl": "https://www.petrubozesan.ro/",
+      "businessCategory": "Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/petrubozesan.ro_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.14,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:48:25.183Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitness.coach.app",
+      "displayName": "FITNESS COACH 🥇",
+      "bio": "Your personalized training app. 💪\n🍎 For nutrition tips 👉 @nutrition.coach.app",
+      "followers": 104014,
+      "following": 1026,
+      "posts": 608,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitness.coach.app",
+      "profilePicUrl": "https://instagram.felp1-1.fna.fbcdn.net/v/t51.2885-19/307317746_2880622818907580_7065588970818460440_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.felp1-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QFQoUJ5mnZZPt8ZOY7u7jVKt7r8NJub859hlP8SKq815FUirP4tfpqWn9LSc1BAXSTqTw4ES2YrY_FibFi6aIUF&_nc_ohc=FrSyVK8W4HwQ7kNvwFNgmev&_nc_gid=RTS03E9l_Vme_6G0QWuSMQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTfqeA4-4Dxt--5IaQbHjwphqPWY4fgILOOMokRPsh8Kg&oe=6877C176&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/fitness.coach.app",
+      "businessCategory": "None,Sports",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/fitness.coach.app_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.6,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.41,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:48:44.331Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "libertefitness.morteau",
+      "displayName": "Liberte Fitness & Coaching",
+      "bio": "Votre club sport-santé unique à Morteau! \nAtteignez enfin vos objectifs avec nos coachings.",
+      "followers": 932,
+      "following": 401,
+      "posts": 519,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/libertefitness.morteau",
+      "profilePicUrl": "https://instagram.fmnl4-2.fna.fbcdn.net/v/t51.2885-19/451713845_1618079292074467_9006537209930661646_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fmnl4-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QH0Cj11DUEhtsq8z2tUelQYrsuUbaAZNVXEe1N2lzkG7l8G0kv2Tp6hLRS2w20LIUs&_nc_ohc=1gsUSvIoOCEQ7kNvwF9DXUw&_nc_gid=sKafPrwfVB67BFkuzWacyQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQDjbxlBXhDrNbF_WRl_KRGFhHlEu7pivNvESj-UO29cw&oe=6877D01C&_nc_sid=8b3546",
+      "externalUrl": "http://www.liberte-fitness.fr/",
+      "businessCategory": "None,Gym/Physical Fitness Center",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/libertefitness.morteau_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.49,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:49:03.287Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "gisellefitness94",
+      "displayName": "🅖🅘🅢🅔🅛🅛🅔 | 𝑭𝒊𝒕𝒏𝒆𝒔𝒔 𝑪𝒐𝒂𝒄𝒉",
+      "bio": "📍𝑴𝒂́𝒍𝒂𝒈𝒂 🔹 |𝖯𝖾𝗋𝗌𝗈𝗇𝖺𝗅 𝗍𝗋𝖺𝗂𝗇𝖾𝗋 | 𝖬𝗈𝖽𝖾𝗅 | 𝖢𝗋𝗈𝗌𝗌𝖿𝗂𝗍\n✨𝖢𝗋𝖾𝖺𝗍𝗈𝗋 𝗈𝖿 @malagatrails \n👉-10% @zumub.es: GISELLEFIT7\n👉-𝟭𝟱% @eunutrition_es: GISELLEFIT\n📥𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝑫𝑴",
+      "followers": 3838,
+      "following": 631,
+      "posts": 384,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/gisellefitness94",
+      "profilePicUrl": "https://instagram.fbhz6-1.fna.fbcdn.net/v/t51.2885-19/511000506_18402934609128564_6240402929842566913_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fbhz6-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2QFb82eLkJOs8O_Z7S_AD7FrB3cS8UknKrM2Ys7wErCDaNezESjqxu4OetVlW3emJss&_nc_ohc=sbZsj55RJkYQ7kNvwEjx_4p&_nc_gid=qt3_3FM1bba64yw9EbIl4A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTiPpNZU4MwMdFPjnqZg9TzdO54tAWqWiMFf_nLpa-Ovg&oe=6877A2BF&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Entrepreneur",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/gisellefitness94_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.2,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:49:21.946Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitness_coach_radhe",
+      "displayName": "Radhe Kumawat | Indore",
+      "bio": "https://Radhefit\nFitness enthusiast | Helping Indore stay \n🏆 X Mr. M.P. (Natural)\n🏆 Mr. Division \n💪 Workouts, tips, & motivation | DM for guidance",
+      "followers": 4890,
+      "following": 297,
+      "posts": 687,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitness_coach_radhe",
+      "profilePicUrl": "https://instagram.fadb9-1.fna.fbcdn.net/v/t51.2885-19/503598672_18384491719141933_5687740579879084924_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fadb9-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2QGvSYxsF5C4mN76NA5w4zEU2KDDeTiAFFzjlAjrQHNhg_8VkljWFM2BsX_mEslH7bw&_nc_ohc=XgFUllx-lcMQ7kNvwHR521x&_nc_gid=7JIjCbUaI9l7lQyL4VWtiA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRvtRxWBzuBgcfy2He_x0DWlRug-Ul207UHYsexu2hJgw&oe=6877A17E&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Gym/Physical Fitness Center",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fitness_coach_radhe_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "DM welcome"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.6,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.65,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:49:40.810Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "arymissfit_fitnesscoach",
+      "displayName": "𝐚𝐫𝐢𝐚𝐧𝐧𝐚rossetto // ♡ 𝐟𝐢𝐭𝐧𝐞𝐬𝐬 𝐞 𝐧𝐮𝐭𝐫𝐢𝐭𝐢𝐨𝐧 𝐜𝐨𝐚𝐜𝐡 ♡",
+      "bio": "🌸personalTrainer/ONLINECOACH\n🌸Aiuto le donne a scolpire il corpo e ad amare il fitness senza diete restrittive\n🩷ARYBIKINI ->FGM04 \n🩷ARYMISSFIT->PROZIS",
+      "followers": 15811,
+      "following": 991,
+      "posts": 716,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/arymissfit_fitnesscoach",
+      "profilePicUrl": "https://scontent-ord5-2.cdninstagram.com/v/t51.2885-19/453730571_855835326086582_181045283615841470_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QH1SRxppgwWVJGP0r2TZKe4UJe-mFk1hQ10ViRoNvXuAEphQINx2pnX5u8pReCpKpA&_nc_ohc=pH_cpPYqvSUQ7kNvwFpJXwl&_nc_gid=a0UvG2XuCEnqq3RlvybHfQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTnwXYnNQjJsT2l-s1cvW9n5IJdNfZNhAuFrcZsnxefsg&oe=6877C913&_nc_sid=8b3546",
+      "externalUrl": "https://bit.ly/362pGF0",
+      "businessCategory": "Personal Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/arymissfit_fitnesscoach_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.8999999999999999,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.19,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:49:58.999Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "micaela_neto",
+      "displayName": "Micas Neto | Personal Trainer",
+      "bio": "Forma, Cintura & Postura \n🎯 DESAFIO 7 DIAS Transforma a tua postura e afina a tua cintura, com um método simples e eficaz \n👇 Inicia o teu desafio 👇",
+      "followers": 3642,
+      "following": 1456,
+      "posts": 593,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/micaela_neto",
+      "profilePicUrl": "https://scontent-phx1-1.cdninstagram.com/v/t51.2885-19/476912225_1365742471088692_57307711390257856_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-phx1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGVgMZ3vTrqQ1S8wQ9UTaoOqPDevOA21FA97ZWLOlCBTGBOQhuy1w3_ZjVFSi8I_Ek&_nc_ohc=dXcQIgOBFAEQ7kNvwHGi1j7&_nc_gid=88dQz_0Zy9173jon-3Djqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQjora4ughnFDtp92-EGml4DitcKiU8J9SdYyeb4KwQxQ&oe=6877B843&_nc_sid=8b3546",
+      "externalUrl": "https://bio.site/micaelaneto",
+      "businessCategory": "None,Health/beauty",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/micaela_neto_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.49,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:50:17.222Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "clarabelfitness",
+      "displayName": "FITNESS COACH ONLINE |Clarabel",
+      "bio": "🚀Te impulso a encontrar tu mejor versión.\n🍎🏋🏽‍♀️Asesoría de nutrición y entrenamiento \n👩🏻‍⚕️TS Nutrición y Dietética\n🤰🏻 Embarazo y Lactancia",
+      "followers": 56673,
+      "following": 976,
+      "posts": 1160,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/clarabelfitness",
+      "profilePicUrl": "https://instagram.fjsr8-1.fna.fbcdn.net/v/t51.2885-19/415986962_741626724536092_8256574330216578131_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fjsr8-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QGTua-1JhXDW-fnM-cvOXb0KfVjbcn6IrzY5rsHGd2tkoxWeRcr431WvW2eCI-ojVs&_nc_ohc=SDxh6pYVKRkQ7kNvwF4Jg4q&_nc_gid=6L4FsR_Fy_XLxuAITA8IHw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQim1Tw5F5lciNFHNnLWyAO4hUSLrs1o-z1SJNnkBUnTg&oe=6877C75D&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/clarabelfitness",
+      "businessCategory": "Athlete",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/clarabelfitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "Spanish",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.18,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:50:36.241Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitnesscoachale",
+      "displayName": "Alejandra Morales 🇬🇹",
+      "bio": "CFL1 Trainer \nCERT. FITNESSCOACH 🏋️‍♀️\nOwner @vibeupgt sportswear 🦾\nCertified by @fit78method 👊🏻⚡️\n@gncguatemala ⚡️",
+      "followers": 49496,
+      "following": 1797,
+      "posts": 3018,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitnesscoachale",
+      "profilePicUrl": "https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/470949744_1254201269023635_4366692177173618242_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QF2N3Gn04qF3SkhTjbtf-VGHetqNzM8jHYIxAqAxe3YbaJBKmfEddK7qN8ttd9f6aU&_nc_ohc=SMCNTdvR2UYQ7kNvwFeyY0P&_nc_gid=U7MJWa7KGXDehSvhaaYEpg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfStQG33Dhsv4GoryBPk798kdzP38LhOvtFFwMGvLrtvaA&oe=6877A6F5&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/fitnesscoachale",
+      "businessCategory": "Athlete",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fitnesscoachale_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 7.2,
+        "urgency_score": 2,
+        "credibility_score": 0.7,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.8999999999999999,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Certified Professional",
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.62,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:50:54.292Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "coach____toma",
+      "displayName": "fitness coach Toma",
+      "bio": "Individual Ve Qrup Mesqleri\nXususi Pehriz Proqrami\nToma Ile Birlikde Fit olaq!\n📩Only For woman\n2,4,6 @gold_fitbaku",
+      "followers": 21317,
+      "following": 224,
+      "posts": 109,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/coach____toma",
+      "profilePicUrl": "https://instagram.fnag4-2.fna.fbcdn.net/v/t51.2885-19/510975278_18043591874640450_3495726802238266827_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fnag4-2.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QFlroZVyRT1U6SRyaJcTF0MAOgtEOs5R9toLf99jO2GyVGfYYDvjdOELMfYNY4t5_bIZA68ARauuUutrEIRYY0H&_nc_ohc=wYthIXs_PPsQ7kNvwHGie6A&_nc_gid=lbzX1RN-PhaeOOpE0k0tng&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQZEDBxf30WZDi4IG6wEeN9LhiJcW3olJVzf_ac_zDXWg&oe=6877B99D&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Fitness Trainer",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/coach____toma_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.57,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:51:13.452Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "brittxkimo",
+      "displayName": "Fitness Coach | Lifestyle Influencers",
+      "bio": "Transforming bodies💪🏻 & relationships 🫶🏻\nFrom insecure to unapologetically YOU✨\n📧 for brands & partnerships\n1:1 coaching - DM US START 🤗🔥",
+      "followers": 178843,
+      "following": 699,
+      "posts": 2435,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/brittxkimo",
+      "profilePicUrl": "https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/500120226_18503158861027693_8679018391093519998_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGUMCZguKwRa-q3CTSpROSc1b9VvgItUgxwOsXOrBbogHL2uYwby_kPFsNfb_XQbwY&_nc_ohc=Cwug9st7FL4Q7kNvwGKMwMD&_nc_gid=czEmck-ttQSfQiJ0SKx3xg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSbkq-rD80P2nPDphN7HCJKEFHcfnL4atPG2r2uLVYhQg&oe=6877B46D&_nc_sid=8b3546",
+      "externalUrl": "http://honourfit.com/",
+      "businessCategory": "Personal Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/brittxkimo_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 2,
+        "methods": [
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 7.1,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 2,
+        "business_type": "Legal",
+        "business_confidence": 0.7,
+        "revenue_potential": 9.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready",
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.59,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:51:31.806Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "joaocfitness",
+      "displayName": "João Café | Emagrecimento & Treino",
+      "bio": "💥 Peso estagnado? Resultados bloqueados?\nEu ajudo-te a emagrecer de vez — sem extremismos\n📉 Até 15kg em 12 semanas e com apoio diário\nClica aqui👇",
+      "followers": 15550,
+      "following": 43,
+      "posts": 574,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/joaocfitness",
+      "profilePicUrl": "https://instagram.flyp11-1.fna.fbcdn.net/v/t51.2885-19/497547334_18048219788608041_1576642657272589652_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.flyp11-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QEF9lrwrC-EG_jaaHRIEGqvovvX3Nbu5r_hu8eqM_l2HBOR1cjVz9qQccAkOfOpJz8&_nc_ohc=8r4Hznn5648Q7kNvwEqyfJa&_nc_gid=DyBALIAWVm7eYpu-J_YQfQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTncQTJb17GSBBPBAQQQsY9XESJGLJ9vg4eL1dPeJ-vvw&oe=6877BBA2&_nc_sid=8b3546",
+      "externalUrl": "https://wa.link/qrthfm",
+      "businessCategory": "Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/joaocfitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.6,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:51:50.701Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "bezzoss_1",
+      "displayName": "FITNESS • COACH • MODEL",
+      "bio": "@biolabshop.uk ⬅️ -𝟕% 𝐜𝐨𝐝𝐞: 𝐒𝐄𝐑𝐉  🦾\nall socials📍collaboration 👇🏻",
+      "followers": 47841,
+      "following": 262,
+      "posts": 74,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/bezzoss_1",
+      "profilePicUrl": "https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/475104376_1129890194887186_1979974725533741073_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QF_k6aP5kpsK9LXvKVdPcmOlk35qO1S7U5OOaFpC9ZowZXYi1kfA4u4sDqV1W3GjLA&_nc_ohc=NJy42dysZtgQ7kNvwFMqk5u&_nc_gid=WDO0kA1Pd6m7Zeom7IDVvw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRi3wmZQHuGqfSqrPve7BNTSolmA5x5f7KBAw9ZbTLqUg&oe=6877D073&_nc_sid=8b3546",
+      "externalUrl": "https://beacons.ai/bezzoss_1",
+      "businessCategory": "Fitness Model",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/bezzoss_1_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.59,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:52:08.738Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "annalisa.manzolini",
+      "displayName": "Annalisa Manzolini | La Specialista Della Cellulite over30",
+      "bio": "CelluShape® - Metodo Scientifico🧬per DONNE 30-55 anni\nCELLULITE, RITENZIONE e LIPEDEMA 🍑\n🏆 +800 donne trasformate \n⬇️ Scrivici INFO in direct",
+      "followers": 32910,
+      "following": 1,
+      "posts": 666,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/annalisa.manzolini",
+      "profilePicUrl": "https://scontent-atl3-3.cdninstagram.com/v/t51.2885-19/514588706_18481789744070515_8996527895671420002_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGxbWfsCCggxn_7UubnnOujhi1MXeFti-MJ4uL30_31uYr5QM-IFhBDolxLLZxdqJIvAheIX1n7G4oYZNnZW7If&_nc_ohc=HoJ9I9QrW0IQ7kNvwEQ1-15&_nc_gid=Id_oT7zGllHZjVmFHsGcEw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRtghV-U2ujYusIUkEFcGcefxQkgZPPRco2W2Hmg8mQ1w&oe=6877A513&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/annalisa.manzolini",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/annalisa.manzolini_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.5,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:52:26.958Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "stry.app",
+      "displayName": "Stry - 1-on-1 fitness coaching",
+      "bio": "Crush Your Strength Goals with Professional Guidance💪\n📲 Train Anytime, Anywhere\n🎥 Receive Support When You Need\nQuiz > Match > Train FREE!",
+      "followers": 327,
+      "following": 0,
+      "posts": 48,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/stry.app",
+      "profilePicUrl": "https://instagram.fhyd11-3.fna.fbcdn.net/v/t51.2885-19/312576781_1084689072230707_2098082011886393739_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fhyd11-3.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QGUQlw2F-jJ7nDuQ9cglIQhEQkxOssBLiZheifK28kgdO24kn6f2M-wjj7fKSxMFz0&_nc_ohc=XBOfFYzTkEsQ7kNvwHp-SNx&_nc_gid=TjTETgz_ksexGSUW3lLzgg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSNMtabIGwX-5YLeSt8JV_bXj8L9CMb3oYUTElF5jCSwg&oe=6877D2C2&_nc_sid=8b3546",
+      "externalUrl": "https://stry.app/enthusiast?utm_source=ig",
+      "businessCategory": "None,Product/service",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/stry.app_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.48,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:52:45.889Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "misss.keit",
+      "displayName": "Fitness Coach | Online",
+      "bio": "• Спортивный коучинг👄\nСо мной ты обретешь свою  точку опоры 🍑\n❤️\n🏋🏼‍♀️ Тренировки в сторис\nOnline ведение/программы в директ",
+      "followers": 2765,
+      "following": 444,
+      "posts": 518,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/misss.keit",
+      "profilePicUrl": "https://instagram.fccm1-1.fna.fbcdn.net/v/t51.2885-19/218867192_350166689823412_1149785482267458460_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fccm1-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QFMkiYtrUQD-djvhkLZd6m4v0CkgW23OFAqbaqzINnZgb0Wm3Nj-y22S6I6eO5Pt-Uvz-H29PR5rnMw5T54E0xl&_nc_ohc=uD4VTRmzPgEQ7kNvwFHgC7I&_nc_gid=0aVD0XxLS1TAc8F5iHB8lg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTeJ_jx0kQddK8L9zIkgPITkOMNXxmv01yDpwWP6RiC2A&oe=6877D5A2&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Author",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/misss.keit_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.15,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:53:04.417Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "toqasalah_coach",
+      "displayName": "Fitness Coach",
+      "bio": "Personal/Online coach\nMum and wife\nMy mumislife \nابويا حته من قلبي 💕\nJumping/cx/trx Instructor\nNutrition coach",
+      "followers": 12801,
+      "following": 2450,
+      "posts": 2241,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/toqasalah_coach",
+      "profilePicUrl": "https://scontent-mia3-3.cdninstagram.com/v/t51.2885-19/387268224_364674815885218_2475940462215501036_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-mia3-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGObUWNesqE_KnFbOUJ8ac3kLZoFePb5VWRqKY0TG4R6eUxMn2j2kQLAxMuln5KKyZ8rNDSlsxvY0XmIxUsOxfi&_nc_ohc=Kxzx_Ubh2owQ7kNvwEBgldC&_nc_gid=akMrINFQhQ3khG1fgarzkg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSG6jQY2jSp7FfsYCyEF1FW0lRwd3BgNE6bY5HTNP9nuQ&oe=6877A930&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/toqasalah_coach_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 1,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.58,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:53:22.637Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "wwwernamed",
+      "displayName": "Fitness coach 🦸‍♀️",
+      "bio": "Functional training🏃‍♀️\nStrength training 🏋️‍♀️\nJoint gymnastics🧘‍♀️",
+      "followers": 1439,
+      "following": 1329,
+      "posts": 131,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/wwwernamed",
+      "profilePicUrl": "https://instagram.fkhh1-2.fna.fbcdn.net/v/t51.2885-19/498191473_18091949929607432_1885357857945943949_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fkhh1-2.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF-H4LDbArOcfzZNRcwI2gev6m_GFlp1fVfnrQJeUs5AC1ogVw-bKr6jpK3EDEDYXk&_nc_ohc=3m4aEj5nghwQ7kNvwHUb7F0&_nc_gid=B6HsIAyedOWmoha8CZstsw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTF2ehSAYbjo_80FDCS-6aGGY4WOwAuD0L6zd4r4LiOGQ&oe=6877D478&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Artist",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/wwwernamed_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.61,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:53:41.155Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "coachlekay",
+      "displayName": "𝐅𝐈𝐓𝐍𝐄𝐒𝐒 𝐂𝐎𝐀𝐂𝐇 𝐋𝐄𝐊𝐀𝐘  🌼",
+      "bio": "🎯Perte de poids, développement musculaire & performance 💪\n🔥Prête à atteindre vos objectifs? DM me!⤵️\n🎁PROZIS -10%: COACHLEKAY",
+      "followers": 3516,
+      "following": 2095,
+      "posts": 235,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/coachlekay",
+      "profilePicUrl": "https://instagram.fmgf4-1.fna.fbcdn.net/v/t51.2885-19/514631191_18510173875030811_6895013340492539279_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fmgf4-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QGsyMwxHbVvAXd9JdJSrvtJyXugvTwxRxJg6Z8NgT3IRzrw9HIN040oZyOavsMEpRQ&_nc_ohc=sszhNKe6WNUQ7kNvwHY76vJ&_nc_gid=ZgOtKAssRjGgOniwfv_AUA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSuwvelX4wnxSPkDhXxj-u_eQtL83HcOUWTuOJYUv0i2g&oe=6877A8F3&_nc_sid=8b3546",
+      "externalUrl": "http://prozis.com/13xLw",
+      "businessCategory": "",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/coachlekay_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 2,
+        "methods": [
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 4,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Contact Ready"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.21,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:53:59.681Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "_mischief_1",
+      "displayName": "🅼🅸🆂🅲🅷🅸🅴🅵 Fitness Coach",
+      "bio": "📍ᴡᴇsᴛ-ᴍɪᴅʟᴀɴᴅs\n@ultimate_fitness_brm\nLifetime Natural ʙᴏᴅʏ ʙᴜɪʟᴅᴇʀ • Man Utd Fan\nᴄʜᴇᴄᴋ ᴏᴜᴛ ᴍʏ ᴛɪᴋ ᴛᴏᴋ + ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ 👇🏾👇🏾",
+      "followers": 80571,
+      "following": 483,
+      "posts": 31,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/_mischief_1",
+      "profilePicUrl": "https://instagram.fccs4-2.fna.fbcdn.net/v/t51.2885-19/515753884_18516119992031348_644887070957147436_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fccs4-2.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QEs7KHgNW3-I3bimNB-h_y8qSjF9SM4oevwc2imyvH9vfBf9Ufna0YaVpwg7UFQjhU&_nc_ohc=FvT8iQ_4hFUQ7kNvwHpEpRE&_nc_gid=_tWzcMP3ZZCQUCxPLT6j6w&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQSNOUbEvSsaMzm6jsSBe0X_B20seiEPsHaT05_jMEfNw&oe=6877BDAA&_nc_sid=8b3546",
+      "externalUrl": "https://www.tiktok.com/@mischiefftc?_t=ZN-8uxvki8s9F0&_r=1",
+      "businessCategory": "",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/_mischief_1_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.67,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:54:17.838Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "_gutswithglorygirll_",
+      "displayName": "FITNESS COACH / NUTRITIONIST",
+      "bio": "helping women who are battling from THYROID,PCOD,PCOS \nNutritionist 🥗\nPre/postnatal /fat loss/weightgain\nNational powerlifter🏋️‍♀️\nForm to register ⬇️",
+      "followers": 3885,
+      "following": 537,
+      "posts": 435,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/_gutswithglorygirll_",
+      "profilePicUrl": "https://instagram.fagc1-1.fna.fbcdn.net/v/t51.2885-19/516526053_18386235715186742_7366584414823052823_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fagc1-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2QFKF4xe-vGM2M1JUi_r_OS8bD6szyR6Wmkv8cqmqvDAWXO3_CtmcmgsrO8T5aLE-GY&_nc_ohc=qLUkatR6WpIQ7kNvwGaJWzn&_nc_gid=iKFaTqDVy45R5x4e2uLiWw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRNKXBt12ONymp7z5ZGY8R2xe0sKzjmeyivv3kr6QvPCg&oe=6877D063&_nc_sid=8b3546",
+      "externalUrl": "https://forms.gle/vAEDGPM9dX6j7GdW8",
+      "businessCategory": "Personal Coach",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/_gutswithglorygirll__composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.18,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:54:35.805Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "coachfagno_",
+      "displayName": "Fitness Coach",
+      "bio": "💪🏼| Coach / Treinador\n🍏| Nutrição\n☠️| Ed física\nConsultoria on-line 👨🏻‍💻\n⬇️CLICK THE LINK BELOW",
+      "followers": 19646,
+      "following": 971,
+      "posts": 187,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/coachfagno_",
+      "profilePicUrl": "https://scontent-phx1-1.cdninstagram.com/v/t51.2885-19/518733326_18059401013366212_6452865041832224009_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-phx1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHOFEH5KDnO_iTZyuMESCg4mfBT7XWTTTj4NLPZfKw-M6vT5kuOisx2fR45232V_HpbjLZv7h5zZ3sI2U_pr4We&_nc_ohc=LcZOrMk_QLQQ7kNvwGNa97J&_nc_gid=Vv1l62iey5RvV3sL_2mOJQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRep1d811O_U3vCzynV7TWKySCS9Fi_m2Q9bM8uPyvvgg&oe=6877CE8B&_nc_sid=8b3546",
+      "externalUrl": "https://pages.mfitpersonal.com.br/p/1smb",
+      "businessCategory": "None,Coach",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/coachfagno__composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.17,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-12T04:54:54.123Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    },
+    {
+      "username": "kevinmro",
+      "displayName": "Fitness Coach | Classic Physique",
+      "bio": "▪️ @io.genix athlete | DTO: kevinmro\n👨🏽‍💻 Fitness Coach @km_fitnesscoaching \n👇🏾 Te ayudo a cambiar tu físico",
+      "followers": 11058,
+      "following": 1401,
+      "posts": 638,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/kevinmro",
+      "profilePicUrl": "https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/441588155_417716834444317_2472760508258671937_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGJBcRcgdvV0lKmBCn0-6l6czd64CwnSEuoTA7d8e2GPk5B_ICIWI1JWtKvLAhw_A8&_nc_ohc=o-4pK18Pwf4Q7kNvwGVy2Z2&_nc_gid=4x4BjxnBl4DuiWnVP7ptHg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRyqwmUFuLY30uQvMKf-fAWeum8yjeHDcWZILiYq-OiVg&oe=6877AB1A&_nc_sid=8b3546",
+      "externalUrl": "https://bit.ly/km-fitnesscoaching",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/kevinmro_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6.8,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 1,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.16,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-12T04:55:12.407Z",
+      "source": "apify_instagram",
+      "keyword": "fitness coach",
+      "dataQuality": "high"
+    }
+  ]
+}

@@ -3,7 +3,6 @@ import { createPortal } from "react-dom";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import LeadScoringGuide from "./LeadScoringGuide";
-import HashtagAnalytics from "./HashtagAnalytics";
 
 // 🎨 ADVANCED TOOLTIP SYSTEM (Prevents ALL cropping and overlapping issues)
 const AdvancedTooltip = ({ text, children, position = 'auto', className = '' }) => {
@@ -638,11 +637,155 @@ const ControlPanel = ({
   loading, 
   onStart, 
   onStop, 
+  onFetchResults,
+  hasScrapedBefore,
   progress, 
   eta,
-  showAdvanced,
-  setShowAdvanced 
-}) => (
+  error,
+  success,
+  advancedSettings,
+  setAdvancedSettings,
+  leads = [],
+  results = []
+}) => {
+  const handleCopyDebugLogs = async () => {
+    try {
+      // First try to get actual backend debug logs
+      let backendLogs = '';
+      let scraperStatus = '';
+      let endpointStatus = '';
+      
+      try {
+        const response = await axios.get('http://localhost:5001/api/debug/logs');
+        backendLogs = response.data.logs || response.data || '';
+        endpointStatus = '✅ Backend connected';
+      } catch (backendError) {
+        backendLogs = `❌ Backend logs unavailable: ${backendError.message}`;
+        endpointStatus = '❌ Backend connection failed';
+      }
+      
+      // Get scraper status
+      try {
+        const statusResponse = await axios.get('http://localhost:5001/bypass/status');
+        scraperStatus = JSON.stringify(statusResponse.data, null, 2);
+      } catch (statusError) {
+        scraperStatus = `❌ Scraper status unavailable: ${statusError.message}`;
+      }
+      
+      const debugInfo = `ClientScope AI Debug Info
+========================
+Timestamp: ${new Date().toISOString()}
+Keyword: ${keyword}
+Pages: ${pages}
+Min Followers: ${advancedSettings?.minFollowers || 50}
+Max Followers: ${advancedSettings?.maxFollowers || 2500000}
+
+Connection Status: ${endpointStatus}
+
+Frontend State:
+- Is Scraping: ${loading}
+- Current Leads: ${leads.length}
+- Last Scrape Results: ${results.length} leads
+- Has Scraped Before: ${hasScrapedBefore}
+- Current Progress: ${progress.percentage || 0}%
+- ETA: ${eta}
+
+Frontend Errors/Messages:
+${error ? `❌ Error: ${error}` : ''}
+${success ? `✅ Success: ${success}` : ''}
+${!error && !success ? '(No current messages)' : ''}
+
+Backend Logs:
+${backendLogs}
+
+Scraper Status:
+${scraperStatus}
+
+Recent Activity:
+- Last scrape attempt: ${new Date().toISOString()}
+- Browser: ${navigator.userAgent}
+- Frontend port: ${window.location.port}
+- Backend port: 5001
+`;
+      
+      await navigator.clipboard.writeText(debugInfo);
+      
+      // Show success message briefly
+      const button = document.querySelector('[data-copy-logs]');
+      if (button) {
+        const originalText = button.textContent;
+        button.textContent = '✅ Enhanced Debug Copied!';
+        setTimeout(() => {
+          button.textContent = originalText;
+        }, 2000);
+      }
+    } catch (error) {
+      console.error('Error copying debug logs:', error);
+      
+      // Fallback to basic info even if backend is unavailable
+      const basicDebugInfo = `ClientScope AI Debug Info (Basic)
+========================
+Timestamp: ${new Date().toISOString()}
+Keyword: ${keyword}
+Pages: ${pages}
+Min Followers: ${advancedSettings?.minFollowers || 50}
+Max Followers: ${advancedSettings?.maxFollowers || 2500000}
+
+❌ Backend Connection: Failed
+Error: ${error.message}
+
+Frontend State:
+- Is Scraping: ${loading}
+- Current Leads: ${leads.length}
+- Browser: ${navigator.userAgent}
+- Frontend URL: ${window.location.href}
+- Expected Backend: http://localhost:5001
+`;
+      
+      try {
+        await navigator.clipboard.writeText(basicDebugInfo);
+        const button = document.querySelector('[data-copy-logs]');
+        if (button) {
+          const originalText = button.textContent;
+          button.textContent = '⚠️ Basic Debug Copied';
+          setTimeout(() => {
+            button.textContent = originalText;
+          }, 2000);
+        }
+      } catch (clipboardError) {
+        alert('Failed to copy debug logs and clipboard access denied');
+      }
+    }
+  };
+
+  // Exponential scaling functions for followers
+  const followerValues = [
+    0, 50, 100, 250, 500, 1000, 2500, 5000, 10000, 25000, 50000, 
+    100000, 250000, 500000, 1000000, 2500000, 5000000
+  ];
+
+  const getFollowerText = (value) => {
+    if (value >= 5000000) return '5M+';
+    if (value >= 1000000) return `${(value / 1000000).toFixed(1)}M`;
+    if (value >= 1000) return `${(value / 1000).toFixed(0)}K`;
+    return value.toString();
+  };
+
+  const getSliderValue = (followerCount) => {
+    // Find the closest index in our exponential scale
+    for (let i = 0; i < followerValues.length; i++) {
+      if (followerValues[i] >= followerCount) {
+        return i;
+      }
+    }
+    return followerValues.length - 1;
+  };
+
+  const getFollowerCount = (sliderValue) => {
+    return followerValues[Math.min(sliderValue, followerValues.length - 1)];
+  };
+
+  return (
   <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 border border-gray-700 shadow-xl">
     <div className="flex items-center justify-between mb-6">
       <h2 className="text-2xl font-bold text-white flex items-center space-x-2">
@@ -741,43 +884,89 @@ const ControlPanel = ({
         )}
         </div>
       
-      {/* Copy Logs Button */}
+        {/* Copy Debug Logs Button */}
       <button 
-        onClick={async () => {
-          try {
-            const response = await axios.get('http://localhost:5001/api/debug/logs');
-            navigator.clipboard.writeText(response.data.logs);
-            setSuccess("Debug logs copied to clipboard!");
-            setTimeout(() => setSuccess(""), 3000);
-          } catch (error) {
-            setError("Failed to copy logs");
-            setTimeout(() => setError(""), 3000);
-          }
-        }}
+          onClick={handleCopyDebugLogs}
+          data-copy-logs
         className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 hover:scale-[1.02] flex items-center justify-center space-x-2 shadow-lg"
       >
         <span>📋</span>
         <span>Copy Debug Logs</span>
       </button>
       
-      {/* Settings Button Row */}
-      <div className="flex space-x-3">
-        <AdvancedTooltip text="Advanced Settings">
+        {/* Fetch Results Button */}
           <button 
-            onClick={() => setShowAdvanced(!showAdvanced)}
-            className="flex-1 bg-gray-700 hover:bg-gray-600 text-gray-300 font-medium py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <span>Settings</span>
+          onClick={onFetchResults}
+          disabled={!hasScrapedBefore}
+          className="w-full bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-500 hover:to-teal-500 disabled:from-gray-600 disabled:to-gray-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 hover:scale-[1.02] disabled:cursor-not-allowed flex items-center justify-center space-x-2 shadow-lg"
+          title={hasScrapedBefore ? "Manually fetch results if scraping completed but results weren't shown" : "Start scraping first to enable this feature"}
+        >
+          <span>📥</span>
+          <span>Fetch Results</span>
           </button>
-        </AdvancedTooltip>
+        
+        {/* Follower Range Sliders */}
+        <div className="mt-4 p-4 bg-gray-700 rounded-lg border border-gray-600">
+          {/* Minimum Followers Slider */}
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-300 mb-2">
+              Minimum Followers: {getFollowerText(advancedSettings?.minFollowers || 50)}
+            </label>
+            <div className="relative">
+              <input
+                type="range"
+                min="0"
+                max={followerValues.length - 1}
+                step="1"
+                value={getSliderValue(advancedSettings?.minFollowers || 50)}
+                onChange={(e) => setAdvancedSettings({ 
+                  ...advancedSettings, 
+                  minFollowers: getFollowerCount(Number(e.target.value))
+                })}
+                className="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer slider"
+              />
+              <div className="flex justify-between text-xs text-gray-400 mt-1">
+                <span>0</span>
+                <span>1K</span>
+                <span>50K</span>
+                <span>500K</span>
+                <span>5M+</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Maximum Followers Slider */}
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-300 mb-2">
+              Maximum Followers: {getFollowerText(advancedSettings?.maxFollowers || 2500000)}
+            </label>
+            <div className="relative">
+              <input
+                type="range"
+                min="0"
+                max={followerValues.length - 1}
+                step="1"
+                value={getSliderValue(advancedSettings?.maxFollowers || 2500000)}
+                onChange={(e) => setAdvancedSettings({ 
+                  ...advancedSettings, 
+                  maxFollowers: getFollowerCount(Number(e.target.value))
+                })}
+                className="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer slider"
+              />
+              <div className="flex justify-between text-xs text-gray-400 mt-1">
+                <span>0</span>
+                <span>1K</span>
+                <span>50K</span>
+                <span>500K</span>
+                <span>5M+</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
+};
 
 // 🎛️ MAIN SCRAPER PANEL COMPONENT
 function ScraperPanel() {
@@ -790,9 +979,14 @@ function ScraperPanel() {
   const [success, setSuccess] = useState("");
   const [currentProgress, setCurrentProgress] = useState({ current: 0, target: 0, percentage: 0 });
   const [eta, setEta] = useState("Calculating...");
-  const [showAdvanced, setShowAdvanced] = useState(false);
   const [showScoringGuide, setShowScoringGuide] = useState(false);
   const [isSavingSession, setIsSavingSession] = useState(false);
+  const [hasScrapedBefore, setHasScrapedBefore] = useState(false); // Track if user has scraped before
+  const [backendIsScraping, setBackendIsScraping] = useState(false); // Track if backend is currently scraping
+  const [advancedSettings, setAdvancedSettings] = useState({
+    minFollowers: 50,
+    maxFollowers: 2500000
+  });
   const abortControllerRef = useRef(null);
 
   // 🔄 Session Loading Effect
@@ -813,6 +1007,34 @@ function ScraperPanel() {
       }
     }
 
+    // Check if backend has completed scraping results available
+    const checkForCompletedResults = async () => {
+      try {
+        const statusResponse = await fetch('http://localhost:5001/bypass/status');
+        if (statusResponse.ok) {
+          const status = await statusResponse.json();
+          if (status.isActive === false && status.percentage >= 100 && status.completedProfiles > 0) {
+            console.log('🔍 Found completed scraping results on page load, fetching...');
+            const resultsResponse = await fetch('http://localhost:5001/api/leads/latest');
+            if (resultsResponse.ok) {
+              const resultsData = await resultsResponse.json();
+              if (resultsData.success && resultsData.leads && resultsData.leads.length > 0) {
+                setLeads(resultsData.leads);
+                setSuccess(`✅ Found ${resultsData.leads.length} leads from previous scraping session!`);
+                setHasScrapedBefore(true);
+                console.log(`✅ Loaded ${resultsData.leads.length} leads from previous session`);
+              }
+            }
+          }
+        }
+      } catch (error) {
+        console.error('❌ Error checking for completed results:', error);
+      }
+    };
+
+    // Check for completed results after a short delay
+    setTimeout(checkForCompletedResults, 1000);
+
     // Listen for session load events
     const handleLoadSession = (event) => {
       const { data } = event.detail;
@@ -829,6 +1051,110 @@ function ScraperPanel() {
       window.removeEventListener('loadSession', handleLoadSession);
     };
   }, []);
+
+  // 🔥 CONTINUOUS REAL-TIME POLLING: Always poll when scraping is active
+  useEffect(() => {
+    let continuousInterval;
+    let backupInterval;
+    
+    if (loading || backendIsScraping) {
+      console.log('🔄 Starting continuous real-time polling...');
+      continuousInterval = setInterval(async () => {
+        try {
+          // Fetch leads
+          const leadsResponse = await fetch('http://localhost:5001/api/leads/latest');
+          if (leadsResponse.ok) {
+            const leadsData = await leadsResponse.json();
+            if (leadsData.success) {
+              const currentCount = leads.length;
+              const newLeads = leadsData.leads || [];
+              const newCount = newLeads.length;
+              
+              // Always update leads array (even if empty)
+              setLeads(newLeads);
+              
+              // Log real-time updates
+              if (newCount !== currentCount) {
+                console.log(`🔄 Real-time update: ${currentCount} → ${newCount} leads`);
+              }
+              
+              if (newLeads.length > 0) {
+                setHasScrapedBefore(true);
+                // Clear any "no leads found" errors when leads are found
+                setError('');
+              }
+            }
+          }
+          
+          // Check backend status
+          const statusResponse = await fetch('http://localhost:5001/bypass/status');
+          if (statusResponse.ok) {
+            const status = await statusResponse.json();
+            setBackendIsScraping(status.isActive === true);
+            
+            // If backend finished but frontend is still loading, sync states
+            if (status.isActive === false && loading) {
+              console.log('🔄 Backend finished, syncing frontend state...');
+              setLoading(false);
+              
+              // Final fetch when backend completes
+              try {
+                const finalResponse = await fetch('http://localhost:5001/api/leads/latest');
+                if (finalResponse.ok) {
+                  const finalData = await finalResponse.json();
+                  if (finalData.success && finalData.leads) {
+                    setLeads(finalData.leads);
+                    if (finalData.leads.length > 0) {
+                      setSuccess(`✅ Scraping completed! Found ${finalData.leads.length} leads.`);
+                    }
+                  }
+                }
+              } catch (finalError) {
+                console.error('❌ Error in final fetch:', finalError);
+              }
+            }
+          }
+        } catch (error) {
+          // Silent error - don't spam console
+        }
+      }, 1000); // Poll every 1 second for real-time updates (reduced from 300ms)
+    
+    // 🔥 BACKUP POLLING: Also try alternative endpoints if main one fails
+    backupInterval = setInterval(async () => {
+      if (loading || backendIsScraping) {
+        try {
+          // Try alternative database endpoint as backup
+          const dbResponse = await fetch('http://localhost:5001/api/leads');
+          if (dbResponse.ok) {
+            const dbData = await dbResponse.json();
+            if (dbData.success && dbData.leads && dbData.leads.length > 0) {
+              const currentCount = leads.length;
+              if (dbData.leads.length !== currentCount) {
+                console.log(`🔄 Backup polling found ${dbData.leads.length} leads in database`);
+                setLeads(dbData.leads);
+                setHasScrapedBefore(true);
+                setError('');
+              }
+            }
+          }
+        } catch (error) {
+          // Silent error
+        }
+      }
+    }, 2000); // Check database every 2 seconds as backup
+    }
+    
+    return () => {
+      if (continuousInterval) {
+        clearInterval(continuousInterval);
+        console.log('🛑 Stopped continuous real-time polling');
+      }
+      if (backupInterval) {
+        clearInterval(backupInterval);
+        console.log('🛑 Stopped backup polling');
+      }
+    };
+  }, [loading, backendIsScraping]);
 
   // Analytics calculations
   const analytics = React.useMemo(() => {
@@ -849,31 +1175,323 @@ function ScraperPanel() {
     setLoading(true);
     setError("");
     setSuccess("");
-    abortControllerRef.current = new AbortController();
+    setCurrentProgress({ current: 0, target: pages * 10 });
+    setEta('Calculating...');
+    
+    // Clear previous results
+    setLeads([]);
+    setHasScrapedBefore(true); // Mark that scraping has begun
+    setBackendIsScraping(true); // Mark backend as scraping
+    
+    // 🔥 DEDICATED REAL-TIME LEADS POLLING: Start immediate polling for leads
+    const realTimeInterval = setInterval(async () => {
+      try {
+        const realTimeResponse = await fetch('http://localhost:5001/api/leads/latest');
+        if (realTimeResponse.ok) {
+          const realTimeData = await realTimeResponse.json();
+          if (realTimeData.success) {
+            // Always update leads, even if count is 0 (in case leads were cleared)
+            const previousCount = leads.length;
+            const newLeads = realTimeData.leads || [];
+            const newCount = newLeads.length;
+            
+            if (newCount !== previousCount) {
+              console.log(`🔄 Real-time leads update: ${previousCount} → ${newCount} leads`);
+            }
+            
+            setLeads(newLeads);
+            
+            // Update hasScrapedBefore if we have leads
+            if (newLeads.length > 0) {
+              setHasScrapedBefore(true);
+            }
+            
+            // Also check backend status to stay in sync
+            try {
+              const statusResponse = await fetch('http://localhost:5001/bypass/status');
+              if (statusResponse.ok) {
+                const status = await statusResponse.json();
+                // Update backend scraping state to stay in sync
+                setBackendIsScraping(status.isActive === true);
+              }
+            } catch (statusError) {
+              // Silent error
+            }
+          }
+        }
+      } catch (realTimeError) {
+        // Silent error - don't spam console
+      }
+    }, 2000); // Poll every 2 seconds for real-time updates (reduced from 500ms)
+    
+    // Real-time progress tracking
+    const startTime = Date.now();
+    let lastProfileCount = 0;
+    let profilesPerSecond = 0;
+    
+    const progressInterval = setInterval(async () => {
+      try {
+        // Try to get real progress from backend
+        const progressResponse = await fetch('http://localhost:5001/bypass/status');
+        if (progressResponse.ok) {
+          const status = await progressResponse.json();
+          console.log(`📊 Status check: isActive=${status.isActive}, percentage=${status.percentage}, completed=${status.completedProfiles}/${status.totalProfiles}`);
+          
+          // Update backend scraping state
+          setBackendIsScraping(status.isActive === true);
+          
+          // 🔥 REAL-TIME LEAD UPDATES: Fetch partial leads during scraping
+          if (status.isActive === true) {
+            try {
+              const partialLeadsResponse = await fetch('http://localhost:5001/api/leads/latest');
+              if (partialLeadsResponse.ok) {
+                const partialData = await partialLeadsResponse.json();
+                if (partialData.success) {
+                  // Always update leads if we have new data (even if same count, data might have changed)
+                  const currentLeadCount = leads.length;
+                  const newLeads = partialData.leads || [];
+                  const newLeadCount = newLeads.length;
+                  
+                  if (newLeadCount !== currentLeadCount) {
+                    console.log(`🔄 Real-time update: ${currentLeadCount} → ${newLeadCount} leads`);
+                  }
+                  
+                  setLeads(newLeads);
+                  setHasScrapedBefore(true); // Mark that scraping has started
+                }
+              }
+            } catch (partialError) {
+              console.error('❌ Error fetching partial leads:', partialError);
+            }
+          }
+          
+          // Check if scraping is complete
+          if (status.isActive === false && status.percentage >= 100) {
+            console.log('🎉 Backend completion detected! Fetching final results...');
+            clearInterval(progressInterval);
+            clearInterval(realTimeInterval);
+            
+            // Abort the main request immediately to prevent timeout
+            if (abortControllerRef.current) {
+              console.log('🛑 Aborting main request to prevent timeout...');
+              abortControllerRef.current.abort();
+            }
+            
+            // Fetch final results immediately
+            try {
+              const resultsResponse = await fetch('http://localhost:5001/api/leads/latest');
+              if (resultsResponse.ok) {
+                const resultsData = await resultsResponse.json();
+                if (resultsData.success && resultsData.leads) {
+                  setLeads(resultsData.leads);
+                  setSuccess(`✅ Successfully scraped ${resultsData.leads.length} leads!`);
+                  setCurrentProgress({ current: 100, target: 100, percentage: 100 });
+                  setEta('Completed!');
+                  setLoading(false);
+                  setError(''); // Clear any previous errors
+                  setHasScrapedBefore(true);
+                  setBackendIsScraping(false); // Mark backend as finished
+                  console.log(`✅ Final results loaded: ${resultsData.leads.length} leads`);
+                  return; // Exit the polling
+                } else {
+                  console.error('❌ Latest leads endpoint returned no data:', resultsData);
+                }
+              } else {
+                console.error('❌ Latest leads endpoint failed:', resultsResponse.status);
+              }
+            } catch (resultsError) {
+              console.error('❌ Error fetching final results:', resultsError);
+            }
+            
+            // If we couldn't fetch results, still mark as completed to prevent timeout
+            setLoading(false);
+            setHasScrapedBefore(true);
+            setBackendIsScraping(false); // Mark backend as finished
+            setError('Scraping completed but failed to fetch results. Try the Fetch Results button.');
+            return;
+          }
+          
+          const currentProfiles = status.completedProfiles || 0;
+          const totalExpected = status.totalProfiles || (pages * 8); // Estimate 8 profiles per page
+          
+          // Calculate profiles per second
+          if (currentProfiles > lastProfileCount) {
+            profilesPerSecond = currentProfiles - lastProfileCount;
+            lastProfileCount = currentProfiles;
+          }
+          
+          const percentage = totalExpected > 0 ? Math.min(100, (currentProfiles / totalExpected) * 100) : 0;
+          setCurrentProgress({ 
+            current: currentProfiles, 
+            target: totalExpected, 
+            percentage: Math.floor(percentage) 
+          });
+          
+          // Calculate realistic ETA
+          if (profilesPerSecond > 0 && currentProfiles < totalExpected) {
+            const remainingProfiles = totalExpected - currentProfiles;
+            const remainingSeconds = Math.ceil(remainingProfiles / profilesPerSecond);
+            const minutes = Math.floor(remainingSeconds / 60);
+            const seconds = remainingSeconds % 60;
+            setEta(`ETA: ${minutes}m ${seconds}s (${profilesPerSecond}/sec)`);
+          } else if (percentage >= 100) {
+            setEta('Finalizing...');
+          } else {
+            setEta('Calculating...');
+          }
+        } else {
+          // Fallback to time-based estimation
+          const elapsed = Date.now() - startTime;
+          const estimatedTotal = pages * 20000; // 20 seconds per page
+          const progress = Math.min(100, (elapsed / estimatedTotal) * 100);
+          
+          setCurrentProgress({ current: Math.floor(progress), target: 100, percentage: Math.floor(progress) });
+          
+          if (elapsed < estimatedTotal) {
+            const remaining = estimatedTotal - elapsed;
+            const minutes = Math.floor(remaining / 60000);
+            const seconds = Math.floor((remaining % 60000) / 1000);
+            setEta(`ETA: ${minutes}m ${seconds}s (estimated)`);
+          } else {
+            setEta('Processing...');
+          }
+        }
+      } catch (error) {
+        // Silent fallback - don't spam console
+        const elapsed = Date.now() - startTime;
+        const estimatedTotal = pages * 20000;
+        const progress = Math.min(100, (elapsed / estimatedTotal) * 100);
+        setCurrentProgress({ current: Math.floor(progress), target: 100, percentage: Math.floor(progress) });
+        setEta('Processing...');
+      }
+    }, 1000); // Check every 1 second for real-time updates (reduced from 250ms)
     
     try {
+      const abortController = new AbortController();
+      abortControllerRef.current = abortController;
+      
+      // Start scraping request (this will likely timeout but that's OK)
       const response = await axios.post('http://localhost:5001/scrape', {
         keyword: keyword.trim(),
-        pages,
-        massMode: true,
-        delay: 3000
-      }, {
-        signal: abortControllerRef.current.signal
+        pages: pages,
+        advancedSettings: {
+          minFollowers: advancedSettings.minFollowers || 50,
+          maxFollowers: advancedSettings.maxFollowers || 2500000
+        }
+              }, {
+        signal: abortController.signal,
+        timeout: 900000 // 15 minutes for large scraping jobs
       });
+      
+      clearInterval(progressInterval);
+      clearInterval(realTimeInterval);
       
       if (response.data.success) {
         setLeads(response.data.leads || []);
-        setSuccess(`Successfully scraped ${response.data.leads?.length || 0} leads!`);
+        setSuccess(`✅ Successfully scraped ${response.data.leads?.length || 0} leads!`);
+        setCurrentProgress({ current: 100, target: 100, percentage: 100 });
+        setEta('Completed!');
       } else {
-        setError(response.data.error || "Scraping failed");
+        setError(response.data.error || 'Scraping failed');
       }
     } catch (error) {
-      if (error.name !== 'AbortError') {
-        setError(error.response?.data?.error || error.message || "Scraping failed");
+      clearInterval(progressInterval);
+      clearInterval(realTimeInterval);
+      
+      // 🔥 ALWAYS try to fetch latest leads even if main request failed
+      console.log('🔍 Main request failed, checking for any scraped leads...');
+      try {
+        const fallbackResponse = await fetch('http://localhost:5001/api/leads/latest');
+        if (fallbackResponse.ok) {
+          const fallbackData = await fallbackResponse.json();
+          if (fallbackData.success && fallbackData.leads && fallbackData.leads.length > 0) {
+            console.log(`🎉 Found ${fallbackData.leads.length} leads despite main request failure!`);
+            setLeads(fallbackData.leads);
+            setSuccess(`✅ Successfully scraped ${fallbackData.leads.length} leads! (Retrieved after timeout)`);
+            setCurrentProgress({ current: 100, target: 100, percentage: 100 });
+            setEta('Completed!');
+            setLoading(false);
+            abortControllerRef.current = null;
+            return; // Exit early with success
+          }
+        }
+      } catch (fallbackError) {
+        console.error('❌ Fallback leads fetch also failed:', fallbackError);
+      }
+      
+      if (error.name === 'AbortError' || error.code === 'ERR_CANCELED') {
+        // Check if this was aborted due to completion detection
+        if (leads.length > 0) {
+          console.log('✅ Request aborted due to completion detection - results already loaded');
+          setSuccess(`✅ Successfully scraped ${leads.length} leads!`);
+        } else {
+          console.log('🛑 Request aborted by user');
+          setSuccess('Scraping was stopped by user');
+        }
+      } else {
+        console.error('Scraping error:', error);
+        
+        // Show the actual error but also indicate we tried to fetch leads
+        let errorMessage = '';
+        if (error.response?.data) {
+          const errorData = error.response.data;
+          if (errorData.details) {
+            errorMessage = JSON.stringify(errorData);
+          } else {
+            errorMessage = errorData.error || errorData.message || 'Failed to scrape leads';
+          }
+        } else {
+          errorMessage = error.message || 'Failed to scrape leads';
+        }
+        
+        // Add note about checking for partial results
+        if (leads.length === 0) {
+          errorMessage += ' | No results found. Try the Fetch Results button.';
+        } else {
+          errorMessage += ` | Found ${leads.length} leads despite the error.`;
+        }
+        setError(errorMessage);
       }
     } finally {
       setLoading(false);
+      setBackendIsScraping(false); // Always reset backend state
       abortControllerRef.current = null;
+      
+      // 🔥 BACKUP POLLING: Continue checking for results even after main request ends
+      if (leads.length === 0) {
+        console.log('🔄 Starting aggressive backup polling for missed results...');
+        let backupAttempts = 0;
+        const maxBackupAttempts = 15; // 15 attempts over 30 seconds
+        
+        const backupInterval = setInterval(async () => {
+          backupAttempts++;
+          try {
+            const backupResponse = await fetch('http://localhost:5001/api/leads/latest');
+            if (backupResponse.ok) {
+              const backupData = await backupResponse.json();
+              if (backupData.success && backupData.leads && backupData.leads.length > 0) {
+                console.log(`🎉 Backup polling found ${backupData.leads.length} leads! (Attempt ${backupAttempts})`);
+                setLeads(backupData.leads);
+                setSuccess(`✅ Successfully scraped ${backupData.leads.length} leads! (Auto-fetched after completion)`);
+                setCurrentProgress({ current: 100, target: 100, percentage: 100 });
+                setEta('Completed!');
+                setError(''); // Clear any previous errors
+                setBackendIsScraping(false); // Mark backend as finished
+                clearInterval(backupInterval);
+                return;
+              }
+            }
+            
+            // Stop if we've tried enough times
+            if (backupAttempts >= maxBackupAttempts) {
+              clearInterval(backupInterval);
+              console.log('🛑 Backup polling stopped after 15 attempts');
+            }
+          } catch (backupError) {
+            console.error('❌ Backup polling error:', backupError);
+          }
+        }, 2000); // Check every 2 seconds
+      }
     }
   };
 
@@ -888,13 +1506,79 @@ function ScraperPanel() {
       }
       
       setLoading(false);
+      setBackendIsScraping(false);
       setSuccess("Scraping stopped successfully. Keeping scraped results.");
     } catch (error) {
       console.error('Error stopping scraper:', error);
       // Still stop the frontend loading state
       setLoading(false);
+      setBackendIsScraping(false);
       setSuccess("Scraping stopped (frontend). Keeping scraped results.");
     }
+  };
+
+  // 🔥 FIXED: Manual fetch results function (doesn't break scraping state)
+  const handleFetchResults = async () => {
+    try {
+      setError(''); // Clear previous errors
+      
+      // First try to get latest leads from memory (this should work during scraping)
+      const latestResponse = await fetch('http://localhost:5001/api/leads/latest');
+      if (latestResponse.ok) {
+        const data = await latestResponse.json();
+        if (data.success) {
+          const fetchedLeads = data.leads || [];
+          setLeads(fetchedLeads);
+          
+          if (fetchedLeads.length > 0) {
+            const message = loading || backendIsScraping ? 
+              `🔄 Fetched ${fetchedLeads.length} leads (scraping in progress)` :
+              `✅ Fetched ${fetchedLeads.length} leads from latest session!`;
+            setSuccess(message);
+            // Only update progress if not currently scraping
+            if (!loading) {
+              setCurrentProgress({ current: 100, target: 100, percentage: 100 });
+              setEta('Completed!');
+            }
+            return;
+          } else if (loading || backendIsScraping) {
+            setSuccess('🔄 Fetching latest leads... (scraping in progress)');
+            return;
+          }
+        }
+      }
+      
+      // If no latest leads, try database
+      const dbResponse = await fetch('http://localhost:5001/api/leads');
+      if (dbResponse.ok) {
+        const dbData = await dbResponse.json();
+        if (dbData.success && dbData.leads && dbData.leads.length > 0) {
+          setLeads(dbData.leads);
+          setSuccess(`✅ Fetched ${dbData.leads.length} leads from database!`);
+          if (!loading) {
+            setCurrentProgress({ current: 100, target: 100, percentage: 100 });
+            setEta('Completed!');
+          }
+          return;
+        }
+      }
+      
+      // If still no leads, show appropriate message
+      if (loading || backendIsScraping) {
+        setSuccess('🔄 Scraping in progress... Leads will appear here as they are found.');
+      } else {
+        setError('No leads found. Try starting a new scrape or check if a previous scrape completed.');
+      }
+      
+    } catch (error) {
+      console.error('Error fetching results:', error);
+      if (loading || backendIsScraping) {
+        setSuccess('🔄 Scraping in progress... Results will appear automatically when ready.');
+      } else {
+        setError('Error fetching results: ' + error.message);
+      }
+    }
+    // 🔥 DON'T reset loading state - let scraping continue
   };
 
   // 🔥 NEW: Save Session Handler
@@ -922,19 +1606,60 @@ function ScraperPanel() {
         leads: leads
       };
       
-      const response = await axios.post('http://localhost:5001/api/sessions/save', sessionData);
+      console.log('💾 Saving session with data:', { 
+        totalLeads: sessionData.totalLeads, 
+        leadsCount: sessionData.leads.length,
+        keyword: sessionData.searchCriteria.keyword 
+      });
       
-      if (response.data.success) {
-        setSuccess(`✅ Session saved! ${leads.length} leads saved with ID: ${response.data.sessionId}`);
+      const response = await fetch('http://localhost:5001/api/sessions/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(sessionData)
+      });
+      
+      const responseData = await response.json();
+      
+      if (response.ok && responseData.success) {
+        setSuccess(`✅ Session saved! ${leads.length} leads saved with ID: ${responseData.sessionId}`);
       } else {
-        setError(response.data.error || "Failed to save session");
+        console.error('Session save failed:', responseData);
+        setError(responseData.error || "Failed to save session");
       }
     } catch (error) {
       console.error('Error saving session:', error);
-      setError(error.response?.data?.error || "Failed to save session");
+      setError(error.message || "Failed to save session");
     } finally {
       setIsSavingSession(false);
     }
+  };
+
+  // 🔥 NEW: Close Session Handler
+  const handleCloseSession = () => {
+    // Clear all session data
+    setLeads([]);
+    setKeyword("");
+    setPages(3);
+    setError("");
+    setSuccess("");
+    setCurrentProgress({ current: 0, target: 0, percentage: 0 });
+    setEta("Calculating...");
+    setHasScrapedBefore(false);
+    setBackendIsScraping(false);
+    setLoading(false);
+    
+    // Clear any localStorage session data
+    localStorage.removeItem('loadedSession');
+    
+    // Show confirmation
+    setSuccess("✅ Session closed successfully!");
+    
+    // Clear success message after a few seconds
+    setTimeout(() => {
+      setSuccess("");
+    }, 3000);
   };
 
   return (
@@ -958,10 +1683,16 @@ function ScraperPanel() {
           loading={loading}
           onStart={handleStart}
           onStop={handleStop}
+          onFetchResults={handleFetchResults}
+          hasScrapedBefore={hasScrapedBefore}
           progress={currentProgress}
           eta={eta}
-          showAdvanced={showAdvanced}
-          setShowAdvanced={setShowAdvanced}
+          error={error}
+          success={success}
+          advancedSettings={advancedSettings}
+          setAdvancedSettings={setAdvancedSettings}
+          leads={leads}
+          results={leads}
         />
 
         {/* Status Messages */}
@@ -991,14 +1722,27 @@ function ScraperPanel() {
         )}
         
         {/* Leads Grid */}
-        {leads.length > 0 && (
+        {(leads.length > 0 || (loading && hasScrapedBefore)) && (
           <div>
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-white flex items-center space-x-2">
                 <span>📊</span>
                 <span>Scraped Leads ({leads.length})</span>
+                {loading && hasScrapedBefore && (
+                  <span className="text-blue-400 text-sm animate-pulse">• Live Updates</span>
+                )}
               </h2>
               <div className="flex items-center space-x-3">
+                {/* 🔥 NEW: Close Session Button */}
+                <button 
+                  onClick={handleCloseSession}
+                  disabled={!leads || leads.length === 0 || loading}
+                  className="px-4 py-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white rounded-lg transition-colors duration-200 flex items-center space-x-2"
+                >
+                  <span>❌</span>
+                  <span>Close Session</span>
+                </button>
+                
           <button 
             onClick={() => setShowScoringGuide(true)}
                   className="px-4 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors duration-200 flex items-center space-x-2"
@@ -1028,18 +1772,24 @@ function ScraperPanel() {
         </div>
                 </div>
             
+            {/* Show leads if available, otherwise show loading placeholder */}
+            {leads.length > 0 ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {leads.map((lead, index) => (
                 <ModernLeadCard key={index} lead={lead} index={index} />
               ))}
                 </div>
+            ) : (
+              <div className="text-center py-12 bg-gray-800/30 rounded-lg border border-gray-700/50">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+                <h3 className="text-xl font-semibold text-white mb-2">Finding Leads...</h3>
+                <p className="text-gray-400">Scraping profiles and analyzing content. Results will appear here live!</p>
                 </div>
         )}
-
-        {/* 🔥 NEW: Hashtag Performance Analytics */}
-        {leads.length > 0 && (
-          <HashtagAnalytics leads={leads} />
+          </div>
         )}
+
+
 
         {/* Empty State */}
         {!loading && leads.length === 0 && (

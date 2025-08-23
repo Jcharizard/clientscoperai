@@ -43,8 +43,9 @@ class InstagramBypassOptimized {
     if (!fs.existsSync(this.screenshotsDir)) fs.mkdirSync(this.screenshotsDir, { recursive: true });
     if (!fs.existsSync(path.dirname(this.logFile))) fs.mkdirSync(path.dirname(this.logFile), { recursive: true });
     
-    // Initialize browser pool (will be dynamically resized based on workload)
-    this.initializeBrowserPool(1); // Start with 1 browser
+    // 🔥 LAZY INITIALIZATION: Don't initialize browser pool immediately
+    // Browser will be initialized on first use to reduce startup time
+    this.browserInitialized = false;
   }
 
   log(message) {
@@ -163,19 +164,26 @@ class InstagramBypassOptimized {
     return false;
   }
 
-  // 🔥 ULTRA-CONSERVATIVE BROWSER POOL - Dynamic Scaling
+    // 🔥 ULTRA-CONSERVATIVE BROWSER POOL - Dynamic Scaling
   async initializeBrowserPool(expectedProfiles = 1) {
     // CRITICAL: Only initialize if we don't already have a browser
     if (this.browserPool.length > 0) {
       this.log(`🔄 Browser pool already has ${this.browserPool.length} browsers - skipping initialization`);
       return;
     }
+
+    // 🚀 LAZY LOADING: Mark as initialized but don't create browsers yet
+    if (!this.browserInitialized) {
+      this.log(`⚡ Fast startup: Browser pool will be initialized on first use`);
+      this.browserInitialized = true;
+      return;
+    }
     
     // 🧠 DYNAMIC POOL SIZING: Scale based on expected workload and success rate
     const successRate = this.rateLimitStats.successCount / (this.rateLimitStats.successCount + this.rateLimitStats.failureCount) || 0.5;
     const dynamicPoolSize = Math.min(
-      Math.max(1, Math.ceil(expectedProfiles / 3)), // 1 browser per 3 profiles
-      successRate > 0.7 ? 2 : 1 // Use 2 browsers only if success rate is high
+      Math.max(1, Math.ceil(expectedProfiles / 10)), // 1 browser per 10 profiles (reduced from 3)
+      successRate > 0.8 ? 2 : 1 // Use 2 browsers only if success rate is very high
     );
     
     this.log(`🚀 Initializing ${dynamicPoolSize} browser for ${expectedProfiles} profiles (success rate: ${(successRate * 100).toFixed(1)}%)`);
@@ -190,7 +198,7 @@ class InstagramBypassOptimized {
       this.log(`🎉 Browser pool initialized with ${this.browserPool.length} browser (dynamic scaling)`);
       } catch (error) {
       this.log(`❌ Failed to create browser: ${error.message}`);
-      }
+    }
   }
 
   // Get available browser from pool
@@ -427,6 +435,35 @@ class InstagramBypassOptimized {
           // Additional wait for popup to fully disappear
           await new Promise(resolve => setTimeout(resolve, 500));
           
+          // === NEW: Dedicated handler for Block/Restrict/Report dialog ===
+          try {
+            const dialogSelector = 'div[role="dialog"]';
+            const dialog = await page.$(dialogSelector);
+            if (dialog) {
+              const dialogText = await page.evaluate(el => el.innerText, dialog);
+              if (
+                dialogText &&
+                dialogText.includes('Block') &&
+                dialogText.includes('Restrict') &&
+                dialogText.includes('Report')
+              ) {
+                const cancelButton = await dialog.$x(".//button[contains(text(), 'Cancel')]");
+                if (cancelButton.length > 0) {
+                  const isVisible = await cancelButton[0].isIntersectingViewport();
+                  if (isVisible) {
+                    this.log('🎯 Detected Block/Restrict/Report popup, clicking Cancel to dismiss');
+                    await cancelButton[0].click();
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    this.log('✅ Block/Restrict/Report popup closed');
+                  }
+                }
+              }
+            }
+          } catch (e) {
+            this.log(`⚠️ Error handling Block/Restrict/Report popup: ${e.message}`);
+          }
+          // === END NEW ===
+          
           // 🔍 VERIFY: Check content again after popup closing
           const updatedContent = await page.content();
           const stillHasLogin = loginIndicators.some(indicator => 
@@ -443,6 +480,13 @@ class InstagramBypassOptimized {
         } catch (popupError) {
           this.log(`⚠️ Popup closing failed: ${popupError.message.substring(0, 30)}...`);
           // Continue with screenshot anyway
+        }
+
+        // Final check: close any remaining popups before screenshot
+        try {
+          await this.closeAllPopups(page);
+        } catch (e) {
+          this.log(`⚠️ Final popup cleanup failed: ${e.message}`);
         }
         
         await page.screenshot({
@@ -578,6 +622,35 @@ class InstagramBypassOptimized {
             }
           }
           
+          // === NEW: Mobile Block/Restrict/Report dialog handler ===
+          try {
+            const dialogSelector = 'div[role="dialog"]';
+            const dialog = await page.$(dialogSelector);
+            if (dialog) {
+              const dialogText = await page.evaluate(el => el.innerText, dialog);
+              if (
+                dialogText &&
+                dialogText.includes('Block') &&
+                dialogText.includes('Restrict') &&
+                dialogText.includes('Report')
+              ) {
+                const cancelButton = await dialog.$x(".//button[contains(text(), 'Cancel')]");
+                if (cancelButton.length > 0) {
+                  const isVisible = await cancelButton[0].isIntersectingViewport();
+                  if (isVisible) {
+                    this.log('📱 Detected mobile Block/Restrict/Report popup, clicking Cancel to dismiss');
+                    await cancelButton[0].click();
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    this.log('✅ Mobile Block/Restrict/Report popup closed');
+                  }
+                }
+              }
+            }
+          } catch (e) {
+            this.log(`⚠️ Error handling mobile Block/Restrict/Report popup: ${e.message}`);
+          }
+          // === END NEW ===
+          
           // Escape key for mobile
           try {
             await page.keyboard.press('Escape');
@@ -588,6 +661,64 @@ class InstagramBypassOptimized {
           
         } catch (error) {
           this.log(`⚠️ Mobile popup closing failed, continuing...`);
+        }
+
+        // 🔥 SPECIFIC "USE THE APP" POPUP HANDLING FOR MOBILE
+        try {
+          this.log(`📱 Specifically targeting mobile "Use the app" popup...`);
+          
+          // Wait for any "Use the app" popup to appear
+          await new Promise(resolve => setTimeout(resolve, 800));
+          
+          // Try to find and close "Use the app" popup specifically on mobile
+          const useAppPopupClosed = await page.evaluate(() => {
+            const popupTexts = [
+              'use the app',
+              'open in app', 
+              'download app',
+              'get app',
+              'continue in app',
+              'switch to app'
+            ];
+            
+            // Find any element containing these texts
+            const elements = Array.from(document.querySelectorAll('*'));
+            const popupElement = elements.find(el => {
+              const text = el.textContent?.toLowerCase() || '';
+              return popupTexts.some(popupText => text.includes(popupText));
+            });
+            
+            if (popupElement) {
+              // Look for close button within the popup
+              const closeButton = popupElement.querySelector('button[aria-label="Close"], svg[aria-label="Close"], button:has(svg), div[role="button"]');
+              if (closeButton) {
+                closeButton.click();
+                return true;
+              }
+              
+              // If no close button, try clicking the popup itself
+              popupElement.click();
+              return true;
+            }
+            
+            return false;
+          });
+          
+          if (useAppPopupClosed) {
+            this.log(`📱 Successfully closed mobile "Use the app" popup`);
+            await new Promise(resolve => setTimeout(resolve, 500));
+          } else {
+            this.log(`📱 No mobile "Use the app" popup found`);
+          }
+        } catch (e) {
+          this.log(`⚠️ Mobile "Use the app" popup handling error: ${e.message}`);
+        }
+
+        // Final mobile popup cleanup before screenshot
+        try {
+          await this.closeAllPopups(page);
+        } catch (e) {
+          this.log(`⚠️ Final mobile popup cleanup failed: ${e.message}`);
         }
         
         await page.screenshot({
@@ -931,27 +1062,78 @@ class InstagramBypassOptimized {
         return null;
       }
       
-      // 🔥 CRITICAL: Handle "Save login info" popup and other Instagram popups
+      // 🔥 CRITICAL: Handle ALL Instagram popups with comprehensive strategy
       try {
         this.log(`🔍 Checking for Instagram popups...`);
         await new Promise(resolve => setTimeout(resolve, 1500)); // Wait for popup to appear
         
-        // Strategy 1: Find and click X button (dismiss popup)
+        // === STRATEGY 1: Handle Block/Restrict/Report popup FIRST ===
+        const blockPopupHandled = await page.evaluate(() => {
+          const dialogs = document.querySelectorAll('div[role="dialog"]');
+          for (const dialog of dialogs) {
+            const text = dialog.textContent || '';
+            if (text.includes('Block') || text.includes('Restrict') || text.includes('Report')) {
+              // Look for Cancel button
+              const cancelBtn = dialog.querySelector('button');
+              const buttons = dialog.querySelectorAll('button');
+              
+              // Find the Cancel button (usually the last one)
+              for (let i = buttons.length - 1; i >= 0; i--) {
+                const btn = buttons[i];
+                if (btn.textContent.includes('Cancel') || i === buttons.length - 1) {
+                  btn.click();
+                  return true;
+                }
+              }
+            }
+          }
+          return false;
+        });
+        
+        if (blockPopupHandled) {
+          this.log(`🎯 Block/Restrict/Report popup detected and closed`);
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+        
+        // === STRATEGY 2: Handle "Use the app" popup ===
+        const useAppPopupHandled = await page.evaluate(() => {
+          const elements = document.querySelectorAll('*');
+          for (const element of elements) {
+            const text = element.textContent?.toLowerCase() || '';
+            if (text.includes('use the app') || text.includes('open in app') || text.includes('get app')) {
+              // Look for close button in the same container
+              const container = element.closest('div[role="dialog"], div[role="presentation"], div[style*="position: fixed"]');
+              if (container) {
+                const closeBtn = container.querySelector('button[aria-label="Close"], svg[aria-label="Close"]');
+                if (closeBtn) {
+                  closeBtn.click();
+                  return true;
+                }
+                // If no close button, try clicking the X in the corner
+                const xBtn = container.querySelector('button:last-child, div[role="button"]:last-child');
+                if (xBtn) {
+                  xBtn.click();
+                  return true;
+                }
+              }
+            }
+          }
+          return false;
+        });
+        
+        if (useAppPopupHandled) {
+          this.log(`🎯 "Use the app" popup detected and closed`);
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+        
+        // === STRATEGY 3: Generic popup closing ===
         const xButtonSelectors = [
-          // Instagram's standard close button
           'svg[aria-label="Close"]',
           'button[aria-label="Close"]',
-          // Modal close buttons
-          'div[role="dialog"] svg[aria-label="Close"]',
           'div[role="dialog"] button[aria-label="Close"]',
-          // Generic X buttons
-          'button[aria-label="Close Modal"]',
-          'button[data-testid="modal-close-button"]',
-          // SVG X icons
-          'svg[role="img"][aria-label="Close"]',
-          // Any button containing an X-like SVG
-          'button:has(svg[aria-label="Close"])',
-          'div[role="button"]:has(svg[aria-label="Close"])'
+          'div[role="dialog"] svg[aria-label="Close"]',
+          'div[role="presentation"] button[aria-label="Close"]',
+          'div[role="presentation"] svg[aria-label="Close"]'
         ];
         
         let popupClosed = false;
@@ -959,21 +1141,17 @@ class InstagramBypassOptimized {
           try {
             const closeButton = await page.$(selector);
             if (closeButton) {
-              // Check if button is visible
               const isVisible = await closeButton.isIntersectingViewport();
               if (isVisible) {
                 this.log(`🎯 Found close button: ${selector} - clicking X to dismiss popup`);
                 await closeButton.click();
-                
-                // 🔥 ENHANCED: Wait longer and verify popup is actually gone
                 this.log(`⏳ Waiting for popup to fully disappear...`);
-                await new Promise(resolve => setTimeout(resolve, 2500)); // Increased from 1000ms to 2500ms
+                await new Promise(resolve => setTimeout(resolve, 2500));
                 
-                // Verify popup is actually gone by checking if the close button still exists
                 const stillExists = await page.$(selector);
                 if (!stillExists) {
                   popupClosed = true;
-                  this.log(`✅ Successfully dismissed popup - X button no longer present`);
+                  this.log(`✅ Successfully closed popup via container click`);
                   break;
                 } else {
                   this.log(`⚠️ Popup still present after clicking X, trying next method...`);
@@ -985,22 +1163,16 @@ class InstagramBypassOptimized {
           }
         }
         
-        // Strategy 2: PREFERRED - Click "Save Info" to prevent future popups
+        // === STRATEGY 4: Text-based button closing ===
         if (!popupClosed) {
           try {
-            this.log(`🎯 Looking for "Save Info" button to prevent future popups...`);
-            // Use XPath to find buttons containing specific text - PRIORITIZE "Save Info"
+            this.log(`🎯 Looking for text-based popup buttons...`);
             const textButtonSelectors = [
-              "//button[contains(text(), 'Save Info')]",
-              "//button[contains(text(), 'Save info')]",
-              "//button[contains(text(), 'Save')]",
-              "//div[@role='button'][contains(text(), 'Save Info')]",
-              "//div[@role='button'][contains(text(), 'Save')]",
-              // Fallback options
-              "//button[contains(text(), 'Not Now')]",
-              "//button[contains(text(), 'Not now')]", 
               "//button[contains(text(), 'Cancel')]",
-              "//button[contains(text(), 'Dismiss')]",
+              "//button[contains(text(), 'Not Now')]",
+              "//button[contains(text(), 'Close')]",
+              "//button[contains(text(), '×')]",
+              "//div[@role='button'][contains(text(), 'Cancel')]",
               "//div[@role='button'][contains(text(), 'Not Now')]"
             ];
             
@@ -1012,12 +1184,9 @@ class InstagramBypassOptimized {
                   if (isVisible) {
                     this.log(`🎯 Found text button via XPath: ${xpath}`);
                     await button.click();
-                    
-                    // 🔥 ENHANCED: Wait longer and verify popup is gone
                     this.log(`⏳ Waiting for text button popup to disappear...`);
-                    await new Promise(resolve => setTimeout(resolve, 2500)); // Increased wait time
+                    await new Promise(resolve => setTimeout(resolve, 2500));
                     
-                    // Verify popup is gone by checking if button still exists
                     const [stillExists] = await page.$x(xpath);
                     if (!stillExists) {
                       popupClosed = true;
@@ -1037,51 +1206,27 @@ class InstagramBypassOptimized {
           }
         }
         
-                 // Strategy 3: Advanced popup detection using content analysis
+        // === STRATEGY 5: Aggressive popup container closing ===
          if (!popupClosed) {
            try {
              this.log(`🔍 Advanced popup detection - checking page content...`);
              
-             // Check if page content indicates a popup is present
-             const hasPopupContent = await page.evaluate(() => {
-               const content = document.body.textContent.toLowerCase();
-               const popupTexts = [
-                 'save your login info',
-                 'save info',
-                 'not now',
-                 'turn on notifications',
-                 'allow notifications',
-                 'add to home screen',
-                 'install app',
-                 'get the app'
-               ];
-               return popupTexts.some(text => content.includes(text));
-             });
-             
-             if (hasPopupContent) {
-               this.log(`🎯 Popup content detected, trying additional selectors...`);
-               
-               // More aggressive popup selectors
                const aggressiveSelectors = [
                  'div[role="dialog"]',
                  'div[role="presentation"]',
-                 '[data-testid*="modal"]',
-                 '[data-testid*="dialog"]',
-                 'div[style*="position: fixed"]',
-                 'div[style*="z-index"]'
+              'div[style*="position: fixed"]'
                ];
                
                for (const selector of aggressiveSelectors) {
                  try {
                    const popupContainer = await page.$(selector);
                    if (popupContainer) {
-                     // Look for any clickable element within the popup
-                     const clickableElements = await popupContainer.$$('button, div[role="button"], [tabindex="0"]');
+                  this.log(`🎯 Clicking element in popup container: ${selector}`);
+                  const clickableElements = await popupContainer.$$('button, div[role="button"]');
                      for (const element of clickableElements) {
                        try {
                          const isVisible = await element.isIntersectingViewport();
                          if (isVisible) {
-                           this.log(`🎯 Clicking element in popup container: ${selector}`);
                            await element.click();
                            await new Promise(resolve => setTimeout(resolve, 500));
                            popupClosed = true;
@@ -1096,7 +1241,6 @@ class InstagramBypassOptimized {
                    }
                  } catch (e) {
                    // Continue to next selector
-                 }
                }
              }
            } catch (e) {
@@ -1104,7 +1248,7 @@ class InstagramBypassOptimized {
            }
          }
          
-         // Strategy 4: Escape key as final fallback
+        // === STRATEGY 6: Escape key as final fallback ===
          if (!popupClosed) {
            try {
              this.log(`⌨️ Trying Escape key to dismiss popup`);
@@ -1116,39 +1260,42 @@ class InstagramBypassOptimized {
            }
          }
         
-        // 🔥 FINAL VERIFICATION: Make absolutely sure popup is gone before proceeding
+        // 🔥 OPTIMIZED FINAL VERIFICATION: Faster popup check
         this.log(`🔍 Final verification - ensuring no popups remain...`);
-        await new Promise(resolve => setTimeout(resolve, 1500)); // Additional wait
+        await new Promise(resolve => setTimeout(resolve, 500)); // Reduced wait time
         
-        // Check one more time for any remaining popups
-        const finalPopupCheck = await page.evaluate(() => {
-          const popupIndicators = [
-            'save your login info',
-            'not now',
-            'save info',
-            'turn on notifications'
-          ];
+        // Quick popup check with timeout
+        const finalPopupCheck = await Promise.race([
+          page.evaluate(() => {
+            const popupIndicators = ['save your login info', 'not now', 'use the app', 'open in app'];
           const bodyText = document.body.textContent.toLowerCase();
           return popupIndicators.some(indicator => bodyText.includes(indicator));
-        });
+          }),
+          new Promise(resolve => setTimeout(() => resolve(false), 1000)) // 1 second timeout
+        ]);
         
         if (finalPopupCheck) {
           this.log(`⚠️ Popup content still detected, attempting final cleanup...`);
-          // Try pressing Escape as final cleanup
           try {
             await page.keyboard.press('Escape');
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 500)); // Reduced wait
             this.log(`✅ Final Escape key pressed`);
           } catch (e) {
             this.log(`⚠️ Final Escape failed: ${e.message}`);
           }
-        } else {
-          this.log(`✅ No popup content detected - ready for screenshot`);
         }
         
         this.log(`✅ Popup handling complete for ${username}`);
       } catch (e) {
         this.log(`⚠️ Popup handling error: ${e.message}`);
+      }
+
+      // Additional popup cleanup before screenshot
+      try {
+        await this.closeAllPopups(page);
+          this.log(`✅ Successfully closed "Use the app" popup`);
+      } catch (e) {
+        this.log(`⚠️ Mobile "Use the app" popup handling error: ${e.message}`);
       }
 
       // 🔥 HIDE BROWSER SUPPORT MESSAGE AND CONSISTENT SCROLLING
@@ -1173,6 +1320,25 @@ class InstagramBypassOptimized {
           });
         });
         
+        // 🔥 ENHANCED SCROLLING: Multi-step scrolling to ensure all content loads
+        await page.evaluate(() => {
+          // Step 1: Scroll to bio section to trigger content loading
+          window.scrollTo(0, 150);
+        });
+        await new Promise(resolve => setTimeout(resolve, 800));
+        
+        await page.evaluate(() => {
+          // Step 2: Scroll to posts section
+          window.scrollTo(0, 350);
+        });
+        await new Promise(resolve => setTimeout(resolve, 800));
+        
+        await page.evaluate(() => {
+          // Step 3: Scroll down more to load posts grid
+          window.scrollTo(0, 600);
+        });
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
         // CONSISTENT SCROLL: Position to show posts properly
         await page.evaluate(() => {
           // Find the posts section and scroll to it consistently
@@ -1181,11 +1347,11 @@ class InstagramBypassOptimized {
             postsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           } else {
             // Fallback: scroll to specific position to show posts, hide followers
-            window.scrollTo(0, 400);
+            window.scrollTo(0, 450);
           }
         });
         
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 800));
         
         // Ensure we're showing posts grid, not header/followers
         await page.evaluate(() => {
@@ -1194,7 +1360,10 @@ class InstagramBypassOptimized {
           
           if (profileHeader && postsContainer) {
             const headerHeight = profileHeader.offsetHeight;
-            window.scrollTo(0, headerHeight - 50); // Show just below header
+            window.scrollTo(0, headerHeight - 30); // Show just below header
+          } else {
+            // Final fallback: scroll to optimal position
+            window.scrollTo(0, 420);
           }
         });
         
@@ -1568,16 +1737,25 @@ class InstagramBypassOptimized {
       this.log(`📸 Preparing for screenshot - final content load wait...`);
       await new Promise(resolve => setTimeout(resolve, 2000)); // Additional 2 seconds for content to stabilize
       
-      // Double-check that we're looking at profile content, not a popup
+      // COMPREHENSIVE PRE-SCREENSHOT CHECK
       const isProfileReady = await page.evaluate(() => {
         const hasProfileContent = document.querySelector('img[alt*="profile picture"], h2, h1') !== null;
-        const hasPopupContent = document.body.textContent.toLowerCase().includes('save your login info');
-        return hasProfileContent && !hasPopupContent;
+        const hasPopupContent = document.body.textContent.toLowerCase();
+        const popupIndicators = ['save your login info', 'not now', 'use the app', 'open in app', 'block', 'restrict', 'report', 'cancel'];
+        const hasAnyPopup = popupIndicators.some(indicator => hasPopupContent.includes(indicator));
+        return hasProfileContent && !hasAnyPopup;
       });
       
       if (!isProfileReady) {
         this.log(`⚠️ Profile content not ready or popup still present, waiting additional time...`);
-        await new Promise(resolve => setTimeout(resolve, 3000)); // Wait even longer if needed
+        // Try one more popup cleanup
+        try {
+          await this.closeAllPopups(page);
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        } catch (e) {
+          this.log(`⚠️ Final popup cleanup failed: ${e.message}`);
+        }
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait even longer if needed
       } else {
         this.log(`✅ Profile content confirmed ready for screenshot`);
       }
@@ -1837,6 +2015,18 @@ class InstagramBypassOptimized {
 
   // 🚀 OPTIMIZED BROWSER MANAGEMENT - Always ensure browser availability
   async getBrowserFromPool() {
+    // 🔥 LAZY INITIALIZATION: Create browser on first use
+    if (this.browserPool.length === 0 && !this.browserInitialized) {
+      this.log('⚡ First use: Creating browser on demand for faster startup');
+      this.browserInitialized = true;
+      
+      // Create first browser immediately when needed
+      this.log('🚀 Creating first browser for immediate use...');
+      const browser = await this.createSingleBrowser();
+      this.browserPool.push(browser);
+      this.log('✅ First browser created and ready');
+    }
+    
     // Try to get an available browser from pool first
     if (this.browserPool.length > 0) {
       const browser = this.browserPool.pop();
@@ -1880,23 +2070,19 @@ class InstagramBypassOptimized {
     }
   }
 
-  // Create a single optimized browser
+  // Create a single optimized browser - FAST STARTUP VERSION
   async createSingleBrowser() {
     return await puppeteer.launch({
       headless: true,
       args: [
+        // 🔥 MINIMAL ARGS FOR FASTEST STARTUP
         '--no-sandbox',
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
         '--no-first-run',
-        '--no-zygote',
         '--disable-gpu',
-        '--disable-background-timer-throttling',
-        '--disable-backgrounding-occluded-windows',
-        '--disable-renderer-backgrounding',
-        '--memory-pressure-off', // Prevent memory throttling
-        '--max_old_space_size=4096' // Increase memory limit
+        '--disable-web-security',
+        '--mute-audio'
       ],
       defaultViewport: { width: 1920, height: 1080 }
     });
@@ -2437,52 +2623,47 @@ class InstagramBypassOptimized {
   // Enhanced popup detection with proper selectors and XPath
   async closeAllPopups(page) {
     try {
+      // First handle Block/Restrict/Report popup specifically
+      const blockPopupHandled = await page.evaluate(() => {
+        const dialogs = document.querySelectorAll('div[role="dialog"]');
+        for (const dialog of dialogs) {
+          const text = dialog.textContent || '';
+          if (text.includes('Block') || text.includes('Restrict') || text.includes('Report')) {
+            const buttons = dialog.querySelectorAll('button');
+            // Find the Cancel button (usually the last one)
+            for (let i = buttons.length - 1; i >= 0; i--) {
+              const btn = buttons[i];
+              if (btn.textContent.includes('Cancel') || i === buttons.length - 1) {
+                btn.click();
+                return true;
+              }
+            }
+          }
+        }
+        return false;
+      });
+      
+      if (blockPopupHandled) {
+        console.log(`[${new Date().toISOString()}] ✅ Closed Block/Restrict/Report popup`);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+      
       // Use valid CSS selectors only
       const validCssSelectors = [
-        // Instagram-specific modals
-        'div[role="dialog"] button[aria-label="Close"]',
-        'div[role="dialog"] svg[aria-label="Close"]',
         'button[aria-label="Close"]',
         'svg[aria-label="Close"]',
-        
-        // Generic modal closers
-        '.modal-close',
-        '.close-button',
-        '.popup-close',
-        '[data-testid="modal-close-button"]',
-        '[data-testid="close-button"]',
+        'div[role="dialog"] button[aria-label="Close"]',
+        'div[role="dialog"] svg[aria-label="Close"]',
         '[aria-label="Close"]'
       ];
       
       // Use XPath for text-based selectors
       const xpathSelectors = [
-        // Login/signup modals
+        "//button[contains(text(), 'Cancel')]",
         "//button[contains(text(), 'Not Now')]",
         "//button[contains(text(), 'Close')]",
-        "//button[contains(text(), 'Cancel')]",
-        "//div[@role='button'][contains(text(), 'Not Now')]",
-        
-        // Rate limit popups  
-        "//button[contains(text(), 'OK')]",
-        "//button[contains(text(), 'Try Again')]",
-        "//button[contains(text(), 'Dismiss')]",
-        
-        // Instagram app install prompts
-        "//button[contains(text(), 'Install App')]",
-        "//button[contains(text(), 'Get App')]",
-        "//a[contains(text(), 'Get App')]",
-        
-        // Cookie consent
-        "//button[contains(text(), 'Accept')]",
-        "//button[contains(text(), 'Allow')]",
-        
-        // Age verification
-        "//button[contains(text(), 'Continue')]",
-        "//button[contains(text(), \"I'm 18 or older\")]",
-        
-        // X button symbols
         "//button[contains(text(), '×')]",
-        "//span[contains(text(), '×')]"
+        "//div[@role='button'][contains(text(), 'Not Now')]"
       ];
       
       let totalClosed = 0;
@@ -2642,47 +2823,27 @@ class InstagramBypassOptimized {
     this.log(`📊 Success rate: ${this.stats.successful}/${this.stats.total} (${rate}%)`);
   }
 
-  // Create stealth browser with enhanced compatibility
+  // Create stealth browser with enhanced compatibility - OPTIMIZED FOR SPEED
   async createStealthBrowser() {
     return await puppeteer.launch({
       headless: 'new',
       args: [
+        // 🔥 ESSENTIAL ARGS ONLY - Reduced from 40+ to 15 for faster startup
         '--no-sandbox',
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
         '--no-first-run',
-        '--no-zygote',
         '--disable-gpu',
-        '--disable-background-timer-throttling',
-        '--disable-backgrounding-occluded-windows',
-        '--disable-renderer-backgrounding',
-        '--memory-pressure-off',
-        '--max_old_space_size=4096',
         '--disable-web-security',
         '--disable-features=VizDisplayCompositor',
         '--disable-blink-features=AutomationControlled',
-        // Enhanced browser compatibility
         '--ignore-certificate-errors',
-        '--ignore-ssl-errors',
-        '--ignore-certificate-errors-spki-list',
-        '--allow-running-insecure-content',
-        '--enable-features=NetworkService',
-        '--force-device-scale-factor=1',
-        '--high-dpi-support=1',
         '--disable-background-networking',
         '--disable-default-apps',
         '--disable-sync',
-        '--disable-translate',
-        '--hide-scrollbars',
-        '--metrics-recording-only', 
         '--mute-audio',
         '--no-default-browser-check',
-        '--no-pings',
-        '--password-store=basic',
-        '--use-mock-keychain',
-        '--disable-component-extensions-with-background-pages',
-        '--disable-ipc-flooding-protection'
+        '--password-store=basic'
       ],
       defaultViewport: { width: 1366, height: 768 }
     });
@@ -2752,6 +2913,101 @@ class InstagramBypassOptimized {
     // Reset counters if too high
     if (stats.consecutiveSuccesses > 10) stats.consecutiveSuccesses = 5;
     if (stats.consecutiveFailures > 10) stats.consecutiveFailures = 5;
+  }
+
+  // 🔍 SCREENSHOT QUALITY DETECTION
+  async validateScreenshotQuality(screenshotPath, username) {
+    try {
+      if (!fs.existsSync(screenshotPath)) {
+        this.log(`❌ Screenshot file not found: ${screenshotPath}`);
+        return { isValid: false, reason: 'File not found', size: 0 };
+      }
+
+      const stats = fs.statSync(screenshotPath);
+      const fileSizeKB = (stats.size / 1024).toFixed(1);
+      
+      // Size-based quality checks
+      if (stats.size < 8000) { // Less than 8KB
+        this.log(`❌ Screenshot too small: ${username} (${fileSizeKB}KB) - likely blocked page or profile picture only`);
+        return { isValid: false, reason: 'Too small (likely blocked)', size: stats.size };
+      }
+      
+      if (stats.size < 15000) { // Less than 15KB
+        this.log(`⚠️ Screenshot small: ${username} (${fileSizeKB}KB) - might be profile picture or minimal content`);
+        return { isValid: false, reason: 'Small (might be profile picture)', size: stats.size };
+      }
+      
+      if (stats.size > 500000) { // Greater than 500KB
+        this.log(`⚠️ Screenshot very large: ${username} (${fileSizeKB}KB) - might include ads or extra content`);
+        // Still valid, just noting it's large
+      }
+      
+      this.log(`✅ Screenshot quality check passed: ${username} (${fileSizeKB}KB)`);
+      return { isValid: true, reason: 'Good quality', size: stats.size };
+      
+    } catch (error) {
+      this.log(`❌ Error validating screenshot: ${error.message}`);
+      return { isValid: false, reason: `Validation error: ${error.message}`, size: 0 };
+    }
+  }
+
+  // 🔄 RETRY SCREENSHOT WITH QUALITY VALIDATION
+  async takeScreenshotWithQualityCheck(username, maxRetries = 2) {
+    let lastError = null;
+    let bestScreenshot = null;
+    let bestQuality = null;
+    
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        this.log(`📸 Screenshot attempt ${attempt}/${maxRetries} for ${username}`);
+        
+        // Try different screenshot methods based on attempt
+        let screenshotPath = null;
+        
+        if (attempt === 1) {
+          // First attempt: Ultra-fast method
+          screenshotPath = await this.takeScreenshotFast(username);
+        } else if (attempt === 2) {
+          // Second attempt: Mobile-optimized method
+          screenshotPath = await this.takeScreenshotMobileOptimized(username);
+        }
+        
+        if (screenshotPath) {
+          const quality = await this.validateScreenshotQuality(screenshotPath, username);
+          
+          if (quality.isValid) {
+            this.log(`✅ High-quality screenshot obtained on attempt ${attempt}: ${username}`);
+            return { success: true, screenshotPath, quality, attempt };
+          } else {
+            this.log(`❌ Low-quality screenshot on attempt ${attempt}: ${username} - ${quality.reason}`);
+            
+            // Keep track of best screenshot even if not ideal
+            if (!bestScreenshot || quality.size > bestQuality.size) {
+              bestScreenshot = screenshotPath;
+              bestQuality = quality;
+            }
+          }
+        }
+        
+      } catch (error) {
+        this.log(`❌ Screenshot attempt ${attempt} failed: ${error.message}`);
+        lastError = error;
+      }
+      
+      // Wait before retry
+      if (attempt < maxRetries) {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
+    }
+    
+    // If all attempts failed but we have a best screenshot, use it
+    if (bestScreenshot) {
+      this.log(`⚠️ Using best available screenshot for ${username}: ${bestQuality.reason}`);
+      return { success: true, screenshotPath: bestScreenshot, quality: bestQuality, attempt: maxRetries, isBestAttempt: true };
+    }
+    
+    this.log(`❌ All screenshot attempts failed for ${username}`);
+    return { success: false, error: lastError?.message || 'All attempts failed', attempt: maxRetries };
   }
 }
 

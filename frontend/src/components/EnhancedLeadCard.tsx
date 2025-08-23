@@ -54,8 +54,7 @@ const EnhancedLeadCard: React.FC<EnhancedLeadCardProps> = ({
 
   // Calculate lead tier based on followers and verification
   const getLeadTier = (lead: Lead): { tier: string; color: string; icon: React.ComponentType<any> } => {
-    const followers = typeof lead.followers === 'string' ? 
-      parseInt(lead.followers.replace(/[^\d]/g, '')) : lead.followers || 0;
+    const followers = lead.followers || 0;
     
     if (lead.isVerified) {
       return { tier: 'PLATINUM', color: 'text-purple-400 bg-purple-900/20 border-purple-400/30', icon: ShieldCheckIcon };
@@ -178,17 +177,24 @@ const EnhancedLeadCard: React.FC<EnhancedLeadCardProps> = ({
       {/* Enhanced Info Row */}
       <div className="flex items-center justify-between text-xs">
         <div className="flex items-center gap-3">
-          {lead.externalUrl && (
+          {(lead.externalUrl || lead.website) && (
             <a
-              href={lead.externalUrl}
+              href={lead.externalUrl || lead.website}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open website"
-              className="flex items-center gap-1 text-blue-400 hover:text-blue-300 hover:underline hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 animate-website-link"
+              className="flex items-center gap-1 text-blue-400 hover:text-blue-300 hover:underline animate-website-link cursor-pointer"
               style={{ willChange: 'transform' }}
+              onClick={(e) => {
+                e.preventDefault();
+                const url = lead.externalUrl || lead.website;
+                if (url) {
+                  window.open(url, '_blank', 'noopener,noreferrer');
+                }
+              }}
             >
               <LinkIcon className="w-3 h-3" />
-              <span>Website</span>
+              <span>🌐Website</span>
             </a>
           )}
           

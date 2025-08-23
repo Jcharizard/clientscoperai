@@ -1,0 +1,1387 @@
+{
+  "timestamp": "2025-07-13T10:05:42.570Z",
+  "totalLeads": 18,
+  "searchCriteria": {
+    "keyword": "idaho fitness",
+    "pages": 3,
+    "timestamp": "2025-07-13T10:05:42.570Z"
+  },
+  "summary": {
+    "hotLeads": 0,
+    "warmLeads": 4,
+    "contactLeads": 5,
+    "avgBioScore": 4.6,
+    "avgVisionScore": 4.9,
+    "totalLeads": 18
+  },
+  "leads": [
+    {
+      "username": "northidahobungeefitness",
+      "displayName": "North Idaho Bungee Fitness",
+      "bio": "Burn massive calories, reach your fitness goals and have fun doing it! Join us for a high intensity, low impact workout designed with you in mind!",
+      "followers": 585,
+      "following": 312,
+      "posts": 383,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/northidahobungeefitness",
+      "profilePicUrl": "https://scontent-man2-1.cdninstagram.com/v/t51.2885-19/490935415_704352542129627_3398932327195868985_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEinvFFhM0odY6vqpP9B5xdEOzA0XEDZc28qVNQZhg7QtQzKU8wIJFISNVXAVWFEtY&_nc_ohc=tr2HP_nEACMQ7kNvwGR9FcM&_nc_gid=1FMVLoqjz3HkAc99Y9raaA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfR-4Bi_qRkd5pnJ1tU43cz79rbS9ZvyI2s-3J8e9PogCw&oe=68795131&_nc_sid=8b3546",
+      "externalUrl": "https://northidahobungeefitness.com/",
+      "businessCategory": "None,Sports & Fitness Instruction",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/northidahobungeefitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.8,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.6,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.57,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:02:48.774Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fenny_parmar",
+      "displayName": "FENNY PARMAR | FITNESS TRAINER| DAHOD-GJ🇮🇳",
+      "bio": "Fit Life Creator.\nCertified - YTTC/GYM Training Experience & Dance Choreographer.\nPaid : Diet, Workout plan & Online Training.\n@fitwithfenny 🤗",
+      "followers": 3072,
+      "following": 800,
+      "posts": 300,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fenny_parmar",
+      "profilePicUrl": "https://scontent-man2-1.cdninstagram.com/v/t51.2885-19/488469486_9751426758230183_46775177652922151_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFpuFJML9wMBHSKCOYITg4Cjilys2fEFxb__yIpB5NAlUlzRSUenwv_H1mKbKPdiRU&_nc_ohc=QMfMD6ZObbIQ7kNvwEyMWET&_nc_gid=01f3V0rPjlwmunonLIB98Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfR4ioUsiw_5VDW1V_52mntrumMvBlQDQQMPuADHiSYeew&oe=6879433F&_nc_sid=8b3546",
+      "externalUrl": "https://www.youtube.com/@fenny_parmar",
+      "businessCategory": "Digital creator",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fenny_parmar_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6.6,
+        "urgency_score": 2,
+        "credibility_score": 0.7,
+        "contact_readiness": 0.8,
+        "business_type": "Beauty",
+        "business_confidence": 0.7,
+        "revenue_potential": 7.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Certified Professional",
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.51,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:03:10.100Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "apex.fitness.idaho",
+      "displayName": "Apex Fitness",
+      "bio": "NSCA Certified Personal Trainer in the Boise, Idaho area. -- email inquiries to: Training.latimer@gmail.com",
+      "followers": 89,
+      "following": 451,
+      "posts": 7,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/apex.fitness.idaho",
+      "profilePicUrl": "https://instagram.fmkz1-2.fna.fbcdn.net/v/t51.2885-19/18011384_428506177503641_63442542477180928_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fmkz1-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2QF_TEHp-AI9uxDIfrkT2sYxvBQUpn_pwT4PsLRGQOQTybVbqN0hmZQrriRgqg6nB4O9RSu_C6wlmJCUa11LlMwg&_nc_ohc=DFO_64AH3_IQ7kNvwFW4cvN&_nc_gid=vYRZCNz1BYEDKIECe3HbKA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSy_Q_O0xwh3RpjeJ03ERNxdpkAmV4V4ZQ4RxfjL9zSzQ&oe=687956F0&_nc_sid=8b3546",
+      "externalUrl": "https://www.facebook.com/ApexFitnessIdaho/",
+      "businessCategory": "Home Services",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/apex.fitness.idaho_composite.png",
+      "contactInfo": {
+        "hasDirectContact": true,
+        "contactMethods": 3,
+        "methods": [
+          "Email in bio",
+          "DM welcome",
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 8.3,
+        "urgency_score": 2,
+        "credibility_score": 0.7,
+        "contact_readiness": 1.6,
+        "business_type": "Fitness",
+        "business_confidence": 1,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Certified Professional",
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.28,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 30,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Excellent Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:03:31.711Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "360fitnessnorthid",
+      "displayName": "360 Fitness North Idaho",
+      "bio": "Were  located downtown Coeur  #cdaidahome #coeurdaleneidaho",
+      "followers": 430,
+      "following": 1280,
+      "posts": 15,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/360fitnessnorthid",
+      "profilePicUrl": "https://scontent-ord5-1.cdninstagram.com/v/t51.2885-19/22637048_368479480276331_3931117221668978688_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGFVJvNHk6AAyl0W4uX03E3CgM872nXYJmMIOr4ZnTqg9xXzSS_YgNe8l2_VUmAQwY&_nc_ohc=jeHWQnp7uVEQ7kNvwEAFt8k&_nc_gid=vAsew2x9Yu6SdpdG2ut-uQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ8__WVgUp23ZhuYQU05nGDnyg7lDzT77xjsdSsQoZy6A&oe=68792E50&_nc_sid=8b3546",
+      "externalUrl": "http://www.360fitnessnorthdaho.com/",
+      "businessCategory": "",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/360fitnessnorthid_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.54,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-13T09:03:52.619Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "_fitnessfirstgym_",
+      "displayName": "Fitness First 💪",
+      "bio": "NO CONTRACTS + NO INITIATION FEES \nMonthly membership: $35 \n(includes all classes + equipment)\nDaily rate: $8.00",
+      "followers": 69,
+      "following": 99,
+      "posts": 51,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/_fitnessfirstgym_",
+      "profilePicUrl": "https://scontent-mia3-3.cdninstagram.com/v/t51.2885-19/49693482_1913236525452201_2576836466130812928_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-mia3-3.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHGJyFAQtInam4jiacIIzP_1301RciPObvykNU3rQIFASRUW6oNtERt0AzceCAKFKQ&_nc_ohc=FTjCQH5RLsQQ7kNvwEdcbsg&_nc_gid=V2R2xJKrfn8lxzDWxngBRQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ3LvhhMj9iw10jGwxMvlUAk8VfKtLLk_msIzDMiKvxXg&oe=68794694&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Sports & recreation",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/_fitnessfirstgym__composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4,
+        "urgency_score": 2,
+        "credibility_score": 0.5,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Business Entity"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.55,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:04:13.595Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "idahocountrygirl",
+      "displayName": "Emily Sansom",
+      "bio": "💪 Personal Trainer + Nutrition Coach  \n🎙️ Host: Choose Your Hard Podcast  \n🔥 Website just launched!  \n👇 Get tips, updates, and real talk",
+      "followers": 245,
+      "following": 292,
+      "posts": 254,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/idahocountrygirl",
+      "profilePicUrl": "https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/476755055_1292842145277275_2613916976271379652_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QE_YbCLBj1gteQU0Yph1B6Eys2TTEdu_SkU25t2d-dR2bYF9-dqRIKe37ulB6tlrVY&_nc_ohc=Zhqu9bP-81kQ7kNvwFHIk7S&_nc_gid=O81YwbCEvKhotwWE8PgbsQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRYMy0iuvXWGNYMEwiXdBt9Lh_uJgpC5haIxEPGZYLTUw&oe=68795B6E&_nc_sid=8b3546",
+      "externalUrl": "http://epsfitness.com/",
+      "businessCategory": "None,Fitness Trainer",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/idahocountrygirl_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 1,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.45,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:04:34.598Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "amfit.idaho",
+      "displayName": "Angie Draper | Fitness Coach",
+      "bio": "📍Eagle, Idaho  @eagleultimatefit \nLife gets heavy, so you oughta get strong 💪",
+      "followers": 377,
+      "following": 1224,
+      "posts": 251,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/amfit.idaho",
+      "profilePicUrl": "https://instagram.fbom12-1.fna.fbcdn.net/v/t51.2885-19/369992132_966136144497492_7285372140927358049_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fbom12-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2QFdL7c6IlTcHWFo-Mk3D2ZRGh9DUOHMzl1HZ4A3NsPG-dCgo6-f067OijABkPorFQk&_nc_ohc=XmhQCv5au8IQ7kNvwF-8me4&_nc_gid=msTktQ1-b1xvGFtqYl0SYg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTQybr7W0TH7_zMXfK5eKJi_xmEHyKn3wagqcmRFwVJQQ&oe=68792EAE&_nc_sid=8b3546",
+      "externalUrl": "http://amfitidaho.com/",
+      "businessCategory": "None,Fitness Trainer",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/amfit.idaho_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.49,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:04:56.159Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "villasportfitness_idaho",
+      "displayName": "Villa Sport Fitness Idaho",
+      "bio": "Four state-of-the-art gym locations in Idaho:\n📍Fairview \n📍The Village \n📍Parkcenter \n📍Meridian",
+      "followers": 8414,
+      "following": 2256,
+      "posts": 2323,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/villasportfitness_idaho",
+      "profilePicUrl": "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/470342481_579108248058014_8666440287346428035_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE8qeMnliLLNs8oiqt_q5_zYtwMwpYLFLgy06GVK-RMLZoVSGK_TZTbUz0lnLLasqI&_nc_ohc=r7_LkpHCD50Q7kNvwEDfKf6&_nc_gid=SIMx386fBZGJM_QXjffR8A&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfT1QuVZOnlOSjphmQcqFElprle9R9TRffeCYI_59nuGDA&oe=68794418&_nc_sid=8b3546",
+      "externalUrl": "https://go.netcamps.com/events/6473-villa-sport-success-challenge-jan-2025",
+      "businessCategory": "None,Gym/Physical Fitness Center",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/villasportfitness_idaho_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.43,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-13T09:05:17.256Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "hothulafitness_id",
+      "displayName": "HOT HULA fitness® - Idaho",
+      "bio": "HOT HULA fitness® incorporates easy to follow Polynesian dance Fitness to traditional Polynesian drum beats fused with Poly, Reggae and Hip Hop music",
+      "followers": 213,
+      "following": 113,
+      "posts": 219,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/hothulafitness_id",
+      "profilePicUrl": "https://instagram.fdac146-1.fna.fbcdn.net/v/t51.2885-19/41498277_856860354510729_6977549743903735808_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fdac146-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QENJY026pxGy7FX0Cs4-kKTlv9TNCzVTR-NB6nzGespD1bwnzGuqrzlVd27_roOgCA&_nc_ohc=dQmh8XusirwQ7kNvwF0N_R5&_nc_gid=jJqfAjeFUe5-7xpNYJw7kg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTtJXCofxEEyphPsaalWqtrCCRafL5zKr1Ec3pd7h7qYg&oe=68793BF5&_nc_sid=8b3546",
+      "externalUrl": "http://www.hothulafitness.com/",
+      "businessCategory": "None,Sports & recreation",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/hothulafitness_id_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.4,
+        "urgency_score": 2,
+        "credibility_score": 0.5,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Business Entity"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.62,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:05:39.065Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "juliareyna64",
+      "displayName": "Julia Reyna - Idaho Health and Fitness Coach",
+      "bio": "Fitness Trainer - ACE CPT\nOCB Competitor\nHelping you transform your physique and health through sustainable habits!",
+      "followers": 193,
+      "following": 328,
+      "posts": 22,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/juliareyna64",
+      "profilePicUrl": "https://instagram.fpoa44-1.fna.fbcdn.net/v/t51.2885-19/494447737_18009490643724142_1185782856259398717_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fpoa44-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QHaW8ZRlTNII4gyBanAVsuG6bNftTOeCRQhdd6f5D7_dV9pEgweU8x5whm3HrdgqUE0rZFJIUGT1mcz3M3rqNFD&_nc_ohc=hDZurJbyd98Q7kNvwGyVavE&_nc_gid=vGhwR1kw9ldLC1SjRpEs9g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRDn0ZyHokMpHo1TdXEr-NLM2J-l9Q_0SAaOOcN0z29FA&oe=6879314F&_nc_sid=8b3546",
+      "externalUrl": "http://www.valkyriesupplement.com/",
+      "businessCategory": "None,Fitness Trainer",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/juliareyna64_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.8,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.6,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.46,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:06:00.638Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "cherylharris_fitness",
+      "displayName": "Cheryl Weiler Harris * IDAHO",
+      "bio": "Believer🙏🏼 \nmama of 5 👦🏻👦🏼👧🏻👦🏼👦🏻\nWife to @ryjharris 💜\nStudio H group fitness \nHigh⚡️Surge💪🏼Dance💃\nGroup Fitness for Life! 🎉",
+      "followers": 2333,
+      "following": 1435,
+      "posts": 592,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/cherylharris_fitness",
+      "profilePicUrl": "https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/261420429_1514249952307797_2806497013076534400_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFczVsAqPHXOTeFAi6viyt3lOW7XEU2gof7DLWDSBwZnVevZtRlpHsWXYAO0CeKnG0&_nc_ohc=o3cvXDbqYWQQ7kNvwHCDDLd&_nc_gid=M6SueWNMkI5s3wbF_uoiRg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTgORhDgYXT0BXih-u4LKbz9Ov3-4P6-Bpj0zqHl5z1pw&oe=68793F10&_nc_sid=8b3546",
+      "externalUrl": "https://www.picktime.com/homeclasseswithcheryl",
+      "businessCategory": "Community",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/cherylharris_fitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.19,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:06:21.637Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "anytimefitnessidahofalls",
+      "displayName": "Anytime Fitness Idaho Falls",
+      "bio": "Anytime Fitness Idaho Falls is a 24/7 fitness facility in Idaho Falls, Idaho",
+      "followers": 407,
+      "following": 399,
+      "posts": 46,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/anytimefitnessidahofalls",
+      "profilePicUrl": "https://instagram.fcbb2-2.fna.fbcdn.net/v/t51.2885-19/41299134_162619701338245_2102696600915673088_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fcbb2-2.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2QFfaK6Va98CDZCS7UunI0TbNCyvcWy_oNuov6a76y8-gsmOtacgMByoAxfUajvSZ-U&_nc_ohc=LtsjuvlRFREQ7kNvwH-CVL7&_nc_gid=mcQ2aITGOdn2ALRXc6NWlA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQiSXQOLcRr9Molx9NPbi0bRVYOn_kPG9N1pILWAzTn8Q&oe=68795904&_nc_sid=8b3546",
+      "externalUrl": "http://anytimefitness.com/",
+      "businessCategory": "None,Sports & recreation",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/anytimefitnessidahofalls_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.61,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-13T09:06:43.038Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "idahofitnessfactory",
+      "displayName": "Idaho Fitness Factory",
+      "bio": "Locally Owned. 11 Locations. No Contracts. 24/7 Access",
+      "followers": 5512,
+      "following": 1095,
+      "posts": 198,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/idahofitnessfactory",
+      "profilePicUrl": "https://instagram.fcpt5-1.fna.fbcdn.net/v/t51.2885-19/295503942_345360527649142_3755752319117922280_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fcpt5-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QFdIPMM88uPXUeAcg7NdIBPLn4RXTi89F3YqTZjdmL8FVjQqiHK1RVcVxI8HlzyOiQ&_nc_ohc=cHorVlYVQsQQ7kNvwGuap58&_nc_gid=BRZckoWY6ACfJXObN_dubg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ3tzJdDK2CjVcbskLM1gq7KeD0ZtLvTu46Ad80_2-Q4g&oe=68793A36&_nc_sid=8b3546",
+      "externalUrl": "http://idahofitnessfactory.com/",
+      "businessCategory": "None,Gym/Physical Fitness Center",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/idahofitnessfactory_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.3,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.12,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:07:04.884Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "unlimitedfitness_idaho",
+      "displayName": "Unlimited Fitness LLC",
+      "bio": "Now open! Where fitness is unlimited and movement makes you limitless. Exclusive around-the-clock access, energetic staff invested in your goals.",
+      "followers": 205,
+      "following": 84,
+      "posts": 89,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/unlimitedfitness_idaho",
+      "profilePicUrl": "https://scontent-bos5-1.cdninstagram.com/v/t51.2885-19/80835190_518799628993558_6783190353362026496_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-bos5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QG6stM_U_pYi3uvZ-RLN2539PPsSiQPdLcGhOmaanzFA-6_BuuEqA9IMA-YohG2sPLhPQpwKwl18cr_xWxdp0c9&_nc_ohc=iAgfUmIijjoQ7kNvwFJxTMv&_nc_gid=5e2yfxV7WrIE5rZ24TIyJg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTmnfHrdMtvi6yRdqeP2i_0N3L6sTpsg5txxvwqVAA-hg&oe=687946F2&_nc_sid=8b3546",
+      "externalUrl": "http://unlimitedfitnessidaho.com/",
+      "businessCategory": "None,Gym/Physical Fitness Center",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/unlimitedfitness_idaho_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 3,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.47,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-13T09:07:25.879Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "idahofallsfitness",
+      "displayName": "k a r l y ⚡️",
+      "bio": "🫶🏼group fitness lover \n💪🏻 currently not teaching at the moment\n⚡️Catch me over @kargetsfit_",
+      "followers": 1896,
+      "following": 2594,
+      "posts": 2061,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/idahofallsfitness",
+      "profilePicUrl": "https://instagram.ffjr8-1.fna.fbcdn.net/v/t51.2885-19/437491486_865965235287897_4249377655488880985_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.ffjr8-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QFG4V9pyPXsweD6s1Rr4plyUTKmssXo4m-L2CNhcyOhcbOqjQCAgkGj7MOMWqAlXWA_N0Gdb2FGHu7mi6j_rHQa&_nc_ohc=i-7p4Hvo4fIQ7kNvwF6jCd4&_nc_gid=80bVCTzVsjt6ASGUHQLzzA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRq0W1jA-Ifd9KqZFyY9GNRsS_NWYBNr9QCE00EdOaHHA&oe=6879503C&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "None,Entrepreneur",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/idahofallsfitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.24,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:07:47.815Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "anytimefitnessmoscow",
+      "displayName": "Anytime Fitness in Moscow",
+      "bio": "",
+      "followers": 806,
+      "following": 289,
+      "posts": 249,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/anytimefitnessmoscow",
+      "profilePicUrl": "https://instagram.febl5-1.fna.fbcdn.net/v/t51.2885-19/16230163_1326671560733171_2325969638279610368_a.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.febl5-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QGRSB__WkGqi17AHa9vLfikHykDs4ReAIHXTSU5W20chuKBk7Xd9xye7Li9vkAvURY&_nc_ohc=erCHet2SAUIQ7kNvwGYA0Ly&_nc_gid=zjwqx3rPNKOAdphRmT8TFg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSUm8t2iNDaDxZhyyXiomRPanuJWPkfFHknHIsEJ8Gpog&oe=68792FE3&_nc_sid=8b3546",
+      "externalUrl": "https://www.anytimefitness.com/gyms/916/moscow-id-83843/",
+      "businessCategory": "Home Services",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/anytimefitnessmoscow_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 1,
+        "urgency_score": 1,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Unknown",
+        "business_confidence": 0,
+        "revenue_potential": 0,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "❌ INSUFFICIENT DATA - Bio too short or empty."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.52,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-13T09:08:09.368Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitnessjones89",
+      "displayName": "P A I G H • BOISE idaho",
+      "bio": "• I got it from my momma \n💪🏽💪🏽",
+      "followers": 321,
+      "following": 337,
+      "posts": 274,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitnessjones89",
+      "profilePicUrl": "https://instagram.fric1-2.fna.fbcdn.net/v/t51.2885-19/317624541_121279870795734_1639979568009036270_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fric1-2.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QEOJ95xGZvgfI2juUHA1BcIgeYsLzq40fab6987ToUhdHw59Kvj6hJIAA6Py7VnTL08ZQIqrPPv6p4CzlqeFhLE&_nc_ohc=O_OGewnISCkQ7kNvwEDpO6s&_nc_gid=ZXGTZOk1rmlE3qmSxSRt2Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTYLX6DhJiX8N6UZWLo-ltd9ZPA3Lg3AfHUSUl-g47wGg&oe=68793816&_nc_sid=8b3546",
+      "externalUrl": "",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/fitnessjones89_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 0,
+        "methods": []
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.17,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-13T09:08:30.436Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "funfitash",
+      "displayName": "ASHLEY • Idaho Fitness Trainer",
+      "bio": "Bringing the FUN to Fitness\n• NASM Personal Trainer\n• BS Exercise Science \n• AFAA Group Fitness Instructor",
+      "followers": 7705,
+      "following": 5181,
+      "posts": 1883,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/funfitash",
+      "profilePicUrl": "https://scontent-jnb2-1.cdninstagram.com/v/t51.2885-19/421009921_245291815184996_4222664451671627849_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-jnb2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGUoqM2BqkVGgMw-UdhgCAbPX4z1CKAN-K_ToV2mswX0_BcyoR7JJ4_3XZzuPUXXA92KSWc1UHb0DQGLeCLM3kK&_nc_ohc=Y98Vf_c_iGYQ7kNvwGPUR1H&_nc_gid=n4FC2l8jK-8VuoufLVIaZw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSkNaO9jqv2yB1tKRqJV0fvEzq8q2D8m1V-LYw8rV7ivA&oe=687955F8&_nc_sid=8b3546",
+      "externalUrl": "https://msha.ke/funfitash",
+      "businessCategory": "Fitness Trainer",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/funfitash_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 6,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 1,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.52,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 20,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Good Bio Score"
+      ],
+      "scrapedAt": "2025-07-13T09:08:52.297Z",
+      "source": "apify_instagram",
+      "keyword": "idaho fitness",
+      "dataQuality": "high"
+    }
+  ]
+}

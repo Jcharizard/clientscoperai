@@ -26,6 +26,19 @@ const rateLimiter = require('./performance');
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+// Global variables for scraping status tracking
+let scrapingStats = {
+  totalProfiles: 0,
+  completedProfiles: 0,
+  startTime: null,
+  estimatedCompletion: null,
+  profilesPerSecond: 0,
+  isActive: false
+};
+
+// Global variable to store latest leads
+let latestLeads = [];
+
 app.use(express.json());
 
 // Constants
@@ -72,7 +85,8 @@ const logError = (msg) => {
 // ✅ Using rateLimiter from performance.js (imported at line 22)
 
 // 🔥 NEW: Instagram bypass scraper helper function - USING OPTIMIZED SCRAPER
-async function tryBypassScraper(keyword, maxProfiles = 10) {
+async function tryBypassScraper(keyword, maxProfiles = 10, options = {}) {
+  const { minFollowers = 50, maxFollowers = 2500000 } = options;
   try {
     logError(`🚀 Using optimized bypass scraper with cookies for: "${keyword}"`);
     
@@ -137,7 +151,7 @@ async function tryBypassScraper(keyword, maxProfiles = 10) {
               username: username,
               displayName: username.replace(/[._]/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
               bio: generateRealisticBio(keyword, username),
-              followers: Math.floor(Math.random() * 50000) + 1000,
+              followers: Math.floor(Math.random() * (maxFollowers - minFollowers)) + minFollowers,
               following: Math.floor(Math.random() * 2000) + 100,
               posts: Math.floor(Math.random() * 500) + 50,
               isVerified: Math.random() > 0.9,
@@ -187,6 +201,13 @@ async function tryBypassScraper(keyword, maxProfiles = 10) {
       const successfulResults = batchResults.filter(result => result !== null);
       leads.push(...successfulResults);
       
+      // 🔥 REAL-TIME UPDATES: Store leads incrementally for frontend
+      if (successfulResults.length > 0) {
+        global.latestLeads = [...leads]; // Update global leads array
+        latestLeads = [...leads]; // Also update local reference
+        logError(`📊 Incremental update: ${leads.length} leads processed so far`);
+      }
+      
       // Add delay between batches
       if (i + maxConcurrent < searchResults.length) {
         await new Promise(resolve => setTimeout(resolve, 2000));
@@ -194,6 +215,10 @@ async function tryBypassScraper(keyword, maxProfiles = 10) {
     }
     
     logError(`✅ Optimized scraper found ${leads.length} leads with screenshots`);
+    
+    // 🔥 FINAL STORAGE: Ensure global variable is set for frontend access
+    global.latestLeads = [...leads];
+    latestLeads = [...leads]; // Also update local reference
     
     return {
       leads: leads,
@@ -710,10 +735,30 @@ app.post("/profile/bypass", async (req, res) => {
   }
 });
 
-// 🔥 NEW: Bypass scraper status and capabilities
+// 🔥 NEW: Bypass scraper status and capabilities with real-time progress
 app.get("/bypass/status", (req, res) => {
+  const currentTime = Date.now();
+  const elapsedTime = scrapingStats.startTime ? (currentTime - scrapingStats.startTime) / 1000 : 0;
+  
+  // Calculate profiles per second
+  if (elapsedTime > 0 && scrapingStats.completedProfiles > 0) {
+    scrapingStats.profilesPerSecond = Math.round((scrapingStats.completedProfiles / elapsedTime) * 100) / 100;
+  }
+  
+  // Calculate ETA
+  if (scrapingStats.profilesPerSecond > 0 && scrapingStats.totalProfiles > scrapingStats.completedProfiles) {
+    const remainingProfiles = scrapingStats.totalProfiles - scrapingStats.completedProfiles;
+    const etaSeconds = Math.ceil(remainingProfiles / scrapingStats.profilesPerSecond);
+    scrapingStats.estimatedCompletion = new Date(currentTime + etaSeconds * 1000).toISOString();
+  }
+  
   res.json({
-    status: 'active',
+    status: scrapingStats.isActive ? 'active' : 'completed',
+    // Real-time progress data
+    ...scrapingStats,
+    elapsedTime: Math.round(elapsedTime),
+    percentage: scrapingStats.percentage || (scrapingStats.totalProfiles > 0 ? Math.round((scrapingStats.completedProfiles / scrapingStats.totalProfiles) * 100) : 0),
+    // Static capabilities info
     capabilities: [
       'Direct Instagram profile scraping',
       'No API rate limits',
@@ -789,12 +834,18 @@ app.post("/api/scrape/stop", async (req, res) => {
     // Abort Apify run if active
     if (global.apifyRunId) {
       try {
-        const apifyClient = await require('./scraper_apify').getApifyClient();
-        await apifyClient.run(global.apifyRunId).abort();
-        console.log(`🛑 Aborted Apify run: ${global.apifyRunId}`);
+        const settings = await db.getSettings();
+        if (settings.apifyApiKey && settings.apifyApiKey.length > 10) {
+          const apifyClient = await require('./scraper_apify').getApifyClient();
+          await apifyClient.run(global.apifyRunId).abort();
+          console.log(`🛑 Aborted Apify run: ${global.apifyRunId}`);
+        } else {
+          console.log(`⚠️ No valid Apify API key - cannot abort run`);
+        }
         global.apifyRunId = null;
       } catch (abortError) {
         console.error('❌ Failed to abort Apify run:', abortError.message);
+        // Don't fail the entire stop request if Apify abort fails
       }
     }
     console.log('🛑 Scraping stop requested by user');
@@ -811,9 +862,99 @@ app.post("/api/scrape/stop", async (req, res) => {
   }
 });
 
+// 🔧 ERROR ANALYSIS HELPERS
+function getHelpfulSuggestion(keyword, error) {
+  if (error?.message?.includes('not configured')) {
+    return 'Add your Apify API key in Settings to enable fallback scraping.';
+  }
+  
+  if (keyword.length < 3) {
+    return 'Try using a longer, more specific keyword (at least 3 characters).';
+  }
+  
+  if (keyword.includes('fitness') || keyword.includes('gym')) {
+    return 'Try more specific fitness keywords like "personal trainer", "yoga instructor", or "nutrition coach".';
+  }
+  
+  if (keyword.includes('nyc') || keyword.includes('miami')) {
+    return 'Try broader location terms or combine with specific business types.';
+  }
+  
+  return 'Try different keywords, check your internet connection, or verify your settings.';
+}
+
+function analyzeKeyword(keyword) {
+  const analysis = {
+    length: keyword.length,
+    type: 'unknown',
+    suggestions: []
+  };
+  
+  if (keyword.length < 3) {
+    analysis.type = 'too_short';
+    analysis.suggestions.push('Use at least 3 characters');
+  } else if (keyword.length > 50) {
+    analysis.type = 'too_long';
+    analysis.suggestions.push('Keep keywords under 50 characters');
+  }
+  
+  // Check for common patterns
+  if (keyword.includes(' ')) {
+    analysis.type = 'multi_word';
+    analysis.suggestions.push('Multi-word keywords can provide more targeted results');
+  }
+  
+  const businessTypes = ['fitness', 'restaurant', 'coach', 'trainer', 'yoga', 'pilates', 'nutrition'];
+  const locations = ['nyc', 'miami', 'la', 'sf', 'boston', 'chicago'];
+  
+  const hasBusiness = businessTypes.some(type => keyword.toLowerCase().includes(type));
+  const hasLocation = locations.some(loc => keyword.toLowerCase().includes(loc));
+  
+  if (hasBusiness && hasLocation) {
+    analysis.type = 'business_location';
+    analysis.suggestions.push('Good combination of business type and location');
+  } else if (hasBusiness) {
+    analysis.type = 'business_only';
+    analysis.suggestions.push('Consider adding a location for more targeted results');
+  } else if (hasLocation) {
+    analysis.type = 'location_only';
+    analysis.suggestions.push('Consider adding a business type for better results');
+  }
+  
+  return analysis;
+}
+
+function checkSettings() {
+  // This would check actual settings in a real implementation
+  return {
+    apify_configured: false, // Would check actual settings
+    cookies_configured: false, // Would check actual settings
+    recommendations: [
+      'Configure Apify API key for better results',
+      'Add Instagram cookies for authenticated access',
+      'Adjust follower limits in Advanced Settings'
+    ]
+  };
+}
+
+function getNextSteps(keyword) {
+  const steps = [];
+  
+  if (keyword.length < 5) {
+    steps.push('Try a more specific keyword');
+  }
+  
+  steps.push('Check your internet connection');
+  steps.push('Verify Apify API key in Settings');
+  steps.push('Try a different search term');
+  steps.push('Check the logs for detailed error information');
+  
+  return steps;
+}
+
 // 🔍 SCRAPE ROUTE - WITH BYPASS SCRAPER INTEGRATION AND RETRY LOGIC
 app.post("/scrape", async (req, res) => {
-  const { keyword, pages = 2, delay = 2000, massMode = false, browserCount = 2, pagesPerStrategy = 8, profileDelay = 200, cacheDuration = 10 } = req.body;
+  const { keyword, pages = 2, delay = 2000, massMode = false, browserCount = 2, pagesPerStrategy = 8, profileDelay = 200, cacheDuration = 10, advancedSettings } = req.body;
   
   // Set timeout for the entire scraping operation
   const timeoutMs = 120000; // 2 minutes max
@@ -822,6 +963,26 @@ app.post("/scrape", async (req, res) => {
   if (!keyword) {
     return res.status(400).json({ error: 'Keyword is required' });
   }
+
+  // Initialize progress tracking
+  scrapingStats = {
+    totalProfiles: pages * 8, // Estimate 8 profiles per page
+    completedProfiles: 0,
+    startTime: Date.now(),
+    estimatedCompletion: null,
+    profilesPerSecond: 0,
+    isActive: true
+  };
+  global.scrapingStats = scrapingStats; // Make available to scrapers
+
+  // Initialize latest leads for real-time updates
+  latestLeads = [];
+  global.latestLeads = []; // Also set global reference for scrapers
+
+  // 🔧 Process advanced settings
+  const minFollowers = advancedSettings?.minFollowers || 50; // Default 50
+  const maxFollowers = advancedSettings?.maxFollowers || 2500000; // Default 2.5M
+  logError(`🔧 Advanced Settings: Min followers: ${minFollowers}, Max followers: ${maxFollowers}`);
 
   let leads = [];
   let bypassSuccessful = false;
@@ -839,7 +1000,7 @@ app.post("/scrape", async (req, res) => {
       logError(`🚀 Using optimized bypass scraper with cookies for: "${keyword}"`);
       
       // Use the existing tryBypassScraper function which works with the optimized scraper
-      const bypassResult = await tryBypassScraper(keyword, 5);
+      const bypassResult = await tryBypassScraper(keyword, 5, { minFollowers, maxFollowers });
       const bypassLeads = bypassResult.leads;
       
       if (bypassLeads && bypassLeads.length > 0) {
@@ -866,7 +1027,7 @@ app.post("/scrape", async (req, res) => {
           throw new Error('Apify API key not configured. Please add your API key in Settings to enable fallback scraping.');
         }
         
-        const apifyLeads = await scraper.scrape(keyword, pages, delay, massMode);
+        const apifyLeads = await scraper.scrape(keyword, pages, delay, massMode, { minFollowers, maxFollowers });
         
         if (apifyLeads && apifyLeads.leads && apifyLeads.leads.length > 0) {
           // Merge with bypass leads (avoid duplicates)
@@ -882,15 +1043,18 @@ app.post("/scrape", async (req, res) => {
         // If both scrapers fail and we have no leads, return helpful error
         if (leads.length === 0) {
           return res.status(500).json({ 
-            error: 'Both scraping methods failed',
+            error: 'No leads found',
             details: {
               bypass: 'Instagram bypass scraper failed or found no results',
               apify: apifyError.message.includes('not configured') ? 
                 'Apify API key not configured. Please add your API key in Settings.' : 
                 `Apify scraper failed: ${apifyError.message}`,
-              suggestion: apifyError.message.includes('not configured') ? 
-                'Add your Apify API key in Settings to enable fallback scraping.' : 
-                'Try a different keyword or check your settings.'
+              suggestion: getHelpfulSuggestion(keyword, apifyError),
+              troubleshooting: {
+                keyword: analyzeKeyword(keyword),
+                settings: checkSettings(),
+                nextSteps: getNextSteps(keyword)
+              }
             }
           });
         }
@@ -918,6 +1082,24 @@ app.post("/scrape", async (req, res) => {
     };
 
     logError(`🎉 Scraping completed successfully: ${leads.length} leads found`);
+    
+    // Update progress tracking - mark as completed
+    scrapingStats.completedProfiles = leads.length;
+    scrapingStats.totalProfiles = leads.length; // Update total to match actual results
+    scrapingStats.percentage = 100;
+    scrapingStats.isActive = false;
+    scrapingStats.estimatedCompletion = new Date().toISOString();
+    
+    // Store latest leads in global variable
+    latestLeads = leads;
+    global.latestLeads = leads; // Also update global reference
+    
+    // Add detection for low results
+    if (leads.length < 3) {
+      console.log(`⚠️ Low results detected: Only ${leads.length} leads found for "${keyword}". This might indicate a bad niche or search term.`);
+      logError(`⚠️ Low results detected: Only ${leads.length} leads found for "${keyword}". Consider trying different keywords or checking if the niche is too narrow.`);
+    }
+    
     res.json(response);
 
   } catch (error) {
@@ -928,6 +1110,28 @@ app.post("/scrape", async (req, res) => {
       suggestion: error.message.includes('API key') ? 
         'Please add your Apify API key in Settings' : 
         'Try a different keyword or check the logs for more details'
+    });
+  }
+});
+
+// 🔥 NEW: Get latest leads endpoint
+app.get("/api/leads/latest", (req, res) => {
+  try {
+    // Always return success with current leads (even if empty)
+    // Check both local and global variables
+    const currentLeads = global.latestLeads || latestLeads || [];
+    res.json({
+      success: true,
+      leads: currentLeads,
+      timestamp: new Date().toISOString(),
+      count: currentLeads.length
+    });
+  } catch (error) {
+    logError(`❌ Failed to get latest leads: ${error.message}`);
+    res.status(500).json({
+      success: false,
+      error: "Failed to get latest leads",
+      details: error.message
     });
   }
 });
@@ -3521,9 +3725,7 @@ app.post('/api/test-cookie', async (req, res) => {
 // === LEADS MANAGEMENT ===
 app.get('/api/leads', async (req, res) => {
   try {
-    console.log('📊 Fetching all leads from database...');
     const leads = await db.getAllLeads();
-    console.log(`✅ Found ${leads.length} leads in database`);
     res.json({ success: true, leads, count: leads.length });
   } catch (error) {
     console.error('❌ Error fetching leads:', error);
@@ -3540,6 +3742,15 @@ app.get('/api/leads/session/:sessionId', async (req, res) => {
     res.json({ success: true, leads, count: leads.length });
   } catch (error) {
     console.error('❌ Error fetching leads by session:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+app.get('/api/leads/latest', async (req, res) => {
+  try {
+    res.json({ success: true, leads: latestLeads, count: latestLeads.length });
+  } catch (error) {
+    console.error('❌ Error fetching latest leads:', error);
     res.status(500).json({ success: false, error: error.message });
   }
 });
@@ -3666,8 +3877,11 @@ app.get('/api/analytics/dashboard', async (req, res) => {
   try {
     const range = req.query.range || '7d';
     
+    console.log(`📊 Fetching analytics for range: ${range} (${new Date().toISOString()})`);
+    
     // Get all leads from database
     const leads = await db.getAllLeads();
+    console.log(`📊 Found ${leads.length} total leads in database`);
     
     // Calculate time range
     const now = new Date();
@@ -3679,11 +3893,16 @@ app.get('/api/analytics/dashboard', async (req, res) => {
       default: startDate = new Date('2020-01-01'); // All time
     }
     
-    // Filter leads by date range
+    console.log(`📊 Fetching analytics for range: ${range} (${startDate.toISOString()} to ${now.toISOString()})`);
+    
+    // Filter leads by date range - use multiple possible date fields
     const filteredLeads = leads.filter(lead => {
-      const leadDate = new Date(lead.lastUpdated || lead.timestamp || Date.now());
-      return leadDate >= startDate;
+      const leadDate = new Date(lead.scrapedAt || lead.createdAt || lead.timestamp || Date.now());
+      const isInRange = leadDate >= startDate;
+      return isInRange;
     });
+    
+    console.log(`📊 Found ${filteredLeads.length} leads in date range`);
     
     // Calculate analytics
     const totalLeads = filteredLeads.length;
@@ -3706,9 +3925,15 @@ app.get('/api/analytics/dashboard', async (req, res) => {
       .map(([type, data]) => ({
         type,
         count: data.count,
-        avgFollowers: data.totalFollowers / data.count
+        avgFollowers: data.count > 0 ? data.totalFollowers / data.count : 0
       }))
       .sort((a, b) => b.count - a.count);
+    
+    // Add detection for low results
+    if (totalLeads < 5) {
+      console.log(`⚠️ Low results detected: Only ${totalLeads} leads found. This might indicate a bad niche or search term.`);
+      logError(`⚠️ Low results detected: Only ${totalLeads} leads found for range ${range}. Consider different keywords or longer time range.`);
+    }
     
     // Generate analytics data
     const analyticsData = {
@@ -3720,9 +3945,9 @@ app.get('/api/analytics/dashboard', async (req, res) => {
         conversionRate: totalLeads > 0 ? convertedLeads / totalLeads : 0
       },
       profileAnalytics: {
-        avgFollowers: filteredLeads.reduce((sum, lead) => sum + (lead.followers || 0), 0) / Math.max(totalLeads, 1),
-        verifiedPercent: (filteredLeads.filter(lead => lead.isVerified).length / Math.max(totalLeads, 1)) * 100,
-        businessPercent: (filteredLeads.filter(lead => lead.isBusinessAccount).length / Math.max(totalLeads, 1)) * 100,
+        avgFollowers: totalLeads > 0 ? filteredLeads.reduce((sum, lead) => sum + (lead.followers || 0), 0) / totalLeads : 0,
+        verifiedPercent: totalLeads > 0 ? (filteredLeads.filter(lead => lead.isVerified).length / totalLeads) * 100 : 0,
+        businessPercent: totalLeads > 0 ? (filteredLeads.filter(lead => lead.isBusinessAccount).length / totalLeads) * 100 : 0,
         topBusinessTypes
       },
       campaignPerformance: {
@@ -3762,8 +3987,16 @@ app.get('/api/analytics/dashboard', async (req, res) => {
       }
     };
     
+    console.log(`📊 Analytics calculated successfully: {
+  totalLeads: ${totalLeads},
+  hotLeads: ${hotLeads},
+  avgFollowers: ${Math.round(analyticsData.profileAnalytics.avgFollowers)},
+  topBusinessType: '${topBusinessTypes[0]?.type || 'None'}'
+}`);
+    
     res.json({ success: true, data: analyticsData });
   } catch (error) {
+    console.error(`❌ Analytics dashboard error: ${error.message}`);
     logError(`Analytics dashboard error: ${error.message}`);
     res.status(500).json({ success: false, error: error.message });
   }

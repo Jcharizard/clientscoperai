@@ -10,13 +10,14 @@ echo.
 
 REM BULLETPROOF CLEANUP - Uses PowerShell for reliability
 echo     [*] FORCE KILLING ALL PROCESSES...
-powershell -Command "Get-Process -Name 'node' -ErrorAction SilentlyContinue | Stop-Process -Force"
-powershell -Command "Get-Process -Name 'npm' -ErrorAction SilentlyContinue | Stop-Process -Force"
+powershell -Command "Get-Process -Name 'node' -ErrorAction SilentlyContinue | Stop-Process -Force" 2>nul
+powershell -Command "Get-Process -Name 'npm' -ErrorAction SilentlyContinue | Stop-Process -Force" 2>nul
 taskkill /f /im cmd.exe /fi "WINDOWTITLE eq ClientScope*" >nul 2>&1
 
 echo     [*] FREEING PORTS 5001 AND 5173...
-powershell -Command "$processes=netstat -ano | Select-String ':5001' | ForEach-Object {($_ -split '\s+')[4]}; if($processes){foreach($processId in $processes){if($processId -and $processId -ne '0'){Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue}}}"
-powershell -Command "$processes=netstat -ano | Select-String ':5173' | ForEach-Object {($_ -split '\s+')[4]}; if($processes){foreach($processId in $processes){if($processId -and $processId -ne '0'){Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue}}}"
+REM Fixed port killing - properly filters numeric PIDs only
+powershell -Command "try { netstat -ano | Select-String ':5001' | ForEach-Object { $pid = ($_ -split '\s+')[4]; if($pid -match '^\d+$' -and $pid -ne '0') { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } } } catch { }" 2>nul
+powershell -Command "try { netstat -ano | Select-String ':5173' | ForEach-Object { $pid = ($_ -split '\s+')[4]; if($pid -match '^\d+$' -and $pid -ne '0') { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } } } catch { }" 2>nul
 
 echo     [*] WAITING FOR PORTS TO BE COMPLETELY FREE...
 timeout /t 5 >nul
@@ -113,13 +114,14 @@ echo.
 
 REM BULLETPROOF RESTART CLEANUP
 echo     [*] FORCE KILLING ALL PROCESSES...
-powershell -Command "Get-Process -Name 'node' -ErrorAction SilentlyContinue | Stop-Process -Force"
-powershell -Command "Get-Process -Name 'npm' -ErrorAction SilentlyContinue | Stop-Process -Force"
+powershell -Command "Get-Process -Name 'node' -ErrorAction SilentlyContinue | Stop-Process -Force" 2>nul
+powershell -Command "Get-Process -Name 'npm' -ErrorAction SilentlyContinue | Stop-Process -Force" 2>nul
 taskkill /f /im cmd.exe /fi "WINDOWTITLE eq ClientScope*" >nul 2>&1
 
 echo     [*] FREEING PORTS 5001 AND 5173...
-powershell -Command "$processes=netstat -ano | Select-String ':5001' | ForEach-Object {($_ -split '\s+')[4]}; if($processes){foreach($processId in $processes){if($processId -and $processId -ne '0'){Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue}}}"
-powershell -Command "$processes=netstat -ano | Select-String ':5173' | ForEach-Object {($_ -split '\s+')[4]}; if($processes){foreach($processId in $processes){if($processId -and $processId -ne '0'){Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue}}}"
+REM Fixed port killing - properly filters numeric PIDs only
+powershell -Command "try { netstat -ano | Select-String ':5001' | ForEach-Object { $pid = ($_ -split '\s+')[4]; if($pid -match '^\d+$' -and $pid -ne '0') { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } } } catch { }" 2>nul
+powershell -Command "try { netstat -ano | Select-String ':5173' | ForEach-Object { $pid = ($_ -split '\s+')[4]; if($pid -match '^\d+$' -and $pid -ne '0') { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } } } catch { }" 2>nul
 
 echo     [*] WAITING FOR PORTS TO BE COMPLETELY FREE...
 timeout /t 6 >nul
@@ -148,12 +150,13 @@ goto wait_for_input
 :end
 echo.
 echo     [*] FINAL SHUTDOWN - KILLING EVERYTHING...
-powershell -Command "Get-Process -Name 'node' -ErrorAction SilentlyContinue | Stop-Process -Force"
-powershell -Command "Get-Process -Name 'npm' -ErrorAction SilentlyContinue | Stop-Process -Force"
+powershell -Command "Get-Process -Name 'node' -ErrorAction SilentlyContinue | Stop-Process -Force" 2>nul
+powershell -Command "Get-Process -Name 'npm' -ErrorAction SilentlyContinue | Stop-Process -Force" 2>nul
 taskkill /f /im cmd.exe /fi "WINDOWTITLE eq ClientScope*" >nul 2>&1
 
-powershell -Command "$processes=netstat -ano | Select-String ':5001' | ForEach-Object {($_ -split '\s+')[4]}; if($processes){foreach($processId in $processes){if($processId -and $processId -ne '0'){Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue}}}"
-powershell -Command "$processes=netstat -ano | Select-String ':5173' | ForEach-Object {($_ -split '\s+')[4]}; if($processes){foreach($processId in $processes){if($processId -and $processId -ne '0'){Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue}}}"
+REM Fixed port killing - properly filters numeric PIDs only
+powershell -Command "try { netstat -ano | Select-String ':5001' | ForEach-Object { $pid = ($_ -split '\s+')[4]; if($pid -match '^\d+$' -and $pid -ne '0') { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } } } catch { }" 2>nul
+powershell -Command "try { netstat -ano | Select-String ':5173' | ForEach-Object { $pid = ($_ -split '\s+')[4]; if($pid -match '^\d+$' -and $pid -ne '0') { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } } } catch { }" 2>nul
 
 echo     [OK] ALL PROCESSES KILLED AND PORTS FREED!
 timeout /t 2 >nul

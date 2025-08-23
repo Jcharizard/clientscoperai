@@ -1,0 +1,848 @@
+{
+  "timestamp": "2025-07-07T11:05:50.978Z",
+  "totalLeads": 11,
+  "searchCriteria": {
+    "keyword": "nyc fitness",
+    "pages": 3,
+    "timestamp": "2025-07-07T11:05:50.978Z"
+  },
+  "summary": {
+    "hotLeads": 0,
+    "warmLeads": 1,
+    "contactLeads": 4,
+    "avgBioScore": 4.2,
+    "avgVisionScore": 4.8,
+    "totalLeads": 11
+  },
+  "leads": [
+    {
+      "username": "planetfitness",
+      "displayName": "Planet Fitness",
+      "bio": "We’re all strong on this planet 💪✨",
+      "followers": 512657,
+      "following": 345,
+      "posts": 913,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/planetfitness",
+      "profilePicUrl": "https://instagram.fgig14-2.fna.fbcdn.net/v/t51.2885-19/471591729_1102955717686948_4361341514140540026_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fgig14-2.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2QE7KWYyy2g5GjGyZrqNfzaxGGMcr-jgFvnYkkEA6L1ebG2_0glqWOdMRqtxJthLV88&_nc_ohc=PWG_g_ili70Q7kNvwFHL4qt&_nc_gid=b01Ghi-nY6BuGAHr0KoHPA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ-4mJxCsgJqIV7QAoVheg2VE9YpssUlFJOdCxemKPiUA&oe=68718712&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/planet.fitness",
+      "businessCategory": "None,Gym/Physical Fitness Center",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/planetfitness.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 2.6,
+        "quality_score": 1,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.01,
+        "image_quality": "Needs Improvement",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "❌ NEEDS IMPROVEMENT"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T11:01:26.757Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "lessie.fitness",
+      "displayName": "lessie.fitness",
+      "bio": "BetterMe ambassador @betterme \nLose pounds & gain muscles with WALL PILATES\nStart now!👇",
+      "followers": 4913135,
+      "following": 39,
+      "posts": 257,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/lessie.fitness",
+      "profilePicUrl": "https://instagram.fded3-1.fna.fbcdn.net/v/t51.2885-19/341186137_564585295763134_462458581165066133_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fded3-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2QHTmZbhcpTC4qRpDhAWSX3wR0BqHXw3Z0kzjUl88BsxeuaC1ORCzFHujUmeRwvhiK9MjZaBYQuQm_7D9hYuSXEG&_nc_ohc=pXea4pC1Mx4Q7kNvwH61Ais&_nc_gid=boNUGFl4-jG7v2UU0Tv38Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRLyYzNFj7TUAd3QnQRRb64sQ3B7WXa2fdftxt0RJDsvA&oe=68716D2B&_nc_sid=8b3546",
+      "externalUrl": "https://bttrm.co/wall_pilates",
+      "businessCategory": "Health/beauty",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/lessie.fitness_mobile.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.27,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T11:01:50.814Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitness_challenge_l",
+      "displayName": "Lasta Fitness",
+      "bio": "A personalized health & wellness app 💪\n📲 1 000 000 installs",
+      "followers": 182756,
+      "following": 1,
+      "posts": 42,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitness_challenge_l",
+      "profilePicUrl": "https://instagram.fbrs1-1.fna.fbcdn.net/v/t51.2885-19/405554453_1643578609467071_8348996787048332961_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fbrs1-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2QF1pmQIRQE2KN0KfAQ6Pz1UEXBSZdWRnv9pqFjICTYF1qyaGsH1YFnOTcqODcsE7jc&_nc_ohc=oBwjsZrfB_gQ7kNvwFWdgyU&_nc_gid=tnzdNmhif3ZBmKotwVuQFg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTxsgWguB_rxsdu8yz2XWk-eFJ2mVuVZlyrKaoX5NhjRg&oe=68718354&_nc_sid=8b3546",
+      "externalUrl": "http://linktr.ee/LastaApp",
+      "businessCategory": "None,Health/beauty",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/fitness_challenge_l_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.8,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Healthcare",
+        "business_confidence": 0.6,
+        "revenue_potential": 9.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.4,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T11:02:12.214Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "tiagoguimaraesfitness",
+      "displayName": "TIAGO GUIMARÃES",
+      "bio": "Também queres mudar o corpo, reconquistar a confiança e melhorar a tua saúde, sem passar fome e a comer o que + gostas? CLICA AQUI 👇🏻",
+      "followers": 798198,
+      "following": 561,
+      "posts": 1428,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/tiagoguimaraesfitness",
+      "profilePicUrl": "https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/497440931_18502545442031750_5490421771866849650_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QGzLlzQZH_6uALIh6MJQZnrXTFCuawOcXPzfP9ZJnnrfakFxRVj6ran1csFDto46a-Gh2OeGama_a65xV9jYDE4&_nc_ohc=XCkBz6NXzacQ7kNvwFc5D9q&_nc_gid=xE7_Epk9B8CL6AT2uIMEcQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQjxogMQfCsumr15CjJWezXaT5DqWTaNheQXQRiDeUQlA&oe=68719252&_nc_sid=8b3546",
+      "externalUrl": "https://links.tigo.pt/igbio",
+      "businessCategory": "None,Entrepreneur",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/tiagoguimaraesfitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.62,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T11:02:33.451Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "gmbfitness",
+      "displayName": "GMB Fitness",
+      "bio": "Don’t die without exploring what your body is capable of. We help busy adults do cool stuff. 😎👍",
+      "followers": 212290,
+      "following": 289,
+      "posts": 2285,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/gmbfitness",
+      "profilePicUrl": "https://instagram.fird1-1.fna.fbcdn.net/v/t51.2885-19/458921493_2889060267899507_3592151557447850512_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fird1-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QElrurEpGsl1cxIQgVQoGcZomsdihE7R-Z9-F95qH0dpDrK76FQuFJv7vzkK-77qpc&_nc_ohc=1znSuBPAYbYQ7kNvwF3eZQB&_nc_gid=Pli0bRgsnj09S-eLsMvW0Q&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRT01zCJyZRvf_m-KV_MC7BzglC4TLbW0M4DG-wQV3Phg&oe=6871655D&_nc_sid=8b3546",
+      "externalUrl": "https://gmb.io/insta/",
+      "businessCategory": "None,Sports & Fitness Instruction",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/gmbfitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.51,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T11:02:55.110Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "itzazo_fitness",
+      "displayName": "Mar Planas | Mentora de Mujeres Empoderadas y Pletórikas",
+      "bio": "💪🏻 Te ayudo a alcanzar tus objetivos para sentirte bien contigo misma\n👙 He ayudado a más de 3.000 mujeres\n📲 Clases y tips para transformar tu cuerpo👇🏼",
+      "followers": 333634,
+      "following": 304,
+      "posts": 3012,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/itzazo_fitness",
+      "profilePicUrl": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/420956101_410901044692472_1365469882278359931_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGVYPbucFqBWsEnsp7prFjhGchhWA34U0pOedn6r9brQi2An3FfsWZODHU76ZQ_SeM&_nc_ohc=RUK1uGMRgwQQ7kNvwHeB0Zv&_nc_gid=dIA9kN6FKBEsohZf6WS4Wg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQYJ7GfNKs7oNiOHk2oFBkte3gBQljz5IRCvlhoezctPg&oe=687161CF&_nc_sid=8b3546",
+      "externalUrl": "http://bit.ly/vidapletorikaIG",
+      "businessCategory": "Health/beauty",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/itzazo_fitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "Spanish",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.66,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T11:03:16.412Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "nebbia_fitness",
+      "displayName": "NEBBIA™ Official Profile",
+      "bio": "Tested by PROs, made for you ⭕️\nCHALLENGE THE ORDINARY! 🥷",
+      "followers": 240387,
+      "following": 1185,
+      "posts": 3591,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/nebbia_fitness",
+      "profilePicUrl": "https://scontent-hou1-1.cdninstagram.com/v/t51.2885-19/469584258_1145495970526490_1612117467456844010_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHZ6uQ32NSABLQt4gMDYr3t-EKJQDjWOFF3Y7yIytrUstQ1p23HTekMl8IWbi1hvWk&_nc_ohc=YwRTY2LNercQ7kNvwFklKqq&_nc_gid=uy-imMkbZMKzdXVqZJRPJA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfSwWTmCBbYl3mhB4zP_1qTXO2Q1GuO77LKhyC2ESFn9CA&oe=687178B1&_nc_sid=8b3546",
+      "externalUrl": "https://tr.ee/XWW2ET7fso",
+      "businessCategory": "None,Entrepreneur",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/nebbia_fitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.5,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "General Business",
+        "business_confidence": 0.1,
+        "revenue_potential": 5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "📋 STANDARD LEAD - Basic qualification, consider for mass outreach."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.53,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T11:03:37.548Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitnessparkofficiel",
+      "displayName": "Fitness Park Officiel",
+      "bio": "💪Leader français du Fitness\n🏋️‍♂️Plus de 300 clubs \n💛 Plus d’1 million d’adhérents \n📸 @ nous en story : on repost !",
+      "followers": 156540,
+      "following": 538,
+      "posts": 1869,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitnessparkofficiel",
+      "profilePicUrl": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/510461267_18521797399029917_790038659880747899_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QG_WdGNYA3XXR0nRkDHVOYo13vbjLmgW-pJR2d2dRnVBafLz5js_Kf8Tyxk-eqcGeg&_nc_ohc=m55HR1dR_UYQ7kNvwGN8ToN&_nc_gid=6D9o3wtaFN_zaeYmVgYCLw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfRjyw1rTZlU_5rfxdvZujRoDsUMdy-mdZLdtWcXRH7itQ&oe=6871776A&_nc_sid=8b3546",
+      "externalUrl": "https://linktr.ee/fitnessparkofficiel",
+      "businessCategory": "None,Sports Club",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/fitnessparkofficiel_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 5.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Ecommerce",
+        "business_confidence": 0.7,
+        "revenue_potential": 8,
+        "language": "Spanish",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💼 QUALIFIED LEAD - Good business potential, add to nurture sequence."
+      },
+      "visionScore": {
+        "professional_score": 4.5,
+        "quality_score": 5,
+        "branding_score": 3,
+        "composition_score": 4,
+        "file_size_mb": 0.44,
+        "image_quality": "Average",
+        "professional_rating": "Casual",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Improve image quality - use higher resolution",
+          "Consider more professional presentation",
+          "Add branding elements"
+        ],
+        "marketability": "Low - Needs professional photography",
+        "recommendation": "⚠️ BASIC PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T11:03:58.697Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "fitnessfirstger",
+      "displayName": "Fitness First Germany",
+      "bio": "MOTIVATION | TRAINING I GROWTH\nPut your Fitness First! \n#MotivatedByFitnessFirst",
+      "followers": 87909,
+      "following": 806,
+      "posts": 2150,
+      "isVerified": true,
+      "isPrivate": false,
+      "url": "https://instagram.com/fitnessfirstger",
+      "profilePicUrl": "https://instagram.fcgh9-1.fna.fbcdn.net/v/t51.2885-19/484001716_998948632171971_3865384794103742084_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fcgh9-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QEVGqiWMTZUQvS4Scn04SsUsc92pG_TruyX5PZQqpiC9EMTahrk425Nw63ecCSJiVY&_nc_ohc=dKaMk8smt84Q7kNvwHnuaDR&_nc_gid=UXma3uRCCSU-29dUi14QJQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfS7YlsvPkbj2RT6Z6MSw5vOvvXz3YzU7nCOL0IP3ElS8Q&oe=687196FB&_nc_sid=8b3546",
+      "externalUrl": "https://www.fitnessfirst.de/linktree/instagram?em_src=socialmedia&em_cmp=IG%2FLInktree%2FLinktree",
+      "businessCategory": "None,Gym/Physical Fitness Center",
+      "isBusinessAccount": true,
+      "screenshot": "/screenshots/fitnessfirstger_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": true,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 3.9,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.5,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 0,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [],
+      "scrapedAt": "2025-07-07T11:04:20.363Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "liliia.fitness",
+      "displayName": "Liliia Dotsenko",
+      "bio": "BetterMe ambassador @betterme\nLose pounds & gain muscles with HOME PILATES\nStart now!👇",
+      "followers": 463872,
+      "following": 0,
+      "posts": 34,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/liliia.fitness",
+      "profilePicUrl": "https://instagram.fyyz1-2.fna.fbcdn.net/v/t51.2885-19/471301837_905632441680168_4448246409525737305_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fyyz1-2.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2QEyCSkec0GkqI1UEX_gWDMDbo7vWp-4p54bzEu0c-bTsM01uRKhxZ1P3IAxDWVVUFjiQ-KoYucbyNwBNwEv3hCp&_nc_ohc=waEdt3lNbTsQ7kNvwGmGQz3&_nc_gid=MvUqvwxyYhk7xGF9q3V7GQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfQ7TaIQhoOmdZ4yTHPGABRiJsqzZ9IT5pbvcDR8Qwnlug&oe=6871767B&_nc_sid=8b3546",
+      "externalUrl": "https://bttrm.co/pilates_kit_workout",
+      "businessCategory": "Sports",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/liliia.fitness_composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.52,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T11:04:41.476Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    },
+    {
+      "username": "kateryna_fitness_",
+      "displayName": "Katarina",
+      "bio": "BetterMe ambassador @betterme \nLose pounds & gain muscles with WALL PILATES\nStart now!👇",
+      "followers": 330947,
+      "following": 450,
+      "posts": 54,
+      "isVerified": false,
+      "isPrivate": false,
+      "url": "https://instagram.com/kateryna_fitness_",
+      "profilePicUrl": "https://instagram.fbom9-1.fna.fbcdn.net/v/t51.2885-19/363514703_2030546070619756_3012898461550725776_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_ht=instagram.fbom9-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2QFQhYtCHDQriqIqxkGa7RYPlhuhwd_tz5okgiI4xRLRl7uNB5c0orECuoS5DvUvl_w&_nc_ohc=5s4n91Fe6kwQ7kNvwFa3FiK&_nc_gid=sWb6uWsQSm9QWKSOJzeu4w&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfTfPVWgKuOSaien8zRDdKK_Z93IsttpujuGiqhhYv8txg&oe=68718FE1&_nc_sid=8b3546",
+      "externalUrl": "https://bttrm.co/somatic_workout1",
+      "businessCategory": "Health/beauty",
+      "isBusinessAccount": false,
+      "screenshot": "/screenshots/kateryna_fitness__composite.png",
+      "contactInfo": {
+        "hasDirectContact": false,
+        "contactMethods": 1,
+        "methods": [
+          "Website link"
+        ]
+      },
+      "activityData": {
+        "isActive": false,
+        "hasActiveStory": false,
+        "isVerified": false,
+        "lastActivity": "recent",
+        "engagementRate": 0,
+        "engagementTier": "Low",
+        "isHighEngagement": false
+      },
+      "bioScore": {
+        "pitch_score": 4.7,
+        "urgency_score": 2,
+        "credibility_score": 0,
+        "contact_readiness": 0.8,
+        "business_type": "Fitness",
+        "business_confidence": 0.3,
+        "revenue_potential": 8.5,
+        "language": "English",
+        "region": "Unknown",
+        "region_value": "Standard",
+        "key_indicators": [
+          "Email Available"
+        ],
+        "recommendation": "💎 HIGH-VALUE INDUSTRY - Lower engagement but high revenue potential."
+      },
+      "visionScore": {
+        "professional_score": 5.3,
+        "quality_score": 6,
+        "branding_score": 3,
+        "composition_score": 5,
+        "file_size_mb": 0.53,
+        "image_quality": "Good",
+        "professional_rating": "Semi-Professional",
+        "key_strengths": [
+          "Basic Profile Image"
+        ],
+        "improvement_suggestions": [
+          "Add branding elements"
+        ],
+        "marketability": "Moderate - Could be improved",
+        "recommendation": "👍 GOOD PROFILE"
+      },
+      "leadScore": 10,
+      "leadTier": "COLD",
+      "leadPriority": 4,
+      "leadAction": "Add to nurture sequence",
+      "leadConfidence": "Low",
+      "leadFactors": [
+        "Average Bio Score"
+      ],
+      "scrapedAt": "2025-07-07T11:05:03.095Z",
+      "source": "apify_instagram",
+      "keyword": "nyc fitness",
+      "dataQuality": "high"
+    }
+  ]
+}

@@ -797,8 +797,11 @@ function calculateLeadScore(profileData, bioScore, visionScore) {
 
 // Main scraping function - maintains exact same interface as original scraper
 async function scrape(keyword, maxPages = 2, delayMs = 1000, massMode = false, options = {}) {
+  const { minFollowers = 50, maxFollowers = 2500000 } = options;
+  
   logError(`🚀 Starting Apify-powered Instagram scrape for: "${keyword}"`);
   logError(`📊 Configuration: ${maxPages} pages, ${delayMs}ms delay, mass mode: ${massMode}`);
+  logError(`🔧 Advanced Settings: Min followers: ${minFollowers}, Max followers: ${maxFollowers}`);
   
   // 🔧 Validate settings before starting
   try {
@@ -840,26 +843,89 @@ async function scrape(keyword, maxPages = 2, delayMs = 1000, massMode = false, o
   
   try {
     // Use search-first approach to find real Instagram profiles
-    const maxProfiles = massMode ? Math.min(maxPages * 5, 25) : Math.min(maxPages * 3, 15);
+    const maxProfiles = massMode ? Math.min(maxPages * 10, 50) : Math.min(maxPages * 8, 30);
     
     logError(`🔍 Using search-first approach to find real Instagram profiles for: "${keyword}"`);
     
     // Primary approach: Use Instagram search to find real profiles
+    let searchTerm = keyword.trim();
+    
       const searchInput = {
-        search: keyword,
+      search: searchTerm,
       searchType: "user",
       resultsType: "details",
-      resultsLimit: maxProfiles,
-      addParentData: true
+      resultsLimit: Math.max(maxProfiles, 20), // Ensure minimum 20 results
+      addParentData: true,
+      searchLimit: 50 // Try to get more search results
       };
       
-    logError(`📡 Starting Apify search for keyword: "${keyword}"`);
+    logError(`📡 Starting Apify search for keyword: "${searchTerm}"`);
         const apifyClient = await getApifyClient();
-        const searchRun = await apifyClient.actor(INSTAGRAM_ACTOR_ID).call(searchInput);
+    let searchRun = await apifyClient.actor(INSTAGRAM_ACTOR_ID).call(searchInput);
     global.apifyRunId = searchRun.id;
-    const { items } = await apifyClient.dataset(searchRun.defaultDatasetId).listItems();
+    let { items } = await apifyClient.dataset(searchRun.defaultDatasetId).listItems();
         
     logError(`✅ Apify search returned ${items.length} profiles`);
+    
+    // If no results, proceed to hashtag search fallback
+    
+    // 🔥 SECOND FALLBACK: If still no results, try hashtag search
+    if (items.length === 0) {
+      logError(`⚠️ No user results found, trying hashtag search for broader results`);
+      const hashtagInput = {
+        search: searchTerm,
+        searchType: "hashtag",
+        resultsType: "details",
+        resultsLimit: Math.min(maxProfiles, 20), // Increase hashtag results
+        addParentData: true,
+        searchLimit: 30 // Try to get more hashtag results
+      };
+      
+      searchRun = await apifyClient.actor(INSTAGRAM_ACTOR_ID).call(hashtagInput);
+      global.apifyRunId = searchRun.id;
+      const hashtagData = await apifyClient.dataset(searchRun.defaultDatasetId).listItems();
+      items = hashtagData.items;
+      logError(`✅ Hashtag search returned ${items.length} profiles`);
+    }
+    
+    // 🔥 THIRD FALLBACK: If still low results, try broader search terms
+    if (items.length < 5) {
+      logError(`⚠️ Only ${items.length} results found, trying broader search terms`);
+      
+      // Extract main keywords and try individual searches
+      const keywordParts = searchTerm.split(' ').filter(word => word.length > 3);
+      
+      for (const part of keywordParts.slice(0, 2)) { // Only try first 2 parts
+        if (items.length >= 10) break; // Stop if we have enough results
+        
+        logError(`🔍 Trying broader search for: "${part}"`);
+        const broaderInput = {
+          search: part,
+          searchType: "user",
+          resultsType: "details",
+          resultsLimit: 15,
+          addParentData: true
+        };
+        
+        try {
+          searchRun = await apifyClient.actor(INSTAGRAM_ACTOR_ID).call(broaderInput);
+          global.apifyRunId = searchRun.id;
+          const broaderData = await apifyClient.dataset(searchRun.defaultDatasetId).listItems();
+          
+          // Add new results (avoid duplicates)
+          const existingUsernames = new Set(items.map(item => item.username || item.handle || item.user));
+          const newResults = broaderData.items.filter(item => {
+            const username = item.username || item.handle || item.user;
+            return username && !existingUsernames.has(username);
+          });
+          
+          items.push(...newResults);
+          logError(`✅ Broader search for "${part}" added ${newResults.length} new profiles (total: ${items.length})`);
+        } catch (broaderError) {
+          logError(`❌ Broader search for "${part}" failed: ${broaderError.message}`);
+        }
+      }
+    }
     
     // 🔥 REMOVED: No more hardcoded business usernames - only use real search results
     
@@ -914,6 +980,50 @@ async function scrape(keyword, maxPages = 2, delayMs = 1000, massMode = false, o
       if (!hasBio && !hasFollowers) {
         logError(`❌ Skipping profile with no bio or followers (likely hashtag): ${username}`);
         continue;
+      }
+      
+      // 🔥 RELAXED: More flexible keyword matching for better results
+      if (keyword.includes(' ')) {
+        const keywordWords = keyword.toLowerCase().split(' ');
+        const bioText = (hasBio || '').toLowerCase();
+        const displayName = (apifyProfile.fullName || apifyProfile.displayName || '').toLowerCase();
+        const profileText = `${bioText} ${displayName} ${username.toLowerCase()}`;
+        
+        // More flexible matching - check for partial matches and related terms
+        const hasRelevantContent = keywordWords.some(word => {
+          // Direct match
+          if (profileText.includes(word)) return true;
+          
+          // Partial match for longer words
+          if (word.length > 4 && profileText.includes(word.substring(0, word.length - 1))) return true;
+          
+          // Related terms mapping
+          const relatedTerms = {
+            'fitness': ['gym', 'workout', 'training', 'health', 'coach', 'trainer', 'fit', 'muscle', 'strength'],
+            'coach': ['trainer', 'instructor', 'teacher', 'mentor', 'guide', 'fitness', 'personal'],
+            'miami': ['florida', 'fl', 'south beach', 'beach', 'tropical'],
+            'arizona': ['az', 'phoenix', 'scottsdale', 'desert'],
+            'business': ['entrepreneur', 'owner', 'ceo', 'founder', 'company', 'service'],
+            'food': ['chef', 'restaurant', 'cooking', 'kitchen', 'culinary', 'recipe'],
+            'beauty': ['makeup', 'cosmetics', 'skincare', 'hair', 'salon', 'spa'],
+            'fashion': ['style', 'clothing', 'apparel', 'design', 'boutique'],
+            'real estate': ['realtor', 'property', 'homes', 'houses', 'agent'],
+            'photography': ['photographer', 'photo', 'camera', 'studio', 'wedding'],
+            'music': ['musician', 'artist', 'band', 'singer', 'dj', 'producer'],
+            'travel': ['vacation', 'trip', 'adventure', 'explore', 'tourism']
+          };
+          
+          // Check if any related terms are present
+          const related = relatedTerms[word] || [];
+          return related.some(term => profileText.includes(term));
+        });
+        
+        // If no match found, still allow profile but log it
+        if (!hasRelevantContent) {
+          logError(`⚠️ Profile ${username} has weak keyword match - including anyway for better results`);
+        } else {
+          logError(`✅ Profile ${username} matches keyword criteria`);
+        }
       }
       
       if (seenUsernames.has(username)) {
@@ -1003,8 +1113,14 @@ async function scrape(keyword, maxPages = 2, delayMs = 1000, massMode = false, o
           externalUrl: apifyProfile.externalUrl || apifyProfile.website || '',
           businessCategory: apifyProfile.businessCategoryName || apifyProfile.category || '',
           isBusinessAccount: apifyProfile.isBusinessAccount || apifyProfile.business || false,
-          screenshotPath: finalScreenshotPath
+          screenshotPath: finalScreenshotPath // can be null
         };
+
+        // 🔧 FOLLOWER FILTERING: Skip profiles over the follower limit
+        if (profileData.followers < minFollowers || profileData.followers > maxFollowers) {
+          logError(`⚠️ Skipping ${username} - ${profileData.followers} followers outside range ${minFollowers}-${maxFollowers}`);
+          continue;
+        }
         
         // Enhanced data analysis
         const contactInfo = extractContactInfo(profileData);
@@ -1013,12 +1129,12 @@ async function scrape(keyword, maxPages = 2, delayMs = 1000, massMode = false, o
         // AI Analysis (same as your original scraper)
         logError(`🧠 Running AI analysis for ${profileData.username}...`);
         const bioScore = await runPythonScript('bio_score_fast.py', profileData.bio);
-        logError(`📝 Bio score: ${JSON.stringify(bioScore)}`);
+        logError(`📝 Bio score: ${bioScore?.pitch_score ?? 'N/A'}`);
         
         const visionScore = finalScreenshotPath ? 
           await runPythonScript('vision_score.py', finalScreenshotPath) : 
           { professional_score: 5 };
-        logError(`👁️ Vision score: ${JSON.stringify(visionScore)}`);
+        logError(`👁️ Vision score: ${visionScore?.professional_score ?? 'N/A'}`);
         
         // Calculate lead score using your existing algorithm
         const leadScore = calculateLeadScore(profileData, bioScore, visionScore);
@@ -1062,8 +1178,20 @@ async function scrape(keyword, maxPages = 2, delayMs = 1000, massMode = false, o
           dataQuality: 'high'
         };
         
+        // 🔥 REAL-TIME UPDATES: Add lead to global array immediately for frontend
+        if (!global.latestLeads) {
+          global.latestLeads = [];
+        }
+        global.latestLeads.push(lead);
+        logError(`📊 Real-time update: Added ${lead.username} to live feed (${global.latestLeads.length} total leads)`);
+        
         leads.push(lead);
-        logError(`✅ Processed ${profileData.username} - Score: ${leadScore.score} (${leadScore.tier})`);
+        logError(`✅ Processed ${lead.username} - Score: ${leadScore.score} (${leadScore.tier})`);
+        
+        // Update scraping stats for real-time progress
+        if (global.scrapingStats) {
+          global.scrapingStats.completedProfiles = global.latestLeads.length;
+        }
         
         // Respect delay
         if (delayMs > 0) await delay(delayMs);
